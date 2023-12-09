@@ -1,0 +1,22 @@
+img {
+    max-width: 150px; /* Adjust the max-width as needed */
+    height: auto;
+    object-fit: cover;
+  }
+
+  .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0 !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+}
+
+  .navsection{
+    background-color: #012741;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
