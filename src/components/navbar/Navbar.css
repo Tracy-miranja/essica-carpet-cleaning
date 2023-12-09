@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #047DCF;
+  color: #fff;
+  height: 62px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  height: 100%;
+  width: 40vw;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.navLinks{
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+ 
+.logo {
+  max-width: 100%;
+  margin-left: 4rem;
+  height: 3rem;
+  box-sizing: border-box;
+}
+
+.slanted-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw; /* Set the desired width */
+  height: 100%; /* Set the desired height */
+  background-color: #F0520B; /* Set the background color */
+}
+
+.slanted-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px; /* Adjust the distance of the slanted side */
+  width: 50px; /* Set the width of the slanted side */
+  height: 100%;
+  background-color: #F0520B; /* Match the background color of the main div */
+  transform: skewX(-30deg); /* Skew the pseudo-element */
+}
+
+.btn-primary.custom-btn {
+ background-color: #fff;
+ outline: none;
+ color: black;
+ border: none;
+}
+
