@@ -4,6 +4,7 @@ import {Button, Badge }from "react-bootstrap";
 import '../Home/home.css';
 import { useEffect, useState } from "react";
 
+
 const Home = () => {
   const [satisfaction, setSatisfaction] = useState(0);
   const [workProgress, setWorkProgress] = useState(0);
@@ -59,31 +60,32 @@ when an unknown printer took a galley of type and
     </Container>
     <div className="container-fluid float">
       <div className="carpet-clean">
-      <h3>  Customized <br />
+      <h3 style={{fontWeight:'700', fontSize:'24px'}}>  Customized <br />
       Cleaning Plans</h3>
         <h6>Lorem Ipsum is simply dummy text of the printing 
       and typesetting industry. Lorem Ipsum has been the industry standard dummy 
       </h6>
       </div>
       <div className="carpet-cleanA">
-      <h3><span style={{color:"#F0520B"}}>Online</span> Booking <br /> Management</h3>
+      <h3 style={{fontWeight:'700', fontSize:'24px'}}><span style={{color:"#F0520B", fontWeight:'700'}}>Online</span> Booking <br /> Management</h3>
         <h6>
         Lorem Ipsum is simply dummy text of the printing 
       and typesetting industry. Lorem Ipsum has been the 
       </h6>
       </div>
       <div className="carpet-cleanB">
-        <h3>Eco-Friendly <br/>Cleaning</h3>
+        <h3 style={{fontWeight:'700', fontSize:'24px'}}>Eco-Friendly <br/>Cleaning</h3>
         <h6>
         Lorem Ipsum is simply dummy text of 
       the printing and typesetting industry. Lorem Ipsum has been the 
        </h6>
        </div>
     </div>
-    <Container className="carpet-progress">
+    <div className="carpet-progress">
       <div className="section-carpet">
         <div>
-          <h1 style={{color:'#04568E', fontWeight:'500'}}>WHY CHOOSE US</h1>
+        <h5 style={{color:'#ffff', fontWeight:'300'}}>WHY CHOOSE US</h5>
+          <h1 style={{color:'#fff', fontWeight:'800'}}>The Clean Team You <br />Can Trust</h1>
         </div>
         <div>Lorem Ipsum is simply dummy text of the printing and typesetting
        industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
@@ -103,7 +105,7 @@ when an unknown printer took a galley of type and
             {satisfaction}%
           </div>
         </div>
-        <div style={{marginTop:'30px'}}>
+        <div style={{marginTop:'20px'}}>
         {/* Progress Bar for Work Progress */}
         <h5>Work Progress</h5>
         <div className="progress">
@@ -120,7 +122,7 @@ when an unknown printer took a galley of type and
         </div>
        </div>
 
-       <div style={{marginTop:'30px'}}>
+       <div style={{marginTop:'20px'}}>
         {/* Progress Bar for Work Done */}
         <h5>Work Done</h5>
         <div className="progress">
@@ -139,9 +141,108 @@ when an unknown printer took a galley of type and
       </div>
       </div>
       <div className="section-carpetC">
-        <div className="circle">circle</div>
+        <div className="circle"></div>
       </div>
-    </Container>
+    </div>
+    <div className="carpet-price">
+      <div className="price">
+      <table>
+        <thead style={{background:'#F0520B'}}>
+          <tr>
+            <th style={{width:'40%',height:'40px'}}>Size (ft)</th>
+            <th style={{width:'40%'}}>Size (m)</th>
+            <th style={{width:'40%'}}>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
+            <td>5x8</td>
+            <td>1.52x2</td>
+            <td>Ksh.1200.00</td>
+          </tr>
+          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
+            <td>6x10</td>
+            <td>2x3</td>
+            <td>Ksh.1800.00</td>
+          </tr>
+          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
+            <td>7x10</td>
+            <td>2.1x3</td>
+            <td>Ksh.2100.00</td>
+          </tr>
+          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
+            <td>8x11</td>
+            <td>2.4x3.3</td>
+            <td>Ksh.2640.00</td>
+          </tr>
+          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
+            <td>9x12</td>
+            <td>2.7x3.6</td>
+            <td>Ksh.3240.00</td>
+          </tr>
+          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
+            <td>10x13</td>
+            <td>3x3.5</td>
+            <td>Ksh.3900.00</td>
+          </tr>
+          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
+            <td>Extra Large</td>
+            <td>Beyond 9 by 12</td>
+            <td>30Ksh/ft</td>
+          </tr>
+          {/* Add more rows as needed */}
+        </tbody>
+      </table>
+    
+      </div>
+      <div className="price1">
+        <h4 style={{color:"#04568E", fontWeight:"700"}}>START WITH A FFORDABLE PRICING</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing 
+and typesetting industry. Lorem Ipsum has been the
+ industry standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and
+ scrambled it to make a type specimen book.
+ Lorem Ipsum is simply dummy text of the printing 
+and typesetting industry. Lorem Ipsum has been the
+ industry standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and
+ scrambled it to make a type specimen book.
+ 
+ </p>
+ <Button>Book Appointment</Button>
+      </div>
+    </div>
+    <div className="footer">
+      <div className="footer-inside">
+        <div>
+        <div>
+              <img src="" alt="Essica" />
+            </div>
+          <p>Lorem ipsum dolor sit amet,
+ consectetur adipiscing elit. 
+Ut elit tellus, <br />luctus nec 
+ullamcorper mattis, Lorem ipsum dolor sit amet,
+ consectetur adipiscing <br />elit. 
+Ut elit tellus, luctus nec 
+ullamcorper mattis,
+</p>
+        </div>
+        <div>
+        <p>Lorem ipsum dolor sit amet,
+ consectetur adipiscing elit. 
+Ut elit tellus, luctus nec 
+ullamcorper mattis, 
+</p>
+        </div>
+        <div>
+        <p>Lorem ipsum dolor sit amet,
+ consectetur adipiscing elit. 
+Ut elit tellus, luctus nec 
+ullamcorper mattis, 
+</p>
+        </div>
+      </div>
+    </div>
     </>
   );
 };

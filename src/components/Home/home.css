@@ -11,7 +11,7 @@
     background-color: #EFEEEE;
     margin-top: 0;
     padding: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
   }
 
   .heading{
@@ -119,7 +119,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     padding: 10px;
     /* position: relative; */
   }
@@ -129,6 +129,7 @@
     text-align: center;
     justify-content: center;
     height: 30vh;
+    color: #fff;
     background-color: #047DCF;
     position: relative;
     margin-top: -50px;
@@ -178,6 +179,7 @@
     width: 18%;
     text-align: center;
     justify-content: center;
+    color: #fff;
     height: 30vh;
     background-color: #F0520B;
     position: relative;
@@ -207,13 +209,11 @@
     justify-content: space-between;
     margin-top: 50px;
     flex-wrap: var(--flex-wrap);
-    /* justify-content: var(--justify-content);
-    align-items: var(--align-items);
-    align-content: var(--align-content);
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
-    align-self: auto; */
+    background-color: #047DCF;
+    padding: 100px;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
   }
 
   .section-carpet{
@@ -223,21 +223,87 @@
     gap: 10px;
   }
 
+  .progress-bar {
+    background-color: #F0520B !important;
+   
+  }
+
   .section-carpetC {
+    position: relative;
     width: 45%;
     height: 60vh;
     background-color: #F0520B;
-    background-image: url(./carpets-washing.jpg);
+    background-size: cover;
+    background-image: url(./carpet-cleaner-full.jpg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add box shadow */
     border-radius: 20px; /* Add rounded corners */
   }
-  
 
-  .circle{
-    border-radius: 50%;
-    background-color: azure;
-    height: 160px;
-    position: relative;
-    width: 30%;
+  .circle {
+    position: absolute;
+    bottom: -40px; /* Adjust the distance from the bottom */
+    left: -55px; /* Adjust the distance from the left */
+    width: 180px; /* Adjust the width of the circle */
+    height: 180px; /* Adjust the height of the circle */
+    background-color: #fff; /* Circle background color */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./carpets-washing.jpg);
+    background-size: cover;
+  }
+  
+  .carpet-price{
+    display: flex;
+    padding: 100px;
+    padding-bottom: 0;
+    gap: 20px;
+  }
+
+  .price1{
+    width: 50%;
+    height: 40vh;
+    text-align: center;
+  }
+
+  .price{
+    width: 50%;
+    height: 60vh;
+    /* margin: 20px; */
+    /* border: 1px solid #f80e0e; */
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+  }
+  
+  .price-table th, .price-table td {
+    /* border: 5px solid #e21e1e; Add borders */
+    padding: 8px; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .price-table th {
+    background-color: #f2f2f2; /* Add a background color for header */
+  }
+  .footer{
+    background-color: #0C8EE7;
+    height: 60vh;
+    padding: 90px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+
+  .footer-inside{
+    height: 40vh;
+    background-color: #04568E;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    color: #fff;
   }
   
