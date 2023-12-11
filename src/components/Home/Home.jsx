@@ -60,25 +60,25 @@ when an unknown printer took a galley of type and
     </Container>
     <div className="container-fluid float">
       <div className="carpet-clean">
-      <h3 style={{fontWeight:'700', fontSize:'24px'}}>  Customized <br />
+      <h3 style={{fontWeight:'700', fontSize:'22px'}}>  Customized <br />
       Cleaning Plans</h3>
-        <h6>Lorem Ipsum is simply dummy text of the printing 
+        <p>Lorem Ipsum is simply dummy text of the printing 
       and typesetting industry. Lorem Ipsum has been the industry standard dummy 
-      </h6>
+      </p>
       </div>
       <div className="carpet-cleanA">
-      <h3 style={{fontWeight:'700', fontSize:'24px'}}><span style={{color:"#F0520B", fontWeight:'700'}}>Online</span> Booking <br /> Management</h3>
-        <h6>
+      <h3 style={{fontWeight:'700', fontSize:'22px'}}><span style={{color:"#F0520B", fontWeight:'700'}}>Online</span> Booking <br /> Management</h3>
+        <p>
         Lorem Ipsum is simply dummy text of the printing 
       and typesetting industry. Lorem Ipsum has been the 
-      </h6>
+      </p>
       </div>
       <div className="carpet-cleanB">
-        <h3 style={{fontWeight:'700', fontSize:'24px'}}>Eco-Friendly <br/>Cleaning</h3>
-        <h6>
+        <h3 style={{fontWeight:'700', fontSize:'22px'}}>Eco-Friendly <br/>Cleaning</h3>
+        <p>
         Lorem Ipsum is simply dummy text of 
       the printing and typesetting industry. Lorem Ipsum has been the 
-       </h6>
+       </p>
        </div>
     </div>
     <div className="carpet-progress">
@@ -212,37 +212,7 @@ when an unknown printer took a galley of type and
  <Button>Book Appointment</Button>
       </div>
     </div>
-    <div className="footer">
-      <div className="footer-inside">
-        <div>
-        <div>
-              <img src="" alt="Essica" />
-            </div>
-          <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, <br />luctus nec 
-ullamcorper mattis, Lorem ipsum dolor sit amet,
- consectetur adipiscing <br />elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis,
-</p>
-        </div>
-        <div>
-        <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, 
-</p>
-        </div>
-        <div>
-        <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, 
-</p>
-        </div>
-      </div>
-    </div>
+   
     </>
   );
 };

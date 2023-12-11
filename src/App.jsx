@@ -8,6 +8,7 @@ import Services from './components/Services/Services'
 import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Footer from './components/footer/footer'
 // import {Swiper, SwiperSlider} from 'swiper/react'
 // import 'swiper/css'
 // import 'swiper/css/effect-coverflow'
@@ -31,7 +32,7 @@ const App= () =>{
         </Routes>
       </Router>
       </div>
-      
+      <Footer />
     </>
   )
 }
