@@ -7,6 +7,7 @@ img {
   .navbar {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0 !important;
+    position: sticky !important;
   }
 
   .navbar-light .navbar-nav .nav-link {
@@ -19,4 +20,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    position: sticky !important;
+    z-index: -1;
+  }
+
+  .d-lg{
+    background-color: brown;
   }
