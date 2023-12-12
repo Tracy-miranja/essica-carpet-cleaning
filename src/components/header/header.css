@@ -7,12 +7,18 @@ img {
   .navbar {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0 !important;
-    position: sticky !important;
+    
   }
 
   .navbar-light .navbar-nav .nav-link {
     color: white !important;
     font-size: 18px;
+}
+
+.navbar-sticky {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
 }
 
   .navsection{
