@@ -22,7 +22,10 @@ const Blog=() =>{
         <div className="blog-article">
           <div className="blog-image"></div>
           <div>
-            <h4>How To Create An Organized Cleaning Schedule That Works</h4><p>Lorem ipsum dolor sit amet,
+          <a href="/">
+  <h4>How To Create An Organized Cleaning Schedule That Works</h4>
+</a>
+            <p>Lorem ipsum dolor sit amet,
  consectetur adipiscing elit. 
 Ut elit tellus, luctus nec 
 ullamcorper mattis, </p></div>
@@ -30,7 +33,9 @@ ullamcorper mattis, </p></div>
         <div className="blog-article">
         <div className="blog-image"></div>
           <div>
+          <a href="/">
             <h4>Green Cleaning, Eco-Friendly Solutions For A Healthier Home</h4>
+            </a>
             <p>Lorem ipsum dolor sit amet,
  consectetur adipiscing elit. 
 Ut elit tellus, luctus nec 
@@ -40,7 +45,9 @@ ullamcorper mattis, </p>
         <div className="blog-article">
         <div className="blog-image"></div>
           <div>
+          <a href="/">
             <h4>Removing Stubborn Stains, A Comprehensive Guide</h4>
+            </a>
             <p>Lorem ipsum dolor sit amet,
  consectetur adipiscing elit. 
 Ut elit tellus, luctus nec 
