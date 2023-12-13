@@ -1,0 +1,107 @@
+.about-banner{
+    background-image: url(../About/carpets-washing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    background-position: 50%;
+    height: 50vh;
+    width: 100%;
+}
+
+.about{
+    background-color: rgba(37, 130, 184, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.about-content{
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #111111;
+    width: 240px;
+    height: 50px;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.about-content h1{
+   font-weight: 700;
+   color: #fff;
+}
+
+.about-sectioA{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.about-contentA{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.about-contentB{
+    background-image: url(../About/carpet-cleaner-full.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: 80%;
+    border-radius: 20px;
+}
+
+.testimonials{
+    height: 60vh;
+    width: 100%;
+    background-image: url(../About/carpetstain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    background-color: #2892D5;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.testimonialsClients{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(37, 130, 184, 0.6);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.testimonialsClients h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.cllientfeed-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.cllientfeed{
+    width: 30%;
+    height: 40vh;
+    background-color: #047DCF;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+}

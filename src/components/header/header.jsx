@@ -11,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 const Header = () => {
   return (
     <div>
+      <div className='head'>hello</div>
       <Navbar expand="lg" className="bg-body-tertiary navbar-sticky">
         <Container fluid className="navsection">
           <div>

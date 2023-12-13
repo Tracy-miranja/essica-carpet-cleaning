@@ -1,0 +1,43 @@
+.title-services{
+    text-align: center;
+    padding: 10px;
+}
+
+.services-sectionB{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10;
+}
+
+.services-content{
+    width: 60%;
+    height: 100vh;
+    /* margin-bottom: 140px; */
+    padding: 40px;
+}
+
+.servicelist{
+    width: 90%;
+    height: 50vh;
+    background-color: #F0520B;
+    border-radius: 20px;
+    margin-left: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.servicelist h4{
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.servicelist2{
+    width: 90%;
+    height: 50vh;
+    background-image:url(../Services/industrial.jpeg);
+    background-position: 90%;
+    background-color: #F0520B;
+    margin-left: 50px;
+    border-radius: 20px;
+}
