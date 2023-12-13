@@ -1,0 +1,50 @@
+.blog-section h2{
+ text-align: center;
+ color: #111111;
+ font-weight: 700;
+}
+.blog-section p{
+    text-align: center;
+    color: #F0520B;
+    font-weight: 700;
+   }
+
+.blog-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 30px;
+}
+
+.blog-article {
+    width: 25%;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 0cm20px;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration,.4s);
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3); /* Add a box shadow with vertical offset */
+}
+
+.blog-article:hover {
+    background-color: #fff; /* Change the background color on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change the box shadow on hover */
+    transform: scale(1.1); /* Add a scaling effect on hover */
+}
+
+.blog-image{
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    background-image: url(../Blog/carpetstain.jpg);
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.blog-article h4{
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 10px;
+}

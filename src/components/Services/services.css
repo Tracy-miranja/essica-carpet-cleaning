@@ -12,7 +12,7 @@
 
 .services-content{
     width: 60%;
-    height: 100vh;
+    height: 120vh;
     /* margin-bottom: 140px; */
     padding: 40px;
 }
@@ -40,4 +40,5 @@
     background-color: #F0520B;
     margin-left: 50px;
     border-radius: 20px;
+    margin-top: 20px;
 }
