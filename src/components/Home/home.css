@@ -335,3 +335,121 @@ body{
     font-size: 24px;
   }
   
+
+  @media (max-width: 1095px) {
+    .content {
+      margin-top: 25%;
+      margin-left: 61px;
+      position: relative;
+    }
+
+    .section-b{
+      height: 71vh;
+    }
+
+    .carpet-clean {
+      width: 25%;
+    }
+
+    .carpet-cleanA {
+      width: 25%;
+    }
+
+    .carpet-cleanB {
+      width: 25%;
+    }
+
+    .footer1 {
+      background: linear-gradient(to bottom, #023161, #046eb4); 
+      height: 40vh;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 30px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .banner {
+      background-image: url(../Home/carpet-cleaner-full.jpg);
+      padding: 0;
+      margin-top: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  
+    .slanted-container {
+      background-color: rgba(14, 15, 15, 0.6); /* Use rgba to control opacity without affecting children */
+      position: relative;
+      overflow: scroll;
+    }
+  
+    .section-b {
+      display: none;
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+      /* text-align: center; */
+    }
+  
+    .section-a {
+      color: #ffff;
+      font-weight: 700;
+    }
+
+    .float {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      gap: 70px;
+      padding: 10px;
+      /* position: relative; */
+  }
+   
+  .carpet-clean {
+    width: 70%;
+    height: 20vh;
+    text-align: center;
+    padding-top: 35px;
+  }
+   
+  .carpet-cleanA {
+    width: 70%;
+    height: 20vh;
+    padding-top: 35px;
+  }
+
+  .carpet-cleanB {
+    width: 70%;
+    height: 20vh;
+    padding-top: 35px;
+  }
+
+  .carpet-progress{
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .section-carpet {
+    width: 80%;
+    margin-top: 30px;
+    text-align: center;
+    height: 40vh;
+  }
+   
+  .section-carpetC {
+    width: 80%;
+    margin-top: 5px;
+    height: 50vh;
+    
+  }
+  }
+  
