@@ -9,12 +9,7 @@ import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from './components/footer/footer'
-// import {Swiper, SwiperSlider} from 'swiper/react'
-// import 'swiper/css'
-// import 'swiper/css/effect-coverflow'
-// import 'swiper/css/pagination'
-// import 'swiper/css/navigation'
-// import {EffectCoverFlow, Pagination, Navigation} from 'swiper'
+
 
 const App= () =>{
 

@@ -1,7 +1,7 @@
 .footer{
     background-image: url(../Home/carpetstain.jpg);
     background-color: #0C8EE7;
-    height: 60vh;
+    height: 90vh;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     margin-top: 0;
@@ -10,7 +10,7 @@
 
   .footer1 {
     background: linear-gradient(to bottom, #023161, #046eb4); 
-    height: 60vh;
+    height: 90vh;
     padding: 80px;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -18,7 +18,7 @@
   }
 
   .footer-inside{
-    height: 37vh;
+    height: 57vh;
     background: linear-gradient(to bottom, #011224, #02548a); 
     border-radius: 50px;
     display: flex;
@@ -42,4 +42,32 @@
     font-weight: 800;
     font-size: 24px;
   }
+
+  .footer-inside a {
+    list-style: none;
+    text-decoration: none !important; 
+    color: inherit; /* This will make sure the link inherits the color from its parent */
+  }
   
+  @media (max-width: 768px) {
+    .footer-inside {
+      flex-direction: column;
+      height: 159vh;
+      text-align: center;
+      gap: 1px;
+     }
+
+     .footer-inside a{
+        text-decoration: none;
+     }
+
+     .footer1 {
+      height: 170vh;
+      padding: 20px;
+     }
+
+     .footer{
+      height: 170vh;
+     }
+
+  }

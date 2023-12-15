@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
     <Container fluid className="banner">
-      <div className="slanted-container">
+      <Container fluid className="slanted-container">
         <div className="row">
           <div className="col-md-4 section-a">
             <div className="content">
@@ -56,40 +56,43 @@ when an unknown printer took a galley of type and
             <div className="inner"></div>
           </div>
         </div>
-      </div>
+      </Container>
     </Container>
     <div className="container-fluid float">
       <div className="carpet-clean">
       <h3 style={{fontWeight:'700', fontSize:'22px'}}>  Customized <br />
       Cleaning Plans</h3>
         <p>Lorem Ipsum is simply dummy text of the printing 
-      and typesetting industry. Lorem Ipsum has been the industry standard dummy 
+      and typesetting industr 
       </p>
       </div>
       <div className="carpet-cleanA">
       <h3 style={{fontWeight:'700', fontSize:'22px'}}><span style={{color:"#F0520B", fontWeight:'700'}}>Online</span> Booking <br /> Management</h3>
         <p>
         Lorem Ipsum is simply dummy text of the printing 
-      and typesetting industry. Lorem Ipsum has been the 
       </p>
       </div>
       <div className="carpet-cleanB">
         <h3 style={{fontWeight:'700', fontSize:'22px'}}>Eco-Friendly <br/>Cleaning</h3>
         <p>
         Lorem Ipsum is simply dummy text of 
-      the printing and typesetting industry. Lorem Ipsum has been the 
+      the printing.
        </p>
        </div>
     </div>
     <div className="carpet-progress">
       <div className="section-carpet">
+      <div>
         <div>
         <h5 style={{color:'#ffff', fontWeight:'300'}}>WHY CHOOSE US</h5>
           <h1 style={{color:'#fff', fontWeight:'800'}}>The Clean Team You <br />Can Trust</h1>
         </div>
         <div>Lorem Ipsum is simply dummy text of the printing and typesetting
        industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      </div>
+      <div>
       <div style={{marginTop:'30px'}}>
         {/* Progress Bar for Satisfaction */}
         <h5>Satisfaction</h5>
@@ -137,6 +140,7 @@ when an unknown printer took a galley of type and
             {workDone}%
           </div>
         </div>
+      </div>
       </div>
       </div>
       </div>
@@ -196,6 +200,7 @@ when an unknown printer took a galley of type and
     
       </div>
       <div className="price1">
+        <div>
         <h4 style={{color:"#04568E", fontWeight:"700"}}>START WITH A FFORDABLE PRICING</h4>
         <p>Lorem Ipsum is simply dummy text of the printing 
 and typesetting industry. Lorem Ipsum has been the
@@ -209,10 +214,53 @@ when an unknown printer took a galley of type and
  scrambled it to make a type specimen book.
  
  </p>
+ </div>
+ <div>
  <Button>Book Appointment</Button>
+ </div>
       </div>
     </div>
-   
+    <div className="blog-section">
+        <p>Blog & Article</p>
+        <h2>Read Our Latest <br />
+    Blog & Article</h2>
+      </div>
+      <div className="blog-post">
+        <div className="blog-article">
+          <div className="blog-image"></div>
+          <div>
+          <a href="/">
+  <h4>How To Create An Organized Cleaning Schedule That Works</h4>
+</a>
+            <p>Lorem ipsum dolor sit amet,
+ consectetur adipiscing elit. 
+Ut elit tellus, luctus nec 
+ullamcorper mattis, </p></div>
+        </div>
+        <div className="blog-article">
+        <div className="blog-image"></div>
+          <div>
+          <a href="/">
+            <h4>Green Cleaning, Eco-Friendly Solutions For A Healthier Home</h4>
+            </a>
+            <p>Lorem ipsum dolor sit amet,
+ consectetur adipiscing elit. 
+Ut elit tellus, luctus nec 
+ullamcorper mattis, </p>
+</div>
+        </div>
+        <div className="blog-article">
+        <div className="blog-image"></div>
+          <div>
+          <a href="/">
+            <h4>Removing Stubborn Stains, A Comprehensive Guide</h4>
+            </a>
+            <p>Lorem ipsum dolor sit amet,
+ consectetur adipiscing elit. 
+Ut elit tellus, luctus nec 
+ullamcorper mattis, </p></div>
+        </div>
+      </div>
     </>
   );
 };

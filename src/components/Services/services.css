@@ -42,3 +42,40 @@
     border-radius: 20px;
     margin-top: 20px;
 }
+
+@media(max-width:768px){
+    .services-sectionB {
+        flex-direction: column;
+        justify-content: start;
+        height: 300vh !important;
+        font-size: 14px;
+    }
+
+    .services-content {
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    .servicelist{
+        margin: 0px 0px 0px 0px;
+    }
+
+    .servicelist2{
+        background-position: 100%;
+        margin: 0px 0px 0px 0px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:1194px){
+    .services-sectionB{
+        height: 180vh;
+    }
+}
+
+@media(max-width:768px){
+    .services-sectionB{
+        height: 380vh;
+    }
+}

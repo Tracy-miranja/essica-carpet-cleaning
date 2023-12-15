@@ -1,8 +1,16 @@
 .contact-us{
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+
+.contact{
+    padding: 40px;
 }
 
 .contact-us p{
@@ -18,6 +26,7 @@
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .contact-us h6{
@@ -30,4 +39,30 @@
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media(max-width:768px){
+    .contact-us{
+        flex-direction: column;
+        height: 260vh;
+        padding: 20px;
+        margin: 10px;
+        justify-content: flex-start;
+    }
+
+    .contact{
+        padding: 30px;
+        padding-top: 0px;
+        
+    }
+
+    .contact h5{
+        font-size: 15px;
+
+    }
+
+    .contact h1{
+        font-size: 25px;
+
+    }
 }
