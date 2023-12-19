@@ -12,15 +12,17 @@ body{
 }
 
 .banner {
-   height: 100vh;
-  background: linear-gradient(to bottom, #6ea9e4, #d5eaf8); 
+   height: 80vh;
+  background: linear-gradient(to bottom, #006bb3, #d5eaf8); 
     margin-top: 0;
     padding: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   .heading{
-    color: #0C8EE7;
+    color: #ffffff;
+    transform: translateX(-100%); 
+        transition: 0.5s ease-in;
   }
 
   .drop{
@@ -57,7 +59,7 @@ body{
 
   .section-b {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: #291e1e;
     background-image: url('../Home/carpets-washing.jpg');
     background-position: center;

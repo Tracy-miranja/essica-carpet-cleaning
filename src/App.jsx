@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Header from './components/header/header'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Home from './components/Home/Home'
 import About from './components/About/About'
@@ -8,14 +7,16 @@ import Services from './components/Services/Services'
 import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.min.css'
 import Footer from './components/footer/footer'
+import Navbar from './components/Navbar/navbar'
 
 
 const App= () =>{
 
   return (
     <>
-      <Header />
+    <Navbar />
       <div className='app'>
       <Router>
         <Routes>
