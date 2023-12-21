@@ -2,6 +2,7 @@
 import './Booking.css';
 import logo from "../Navbar/logo.png"
 import worker from "../Bookings/worker2.png"
+import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 
 const Booking = () => {
@@ -18,7 +19,7 @@ const Booking = () => {
               </div>
               <h3 className="form-title">
                 <span style={{ color: '#000F5C' }}>
-                  Hi, Welcome to Carpwash. The
+                  Hi, Welcome to Essica carpet cleaning. The
                 </span>{' '}
                 <span style={{ color: 'green' }}>C</span>
                 <span style={{ color: 'blue' }}>o</span>
@@ -47,35 +48,35 @@ const Booking = () => {
                     type="text"
                     name="clientname"
                     id="clientname"
-                    placeholder="Your Name"
+                    placeholder=" &#128100; Your Name"
                     required=""
                   />
                 </div>
                 
                 <div className="form-group">
                                 <label htmlFor="phone"><i className="zmdi zmdi-phone material-icons-name"></i></label>
-                                <input type="text" name="clientphone" id="name" placeholder="e.g 0712345678" required="" />
+                                <input type="text" name="clientphone" id="name" placeholder=" &#128222; e.g 0712345678" required="" />
                 </div>
                 <div className="form-group">
                                 <label htmlFor="location"><i className="zmdi zmdi-my-location material-icons-name"></i></label>
-                                <input type="text" name="location" id="name" placeholder="Your Location/town" required="" />
+                                <input type="text" name="location" id="name" placeholder=" 🧭 Your Location/town" required="" />
                  </div>
 
                  <div className="form-group">
                                 <label htmlFor="apartmentname"><i className="zmdi zmdi-home material-icons-name"></i></label>
-                                <input type="text" name="apartmentname" id="name" placeholder="apartment/estate name" required="" />
+                                <input type="text" name="apartmentname" id="name" placeholder="&#127968; apartment/estate name" required="" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="housenumber"><i className="zmdi zmdi-key material-icons-name"></i></label>
-                                <input type="text" name="housenumber" id="name" required="" placeholder="House/home number" />
+                                <input type="text" name="housenumber" id="name" required="" placeholder=" 🔑 House/home number" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="collectionday"><i className="zmdi zmdi-calendar material-icons-name"></i></label>
-                                <input type="date" name="collectionday" required="" id="name" placeholder="collection day" />
+                                <input type="date" name="collectionday" required="" id="name" placeholder="📅 collection day" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="collectiontime"><i className="zmdi zmdi-time material-icons-name"></i></label>
-                                <input type="text" name="collectiontime" id="name" required="" placeholder="collection time btwn 9:00am - 6:30pm" />
+                                <input type="text" name="collectiontime" id="name" required="" placeholder="📅 collection time btwn 9:00am - 6:30pm" />
                             </div>
 
                 <div className="form-group form-button">
@@ -138,43 +139,46 @@ const Booking = () => {
               </table>
 
               <ul className="icons">
-                <li>
-                  <a
-                    href="https://web.facebook.com/carpwashruaka"
-                    className="icon alt fa-facebook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="label">Facebook</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/carpwash_carpetcare/"
-                    className="icon alt fa-instagram"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="label">Instagram</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="icon alt fa-envelope"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="label">Email</span>
-                  </a>
-                </li>
+              <li>
+      <a
+        href="https://www.facebook.com/your-facebook-page"
+        className="icon alt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaFacebook style={{color:"blue", fontSize:"18px", marginRight:"6px"}}/>
+        <span className="label">Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.instagram.com/your-instagram-account"
+        className="icon alt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaInstagram style={{color:"blue", fontSize:"18px", marginRight:"6px"}}/>
+        <span className="label">Instagram</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="mailto:your-email@example.com"
+        className="icon alt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaEnvelope style={{color:"blue", fontSize:"18px", marginRight:"6px"}}/>
+        <span className="label">Email</span>
+      </a>
+    </li>
               </ul>
 
               <ul className="copyright">
-                <li>© Carpwash T&amp;C applies</li>
+                <li>© Essica T&amp;C applies</li>
                 <li>
                   Design:{' '}
-                  <a href="http://carpwash.co.ke">CARPWASH CARPET CLEANERS - 0727828681</a>
+                  <a href="#">Essica CARPET CLEANERS - +254-788-413-877</a>
                 </li>
               </ul>
             </div>
