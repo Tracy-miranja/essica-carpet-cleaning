@@ -16,27 +16,26 @@ const Navbar= () => {
 
         }
     
-  
     return (
         <div className="essica-nav">
         <SocialIcons />
       <nav className="nav">
         <a href="#" className="brand"><img src={logo} alt="Essica carpets" /></a>
         <ul className={active}>
-            <li className="nav__item"> <a href="#" className="nav__link">Home</a></li>
-            <li className="nav__item"> <a href="#" className="nav__link">About</a></li>
-            <li className="nav__item"> <a href="#" className="nav__link">Services</a></li>
-            <li className="nav__item"> <a href="#" className="nav__link">Blog</a></li>
-            <li className="nav__item"> <a href="#" className="nav__link">Contact</a></li>
+            <li className="nav__item"> <a href="/" className="nav__link">Home</a></li>
+            <li className="nav__item"> <a href="/About" className="nav__link">About</a></li>
+            <li className="nav__item"> <a href="/Services" className="nav__link">Services</a></li>
+            <li className="nav__item"> <a href="/Blog" className="nav__link">Blog</a></li>
+            <li className="nav__item"> <a href="/Contact" className="nav__link">Contact</a></li>
         </ul>
-        <button className="book__appointment">Book appointment</button>
+        <a href="/Booking"><button className="book__appointment">Book appointment</button></a>
         <div onClick={navToggle} className={toggleIcon}>
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
       </nav>
-     
+       
       </div>
     )
   }

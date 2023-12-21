@@ -90,6 +90,13 @@
     border: #fff;
     height: 5vh;
   }
+
+  button:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    background-color: #f8f6f4;
+    color: black;
+    border: 2px solid black;
+  }
   
 
  @media(max-width:768px){
@@ -124,7 +131,7 @@
 
      .header{
         background-color: #006bb3;
-        height: 15vh;
+        height: 12vh;
         display: flex;
         flex-direction: column;
         align-items: center;

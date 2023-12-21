@@ -32,9 +32,16 @@ const Home = () => {
     <>
     <Container fluid className="banner">
       <Container fluid className="slanted-container">
+      <div className="bubble" style={{ top: '30%', left: '20%', width: '100px', height: '100px' }}></div>
+      <div className="bubble" style={{ top: '50%', right: '10%', width: '100px', height: '30px' }}></div>
+      <div className="bubble" style={{ top: '30%', left: '20%', width: '20px', height: '20px' }}></div>
+      <div className="bubble" style={{ top: '100%', left: '70%', width: '100px', height: '100px' }}></div>
+      <div className="bubble" style={{ top: '80%', left: '20%', width: '100px', height: '100px' }}></div>
+      <div className="bubble" style={{ top: '80%', left: '20%', width: '30px', height: '30px' }}></div>
         <div className="row">
           <div className="col-md-4 section-a">
             <div className="content">
+              
             <h6><span className="drop">DROP</span> & PICK AFTER 24HRS</h6>
             <h1> <span className="heading">PROFESSIONAL</span> <br />
                 CARPET CLEANING

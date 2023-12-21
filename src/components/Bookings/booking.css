@@ -1,0 +1,94 @@
+.booking-container {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #222;
+    background: #C2C8E5;
+    font-weight: 400;
+    font-family: Poppins;
+    padding: 70px;
+}
+
+.booking-container {
+    z-index: 2; /* Set a higher z-index than the navbar */
+    height: 150vh;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+   
+  }
+
+  .signup-content {
+    padding: 75px 0;
+}
+
+  .form-group {
+    /* position: relative; */
+    margin-bottom: 25px;
+    /* overflow: hidden; */
+}
+  
+  .booking-container.active {
+    display: block; /* Display the modal when it has the 'active' class */
+  }
+  
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-width: 100%;
+    background-color: #EBEDF7;
+    border-radius: 20px;
+    box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+.form-submit {
+    display: inline-block;
+    background: #6dabe4;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.signup-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.signup {
+    margin-bottom: 150px;
+}
+
+.essica-nav{
+    display: none;
+}
+.footer{
+    display: none;
+}
+
+.signup-form{
+    width: 40%;
+}
