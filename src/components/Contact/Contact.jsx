@@ -1,5 +1,5 @@
 // import React from 'react';
-import { Nav } from 'react-bootstrap';
+// import { Nav } from 'react-bootstrap';
 import ContactForm from '../contactform/ContactForm';
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import '../Contact/contact.css';
@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="about">
           <div className="about-content">
             <h1>CONTACT</h1>
-            <Nav.Link href="/">Home </Nav.Link>
+            {/* <Nav.Link href="/">Home </Nav.Link> */}
           </div>
         </div>
       </div>

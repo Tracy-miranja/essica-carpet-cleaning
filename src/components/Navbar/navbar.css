@@ -21,7 +21,6 @@
  }
 
  .nav{
-    position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
@@ -71,9 +70,11 @@
  }
 
  .essica-nav{
+   top: 0;
   position: fixed;
   width: 100%;
   z-index: 3;
+  padding-bottom: 100px;
  }
 
  .brand img{

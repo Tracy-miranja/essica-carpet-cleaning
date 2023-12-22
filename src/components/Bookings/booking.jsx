@@ -5,13 +5,18 @@ import worker from "../Bookings/worker2.png"
 import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 
+
 const Booking = () => {
   return (
+    <>
     <div className="booking-container">
+        <a href='/' style={{fontSize:"15px", margin:"20px"}}>← Back</a>
       <section className="signup">
         <div className="container">
           <div className="signup-content">
+            
             <div className="signup-form">
+                
               <div>
                 <center>
                   <img src={logo} alt="Welcome image" style={{width:"200px", marginBottom:"20px"}} />
@@ -186,6 +191,7 @@ const Booking = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

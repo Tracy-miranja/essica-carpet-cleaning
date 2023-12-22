@@ -1,5 +1,5 @@
 // import React from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import {  Row, Col, Form, Button } from 'react-bootstrap';
 
 const ContactForm = () => {
   const handleSubmit = (event) => {
@@ -8,7 +8,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container>
+    <div>
         <h3>Send us a message</h3>
         <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,<br /> luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
       <Row>
@@ -71,7 +71,7 @@ const ContactForm = () => {
           <Button variant="primary" type="submit">
             Send Message
           </Button>
-    </Container>
+    </div>
   );
 };
 

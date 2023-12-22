@@ -106,7 +106,7 @@
     padding: 40px;
 }
 
-@media(max-width:767px){
+@media(max-width:768px){
     .about-sectioA{
         flex-direction: column;
         padding: 0px;
@@ -141,7 +141,7 @@
     }
 }
 
-@media(min-width:768px){
+@media(max-width:768px){
     .cllientfeed {
         padding: 10px;
         height: 60vh !important;
@@ -149,18 +149,85 @@
         align-items: center;
     }
 
-    .testimonials {
-        height: 90vh !important;
+    .about-sectioA {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
+
+    .about-contentA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonials {
+        /* height: 90vh !important; */
+    }
+
+    .cllientfeed{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Footer{
+        margin-bottom: 0px;
+    }
+
+   
 }
 
-@media(min-width:1440px){
+@media(max-width:1095px){
     .cllientfeed {
-        height: 40vh !important;
+        padding: 10px;
+        height: 70vh;
         text-align: center;
     }
 
     .testimonials {
-        height: 60vh !important;
+        height: 100vh !important;
+    }
+
+    .testimonialsClients {
+        justify-content: flex-start;
+    }
+
+    .about-contentA {
+        padding: 0px;
+    }
+}
+
+@media(max-width:575px){
+    .about-sectioA {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-contentA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cllientfeed{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
 }

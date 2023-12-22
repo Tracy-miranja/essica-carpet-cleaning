@@ -1,5 +1,5 @@
 import '../About/about.css'
-import Nav from 'react-bootstrap/Nav';
+
 
 const About=() =>{
   return (
@@ -8,7 +8,6 @@ const About=() =>{
         <div className='about'>
           <div className='about-content'>
             <h1 >ABOUT</h1>
-            <Nav.Link href="/">Home </Nav.Link>
           </div>
         </div>
       </div>
