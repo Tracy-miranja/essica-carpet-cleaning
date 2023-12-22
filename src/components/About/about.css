@@ -59,7 +59,7 @@
 }
 
 .testimonials{
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     background-image: url(../About/carpetstain.jpg);
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@
 
 .cllientfeed{
     width: 30%;
-    height: 40vh;
+    height: 55vh;
     background-color: #047DCF;
     border-radius: 20px;
     text-align: center;
@@ -183,11 +183,15 @@
    
 }
 
-@media(max-width:1095px){
+@media(max-width:1195px){
     .cllientfeed {
+        display: flex;
+        flex-direction: column;
         padding: 10px;
         height: 70vh;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .testimonials {

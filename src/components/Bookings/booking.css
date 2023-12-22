@@ -86,13 +86,66 @@ input {
     margin-bottom: 150px;
 }
 
-/* .essica-nav{
-    display: none;
-}
-.footer{
-    display: none;
-} */
 
 .signup-form{
     width: 40%;
 }
+
+@media (max-width: 768px) {
+    .booking-container {
+        height: 350vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup-form{
+        width: 100%;
+    }
+    .signup-image{
+        width: 100%;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        color: #222;
+    }
+    .label{
+        color: black;
+        margin-right: 10px;
+    }
+
+    .copyright{
+        color: black;
+    }
+}
+
+@media (max-width: 1198px) {
+    .booking-container {
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}
+
