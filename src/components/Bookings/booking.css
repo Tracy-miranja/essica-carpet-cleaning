@@ -5,16 +5,14 @@
     background: #C2C8E5;
     font-weight: 400;
     font-family: Poppins;
-    /* margin-top: 100px; */
     padding: 70px;
     padding-top: 10px;
 }
 
 .booking-container {
-    z-index: 2; /* Set a higher z-index than the navbar */
+    z-index: 2; 
     height: 150vh;
     width: 100%;
-    /* position: fixed; */
     top: 0;
     left: 0;
    
@@ -25,13 +23,11 @@
 }
 
   .form-group {
-    /* position: relative; */
     margin-bottom: 25px;
-    /* overflow: hidden; */
 }
   
   .booking-container.active {
-    display: block; /* Display the modal when it has the 'active' class */
+    display: block; 
   }
   
 

@@ -10,7 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from './components/footer/footer';
 import Navbar from './components/Navbar/navbar';
+
 import Booking from './components/Bookings/booking';
+
 
 const App = () => {
   // const navigate = useNavigate();
