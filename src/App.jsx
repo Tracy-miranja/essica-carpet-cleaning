@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from './components/footer/footer';
 import Navbar from './components/Navbar/navbar';
-
+import SignInPage from './sign/SignInPage';
 import Booking from './components/Bookings/booking';
 
 
@@ -40,6 +40,7 @@ const App = () => {
             <Route exact path="/Blog" element={<Blog />} />
             <Route exact path="/Contact" element={<Contact />} />
             <Route exact path="/Booking" element={<Booking />} />
+            <Route path="/SignInPage" element={<SignInPage />} />
           </Routes>
         </Router>
       </div>

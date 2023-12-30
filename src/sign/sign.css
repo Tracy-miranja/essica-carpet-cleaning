@@ -1,0 +1,18 @@
+.sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    /* background-color: blue; */
+    text-align: center;
+}
+
+.signIn{
+    width: 50%;
+    height: fit-content;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 40px;
+}

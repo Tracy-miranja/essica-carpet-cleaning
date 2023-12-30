@@ -9,34 +9,39 @@ import { makeBookings } from '../../store/actions/bookingActions';
 const Booking = () => {
   const dispatch = useDispatch();
   const [bookingData, setBookingData] = useState({
-    clientname: '',
-    clientphone: '',
+    customer_name: '',
+    phone_number: '',
     location: '',
-    apartmentname: '',
-    housenumber: '',
-    collectionday: '',
-    collectiontime: '',
+    apartment: '',
+    house_number: '',
+    collection_day: '',
+    collection_time: '',
   });
   const [bookingSuccess, setBookingSuccess] = useState(false);
 
   const handleBooking = async (e) => {
     e.preventDefault();
   
+    // Basic client-side validation
+    if (!bookingData.customer_name || !bookingData.phone_number || !bookingData.location || !bookingData.collection_day || !bookingData.collection_time) {
+      console.error('Please fill in all required fields.');
+      return;
+    }
+  
     try {
       dispatch(makeBookings(bookingData));
       setBookingSuccess(true);
       setBookingData({
-        clientname: '',
-        clientphone: '',
+        customer_name: '',
+        phone_number: '',
         location: '',
-        apartmentname: '',
-        housenumber: '',
-        collectionday: '',
-        collectiontime: '',
+        apartment: '',
+        house_number: '',
+        collection_day: '',
+        collection_time: '',
       });
     } catch (error) {
       console.error('Booking failed:', error);
-      console.error(error);
     }
   };
   
@@ -80,30 +85,30 @@ const Booking = () => {
                     id="register-form"
                   >
                     <div className="form-group">
-                      <label htmlFor="clientname">
+                      <label htmlFor="customer_name">
                         <i className="zmdi zmdi-account material-icons-name"></i>
                       </label>
                       <input
                         type="text"
-                        name="clientname"
+                        name="customer_name"
                         id="clientname"
                         placeholder=" &#128100; Your Name"
                         required=""
-                        value={bookingData.clientname}
-                        onChange={(e) => setBookingData({ ...bookingData, clientname: e.target.value })}
+                        value={bookingData.customer_name}
+                        onChange={(e) => setBookingData({ ...bookingData, customer_name: e.target.value })}
                       />
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="phone"><i className="zmdi zmdi-phone material-icons-name"></i></label>
+                      <label htmlFor="phone_number"><i className="zmdi zmdi-phone material-icons-name"></i></label>
                       <input
                         type="text"
-                        name="clientphone"
+                        name="phone_number"
                         id="clientphone"
                         placeholder=" &#128222; e.g 0712345678"
                         required=""
-                        value={bookingData.clientphone}
-                        onChange={(e) => setBookingData({ ...bookingData, clientphone: e.target.value })}
+                        value={bookingData.phone_number}
+                        onChange={(e) => setBookingData({ ...bookingData, phone_number: e.target.value })}
                       />
                     </div>
 
@@ -121,54 +126,54 @@ const Booking = () => {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="apartmentname"><i className="zmdi zmdi-home material-icons-name"></i></label>
+                      <label htmlFor="apartment"><i className="zmdi zmdi-home material-icons-name"></i></label>
                       <input
                         type="text"
-                        name="apartmentname"
+                        name="apartment"
                         id="apartmentname"
                         placeholder="&#127968; apartment/estate name"
                         required=""
-                        value={bookingData.apartmentname}
-                        onChange={(e) => setBookingData({ ...bookingData, apartmentname: e.target.value })}
+                        value={bookingData.apartment}
+                        onChange={(e) => setBookingData({ ...bookingData, apartment: e.target.value })}
                       />
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="housenumber"><i className="zmdi zmdi-key material-icons-name"></i></label>
+                      <label htmlFor="house_number"><i className="zmdi zmdi-key material-icons-name"></i></label>
                       <input
                         type="text"
-                        name="housenumber"
+                        name="house_number"
                         id="housenumber"
                         required=""
                         placeholder=" 🔑 House/home number"
-                        value={bookingData.housenumber}
-                        onChange={(e) => setBookingData({ ...bookingData, housenumber: e.target.value })}
+                        value={bookingData.house_number}
+                        onChange={(e) => setBookingData({ ...bookingData, house_number: e.target.value })}
                       />
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="collectionday"><i className="zmdi zmdi-calendar material-icons-name"></i></label>
+                      <label htmlFor="collection_day"><i className="zmdi zmdi-calendar material-icons-name"></i></label>
                       <input
                         type="date"
-                        name="collectionday"
+                        name="collection_day"
                         required=""
                         id="collectionday"
                         placeholder="📅 collection day"
-                        value={bookingData.collectionday}
-                        onChange={(e) => setBookingData({ ...bookingData, collectionday: e.target.value })}
+                        value={bookingData.collection_day}
+                        onChange={(e) => setBookingData({ ...bookingData, collection_day: e.target.value })}
                       />
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="collectiontime"><i className="zmdi zmdi-time material-icons-name"></i></label>
+                      <label htmlFor="collection_time"><i className="zmdi zmdi-time material-icons-name"></i></label>
                       <input
                         type="text"
-                        name="collectiontime"
+                        name="collection_time"
                         id="collectiontime"
                         required=""
                         placeholder="📅 collection time btwn 9:00am - 6:30pm"
-                        value={bookingData.collectiontime}
-                        onChange={(e) => setBookingData({ ...bookingData, collectiontime: e.target.value })}
+                        value={bookingData.collection_time}
+                        onChange={(e) => setBookingData({ ...bookingData, collection_time: e.target.value })}
                       />
                     </div>
 

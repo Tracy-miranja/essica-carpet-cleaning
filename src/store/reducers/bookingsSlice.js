@@ -11,4 +11,4 @@ const bookingsSlice= createSlice({
 })
 
 export const {addBooking} = bookingsSlice.actions;
-export default bookingsSlice.reducer;
+export default bookingsSlice.reducer; 

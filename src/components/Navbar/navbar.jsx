@@ -28,7 +28,7 @@ const Navbar= () => {
             <li className="nav__item"> <a href="/Blog" className="nav__link">Blog</a></li>
             <li className="nav__item"> <a href="/Contact" className="nav__link">Contact</a></li>
         </ul>
-        <a href="/Booking"><button className="book__appointment">Book appointment</button></a>
+        <a href="/SignInPage"><button className="book__appointment">Book appointment</button></a>
         <div onClick={navToggle} className={toggleIcon}>
         <div className="line1"></div>
         <div className="line2"></div>
