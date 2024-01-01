@@ -5,24 +5,23 @@
     background: #C2C8E5;
     font-weight: 400;
     font-family: Poppins;
-    padding: 70px;
-    padding-top: 10px;
+    padding: 30px; /* Reduced overall padding */
+    padding-top: 100px; /* Increased top padding to move content down */
     z-index: 2; 
-    height: auto;
+    height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Keep content centered horizontally */
+    justify-content: start; /* Align items to start from top */
 }
 
 .button-group {
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
     align-items: center; /* Center buttons */
-    gap: 10px; /* Add space between buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 50px; /* Additional spacing above the buttons */
 }
 
 .options-button {
@@ -30,24 +29,23 @@
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 40px; /* Adjust top and bottom padding for vertical centering */
-    margin-top: 100px;
+    padding: 10px 40px;
     cursor: pointer;
-    font-size: 20px; /* Increased font size */
-    font-family: Poppins; /* Ensure font consistency */
-    width: 300px; /* Set a fixed width for buttons */
-    text-align: center; /* Center text inside buttons */
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center content horizontally */
-    height: 60px; /* Fixed height for better control */
+    font-size: 20px;
+    font-family: Poppins;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
 }
-
 
 /* Maintain responsiveness */
 @media (max-width: 768px) {
     .options-container {
         padding: 20px;
+        padding-top: 70px; /* Adjust for mobile */
     }
 
     .button-group {

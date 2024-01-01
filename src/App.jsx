@@ -11,6 +11,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import Footer from './components/footer/footer';
 import Navbar from './components/Navbar/navbar';
 import Options from './components/Registration/options';
+import SignIn from './components/Signin/Signin';
 
 
 const App = () => {
@@ -39,6 +40,8 @@ const App = () => {
             <Route exact path="/Blog" element={<Blog />} />
             <Route exact path="/Contact" element={<Contact />} />
             <Route exact path="/Options" element={<Options/>} />
+            <Route exact path="/signin" element={<SignIn />} />
+
           </Routes>
         </Router>
       </div>

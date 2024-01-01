@@ -1,6 +1,5 @@
 import React from 'react';
 import './options.css';
-import logo from "../Navbar/logo.png";
 import { useNavigate } from 'react-router-dom';
 
 const Options = () => {
@@ -10,19 +9,18 @@ const Options = () => {
     navigate(path);
   };
 
-  return (
+return (
     <>
-      <div className="options-container">
-        <div className="header">
-          <img src={logo} alt="Logo" style={{ width: "200px" }} />
+        <div className="options-container">
+            <div className="button-group">
+                <p>If you have already registered, please click below to make a booking</p>
+                <button className="options-button" onClick={() => navigateTo('/signin')}>Sign In to Book</button>
+                <p>If you haven&apos;t registered, please, click below to register</p>
+                <button className="options-button" onClick={() => navigateTo('/signup')}>Sign Up to Book</button>
+            </div>
         </div>
-        <div className="button-group">
-          <button className="options-button" onClick={() => navigateTo('/sign')}>Sign In to Book</button>
-          <button className="options-button" onClick={() => navigateTo('/signup')}>Sign Up to Book</button>
-        </div>
-      </div>
     </>
-  );
+);
 };
 
 export default Options;
