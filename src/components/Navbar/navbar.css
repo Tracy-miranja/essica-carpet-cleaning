@@ -99,7 +99,27 @@
     border: 2px solid black;
   }
   
+  .nav__item.booking-button {
+   border: 2px solid #fff; /* Adjust the color and width as needed */
+   background-color: #ff0000; /* Red background */
+   border-radius: 5px; /* Rounded corners */
+ }
+ 
+ .nav__item.booking-button .nav__link {
+   color: #fff; /* White text */
+   padding: 10px 20px; /* Padding inside the border */
+   display: inline-block; /* Allows padding to take effect */
+   text-decoration: none; /* Removes underline from links */
+   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+ }
+ 
+ .nav__item.booking-button:hover .nav__link {
+   background-color: #cc0000; /* Darker red on hover */
+   color: #ffffff; /* Keeps text white on hover */
+ }
+ 
 
+  
  @media(max-width:768px){
     .nav__toggler{
         display: block;

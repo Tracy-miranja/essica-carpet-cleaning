@@ -27,7 +27,7 @@ const Navbar= () => {
             <li className="nav__item"> <a href="/Services" className="nav__link">Services</a></li>
             <li className="nav__item"> <a href="/Blog" className="nav__link">Blog</a></li>
             <li className="nav__item"> <a href="/Contact" className="nav__link">Contact</a></li>
-            <li className="nav__item"> <a href="/Options" className="nav__link">Book Appointment</a></li>
+            <li className="nav__item booking-button"> <a href="/Options" className="nav__link">Book Appointment</a></li>
         </ul>
 
         <div onClick={navToggle} className={toggleIcon}>
