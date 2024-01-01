@@ -1,0 +1,97 @@
+/* Signup Banner */
+.signup-banner {
+    background-image: url(../About/carpets-washing.jpg); /* Adjust the image URL as needed */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    background-position: 25%;
+    height: 15vh; /* Half the height compared to signin */
+    width: 100%;
+  }
+  
+  /* Signup Container */
+  .signup {
+    background-color: rgba(37, 130, 184, 0.6); /* Slightly lighter/darker for distinction */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Signup Content Styling */
+  .signup-contents {
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #111111;
+    width: 240px; /* Same as signin */
+    height: 50px; /* Same as signin */
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  /* Signup Form Container */
+  .signup-container {
+    font-size: 14px; /* Slightly larger font size */
+    line-height: 1.8;
+    color: #222;
+    background: #E2E6EA; /* Different background color for distinction */
+    font-weight: 400;
+    font-family: Poppins;
+    padding: 30px;
+    padding-top: 100px; /* Increased top padding to move content down */
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* Form Group */
+.form-group {
+    margin-bottom: 10px; /* Reduced space between each input field */
+    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .form-group label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Optional: makes label text bold */
+    color: black; /* Set label color to black */
+  }
+  
+  
+  /* Input Field Styling */
+  .form-group input {
+    width: 70%; /* Adjust as needed */
+    padding: 10px;
+    margin-bottom: 10px; /* Reduced space between input field and the next element */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Submit Button Styling */
+  .signup-submit {
+    width: 50%; /* Matching input fields width */
+    padding: 10px;
+    background-color: #37A1E8; /* A vibrant color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for readability */
+    margin-top: 20px;
+  }
+  
+  /* Success Message Styling */
+  .signup-success-message {
+    color: green;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
