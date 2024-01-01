@@ -6,142 +6,158 @@
     font-weight: 400;
     font-family: Poppins;
     padding: 70px;
-    padding-top: 10px;
-}
-
-.booking-container {
-    z-index: 2; 
-    height: 150vh;
+    padding-top: 10px; /* You might need to increase this value */
+    margin-top: 100px; /* Adjust this value to push the container below the navbar */
+    z-index: 2;
+    height: auto;
     width: 100%;
-    top: 0;
-    left: 0;
-   
-  }
-
-  .signup-content {
-    padding: 75px 0;
 }
-
-  .form-group {
-    margin-bottom: 25px;
-}
-  
-  .booking-container.active {
-    display: block; 
-  }
-  
 
 .container {
     display: flex;
-    flex-direction: row;
-    width: 70%;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%;
+    margin: 0 auto;
     background-color: #EBEDF7;
     border-radius: 20px;
-    box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    padding-top: 2px;
-    
 }
 
-input {
-    width: 100%;
-    display: block;
-    border: none;
-    border-bottom: 1px solid #999;
-    padding: 6px 30px;
-    font-family: Poppins;
-    box-sizing: border-box;
+.signup-content {
+    width: 50%; /* Full width */
+}
+
+.signup-image {
+    width: 40%; /* Adjust the width as needed */
+    /* Align the image to the center of its container if desired */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-content {
+    display: flex; /* Use flexbox to lay out children side by side */
+    align-items: start; /* Align items to the start (top) */
+    justify-content: space-between; /* Space between form and image */
+    width: 100%; /* Full width of container */
+}
+.register-form{
+    padding-top: 10px; /* You might need to increase this value */
+    margin-top: 100px; /* Adjust this value to push the container below the navbar */
+}
+.form-title {
+    width: 100%; /* Full width */
+    text-align: center; /* Center the title */
+}
+
+.signup-form {
+    width: 50%; /* Full width of the container */
+    margin-bottom: 150px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between; /* Space between label and input */
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%; /* Full width */
+}
+
+.form-group label {
+    width: 20%; /* Fixed width for labels */
+    min-width: 150px; /* Minimum width */
+    text-align: left;
+}
+
+.form-group input {
+    flex-grow: 1; /* Allow input to grow and fill space */
+    margin-left: 10px; /* Space between label and input */
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 6px 12px;
 }
 
 .form-submit {
-    display: inline-block;
+    width: 100%; /* Full width button */
     background: #6dabe4;
     color: #fff;
-    border-bottom: none;
-    width: auto;
-    padding: 15px 39px;
     border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
+    padding: 15px;
     margin-top: 25px;
     cursor: pointer;
 }
 
-.signup-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 50px;
+.signup-image {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    width: 40%; /* Adjust the width as needed */
+    margin-left: 20px; /* Add some space from the form */
 }
 
-.signup {
-    margin-bottom: 150px;
+.signup-image figure {
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Full width of its container */
+    display: flex; /* Use flexbox for image */
+    justify-content: center; /* Center the image horizontally */
+    height: 240px;
 }
 
-
-.signup-form{
-    width: 40%;
+.signup-image img {
+    max-width: 350px; /* Maximum width of the image */
+    width: 100%; /* Scale image to fit container */
+    height: auto; /* Maintain aspect ratio */
 }
 
+.pricelist {
+    margin-top: 20px; /* Space above the price list */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+}
+
+.price-table {
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Space above the table */
+}
+
+.icons {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center items */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above icons */
+}
+
+.icons li {
+    margin-bottom: 10px; /* Space between each icon */
+}
+
+.success-message {
+    color: green; /* Green text color */
+    font-size: 1.5em; /* Bigger font size */
+    text-align: center; /* Centered text */
+    margin-top: 20px; /* Space above the message */
+    margin-bottom: 20px; /* Space below the message */
+    width: 100%; /* Full width */
+}
+
+/* Adjust styles for responsive design as needed */
 @media (max-width: 768px) {
-    .booking-container {
-        height: 350vh;
-        display: flex;
-        flex-direction: column;
+    .signup-image {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 0; /* No margin on smaller screens */
     }
 
-    .container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .signup-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .signup-form{
-        width: 100%;
-    }
-    .signup-image{
-        width: 100%;
-    }
-
-    .icons{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-        color: #222;
-    }
-    .label{
-        color: black;
-        margin-right: 10px;
-    }
-
-    .copyright{
-        color: black;
+    .form-group label {
+        width: 30%; /* Increase label width on smaller screens */
     }
 }
 
-@media (max-width: 1198px) {
-    .booking-container {
-        height: 250vh;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+/* Add other responsive adjustments as needed */
 
-    .container {
-        width: 100%;
-    }
 
-}
+
 

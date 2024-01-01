@@ -1,62 +1,65 @@
 import './Booking.css';
-import logo from "../Navbar/logo.png";
 import worker from "../Bookings/worker2.png";
-import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { makeBookings } from '../../store/actions/bookingActions';
+import { addBooking } from '../../store/bookingSlice';
 
 const Booking = () => {
+  const userId = localStorage.getItem('userId'); // Retrieve user ID from local storage
   const dispatch = useDispatch();
   const [bookingData, setBookingData] = useState({
-    clientname: '',
-    clientphone: '',
-    location: '',
-    apartmentname: '',
-    housenumber: '',
-    collectionday: '',
-    collectiontime: '',
+    customer_ID: userId,
+    apartment: '',
+    houseNumber: '',
+    carpetSize: '',
+    collectionTime: '',
+    location: ''
   });
   const [bookingSuccess, setBookingSuccess] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleBooking = async (e) => {
+   const handleBooking = async (e) => {
     e.preventDefault();
+    // Check if all fields are filled
+    if (Object.values(bookingData).some(field => field.trim() === '')) {
+      setError('Please fill in all fields.');
+      setTimeout(() => setError(''), 3000);
+      return;
+    }
+
+
   
-    try {
-      dispatch(makeBookings(bookingData));
+     try {
+      await dispatch(addBooking(bookingData));
       setBookingSuccess(true);
       setBookingData({
-        clientname: '',
-        clientphone: '',
-        location: '',
-        apartmentname: '',
-        housenumber: '',
-        collectionday: '',
-        collectiontime: '',
+        customer_ID: userId,
+        apartment: '',
+        houseNumber: '',
+        carpetSize: '',
+        collectionTime: '',
+        location: ''
       });
     } catch (error) {
       console.error('Booking failed:', error);
-      console.error(error);
+      setError('Booking failed. Please try again.');
+      setTimeout(() => setError(''), 3000);
     }
   };
-  
+
+  const handleInputChange = (e) => {
+    setBookingData({ ...bookingData, [e.target.name]: e.target.value });
+  };
 
   return (
     <>
       <div className="booking-container">
         {bookingSuccess ? (
-          <p>Booking successful! You will receive a call from Essica Carpet Cleaning.</p>
+          <p className="success-message">Booking successful! You will receive a call from Essica Carpet Cleaning.</p>
         ) : (
           <section className="signup">
             <div className="container">
-              <div className="signup-content">
-                <div className="signup-form">
-                  <div>
-                    <center>
-                      <img src={logo} alt="Welcome image" style={{ width: "200px", marginBottom: "20px" }} />
-                    </center>
-                  </div>
-                  <h3 className="form-title">
+            <h3 className="form-title">
                     <span style={{ color: '#000F5C' }}>
                       Hi, Welcome to Essica carpet cleaning. The
                     </span>{' '}
@@ -72,123 +75,43 @@ const Booking = () => {
                       way to book for your carpet clean.
                     </span>
                   </h3>
-                  <form
-                    onSubmit={handleBooking}
-                    autoComplete="off"
-                    method="post"
-                    className="register-form"
-                    id="register-form"
-                  >
-                    <div className="form-group">
-                      <label htmlFor="clientname">
-                        <i className="zmdi zmdi-account material-icons-name"></i>
-                      </label>
-                      <input
-                        type="text"
-                        name="clientname"
-                        id="clientname"
-                        placeholder=" &#128100; Your Name"
-                        required=""
-                        value={bookingData.clientname}
-                        onChange={(e) => setBookingData({ ...bookingData, clientname: e.target.value })}
-                      />
-                    </div>
+              <div className="signup-content">
+                
+                <div className="signup-form">
 
-                    <div className="form-group">
-                      <label htmlFor="phone"><i className="zmdi zmdi-phone material-icons-name"></i></label>
-                      <input
-                        type="text"
-                        name="clientphone"
-                        id="clientphone"
-                        placeholder=" &#128222; e.g 0712345678"
-                        required=""
-                        value={bookingData.clientphone}
-                        onChange={(e) => setBookingData({ ...bookingData, clientphone: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="location"><i className="zmdi zmdi-my-location material-icons-name"></i></label>
-                      <input
-                        type="text"
-                        name="location"
-                        id="location"
-                        placeholder=" 🧭 Your Location/town"
-                        required=""
-                        value={bookingData.location}
-                        onChange={(e) => setBookingData({ ...bookingData, location: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="apartmentname"><i className="zmdi zmdi-home material-icons-name"></i></label>
-                      <input
-                        type="text"
-                        name="apartmentname"
-                        id="apartmentname"
-                        placeholder="&#127968; apartment/estate name"
-                        required=""
-                        value={bookingData.apartmentname}
-                        onChange={(e) => setBookingData({ ...bookingData, apartmentname: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="housenumber"><i className="zmdi zmdi-key material-icons-name"></i></label>
-                      <input
-                        type="text"
-                        name="housenumber"
-                        id="housenumber"
-                        required=""
-                        placeholder=" 🔑 House/home number"
-                        value={bookingData.housenumber}
-                        onChange={(e) => setBookingData({ ...bookingData, housenumber: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="collectionday"><i className="zmdi zmdi-calendar material-icons-name"></i></label>
-                      <input
-                        type="date"
-                        name="collectionday"
-                        required=""
-                        id="collectionday"
-                        placeholder="📅 collection day"
-                        value={bookingData.collectionday}
-                        onChange={(e) => setBookingData({ ...bookingData, collectionday: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="collectiontime"><i className="zmdi zmdi-time material-icons-name"></i></label>
-                      <input
-                        type="text"
-                        name="collectiontime"
-                        id="collectiontime"
-                        required=""
-                        placeholder="📅 collection time btwn 9:00am - 6:30pm"
-                        value={bookingData.collectiontime}
-                        onChange={(e) => setBookingData({ ...bookingData, collectiontime: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group form-button">
-                      <input
-                        type="submit"
-                        name="btn_startcollections"
-                        id="signup"
-                        className="form-submit"
-                        value="Book Collection"
-                      />
-                    </div>
-                  </form>
+                {error && <p className="error-message">{error}</p>} {/* Display error message here */}
+                  <form onSubmit={handleBooking} autoComplete="off" className="register-form">
+                <div className="form-group">
+                  <label htmlFor="apartment">Apartment:</label>
+                  <input type="text" name="apartment" value={bookingData.apartment} onChange={handleInputChange} placeholder="Apartment Name" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="houseNumber">House Number:</label>
+                  <input type="text" name="houseNumber" value={bookingData.houseNumber} onChange={handleInputChange} placeholder="House Number" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="carpetSize">Carpet Size:</label>
+                  <input type="text" name="carpetSize" value={bookingData.carpetSize} onChange={handleInputChange} placeholder="Carpet Size" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="collectionTime">Collection Time:</label>
+                  <input type="datetime-local" name="collectionTime" value={bookingData.collectionTime} onChange={handleInputChange} />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="location">Location:</label>
+                  <input type="text" name="location" value={bookingData.location} onChange={handleInputChange} placeholder="Location" />
+                </div>
+                <div className="form-group form-button">
+                  <input type="submit" className="form-submit" value="Book Collection" />
+                </div>
+              </form>
                 </div>
 
                 <div className="signup-image">
                   <figure>
                     <img src={worker} alt="Sign up image" style={{ width: "350px" }} />
                   </figure>
-                  <p>PRICELIST</p>
+                  <p className="pricelist">PRICELIST</p>
                   <table className="price-table">
                     <thead style={{ backgroundColor: "#F0520B" }}>
                       <tr style={{ backgroundColor: "#F0520B" }}>
@@ -231,49 +154,7 @@ const Booking = () => {
                     </tbody>
                   </table>
 
-                  <ul className="icons">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/your-facebook-page"
-                        className="icon alt"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaFacebook style={{ color: "blue", fontSize: "18px", marginRight: "6px" }} />
-                        <span className="label">Facebook</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/your-instagram-account"
-                        className="icon alt"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaInstagram style={{ color: "blue", fontSize: "18px", marginRight: "6px" }} />
-                        <span className="label">Instagram</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="mailto:your-email@example.com"
-                        className="icon alt"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaEnvelope style={{ color: "blue", fontSize: "18px", marginRight: "6px" }} />
-                        <span className="label">Email</span>
-                      </a>
-                    </li>
-                  </ul>
 
-                  <ul className="copyright">
-                    <li>© Essica T&amp;C applies</li>
-                    <li>
-                      Design:{' '}
-                      <a href="#">Essica CARPET CLEANERS - +254-788-413-877</a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
