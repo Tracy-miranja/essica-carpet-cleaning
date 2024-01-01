@@ -1,4 +1,3 @@
-// import React, { Component } from 'react'
 import "../Navbar/navbar.css"
 import { useState } from "react"
 import logo from "../Navbar/logo.png"
@@ -27,7 +26,7 @@ const Navbar= () => {
             <li className="nav__item"> <a href="/Services" className="nav__link">Services</a></li>
             <li className="nav__item"> <a href="/Blog" className="nav__link">Blog</a></li>
             <li className="nav__item"> <a href="/Contact" className="nav__link">Contact</a></li>
-            <li className="nav__item"> <a href="/Options" className="nav__link">Book Appointment</a></li>
+            <li className="nav__item"> <a href="/Options" className="nav__link"><button className="book__appointment">Book Appointment</button></a></li>
         </ul>
 
         <div onClick={navToggle} className={toggleIcon}>
