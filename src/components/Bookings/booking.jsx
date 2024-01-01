@@ -13,9 +13,9 @@ const Booking = () => {
     phone_number: '',
     location: '',
     apartment: '',
-    house_number: '',
+    houseNumber: '',
     collection_day: '',
-    collection_time: '',
+    collectionTime: '',
   });
   const [bookingSuccess, setBookingSuccess] = useState(false);
 
@@ -23,7 +23,7 @@ const Booking = () => {
     e.preventDefault();
   
     // Basic client-side validation
-    if (!bookingData.customer_name || !bookingData.phone_number || !bookingData.location || !bookingData.collection_day || !bookingData.collection_time) {
+    if (!bookingData.customer_name || !bookingData.phone_number || !bookingData.location || !bookingData.collection_day || !bookingData.collectionTime) {
       console.error('Please fill in all required fields.');
       return;
     }
@@ -36,9 +36,9 @@ const Booking = () => {
         phone_number: '',
         location: '',
         apartment: '',
-        house_number: '',
+        houseNumber: '',
         collection_day: '',
-        collection_time: '',
+        collectionTime: '',
       });
     } catch (error) {
       console.error('Booking failed:', error);
@@ -139,15 +139,15 @@ const Booking = () => {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="house_number"><i className="zmdi zmdi-key material-icons-name"></i></label>
+                      <label htmlFor="houseNumber"><i className="zmdi zmdi-key material-icons-name"></i></label>
                       <input
                         type="text"
-                        name="house_number"
+                        name="houseNumber"
                         id="housenumber"
                         required=""
                         placeholder=" 🔑 House/home number"
-                        value={bookingData.house_number}
-                        onChange={(e) => setBookingData({ ...bookingData, house_number: e.target.value })}
+                        value={bookingData.houseNumber}
+                        onChange={(e) => setBookingData({ ...bookingData, houseNumber: e.target.value })}
                       />
                     </div>
 
@@ -165,15 +165,15 @@ const Booking = () => {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="collection_time"><i className="zmdi zmdi-time material-icons-name"></i></label>
+                      <label htmlFor="collectionTime"><i className="zmdi zmdi-time material-icons-name"></i></label>
                       <input
                         type="text"
-                        name="collection_time"
+                        name="collectionTime"
                         id="collectiontime"
                         required=""
                         placeholder="📅 collection time btwn 9:00am - 6:30pm"
-                        value={bookingData.collection_time}
-                        onChange={(e) => setBookingData({ ...bookingData, collection_time: e.target.value })}
+                        value={bookingData.collectionTime}
+                        onChange={(e) => setBookingData({ ...bookingData, collectionTime: e.target.value })}
                       />
                     </div>
 

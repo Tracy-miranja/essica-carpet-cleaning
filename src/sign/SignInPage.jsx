@@ -10,7 +10,7 @@ const SignInPage = () => {
       <SignIn />
       <p>
         Do not have an account? <span>
-    <a  style={{color:"blue"}} href="/signup">Sign Up</a>
+    <a  style={{color:"blue"}} href="/SignUp">Sign Up</a>
   </span>
       </p>
       </div>

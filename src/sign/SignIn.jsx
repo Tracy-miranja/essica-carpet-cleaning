@@ -1,33 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const SignIn = ({ onSignIn }) => {
+const SignIn = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignIn = async () => {
-    try {
-      const response = await fetch('/api/auth/signin', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username,
-          password,
-        }),
-      });
+  const handleSignIn = () => {
+    // Assume successful authentication
+    const userId = 123; // Replace with the actual user ID from the server
 
-      if (response.ok) {
-        // Authentication successful, notify the parent component
-        onSignIn();
-      } else {
-        // Authentication failed, handle accordingly
-        alert('Invalid username or password');
-      }
-    } catch (error) {
-      console.error('Error during sign-in:', error);
-      // Handle error, show appropriate message
-    }
+    // Store user information in local storage
+    localStorage.setItem('userId', userId);
+    localStorage.setItem('username', username);
+
+    alert('Sign in successful!');
+    // Redirect or handle success as needed
+    window.location.href = '/Booking';
   };
 
   return (

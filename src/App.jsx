@@ -12,6 +12,7 @@ import Footer from './components/footer/footer';
 import Navbar from './components/Navbar/navbar';
 import SignInPage from './sign/SignInPage';
 import Booking from './components/Bookings/booking';
+import SignUp from './sign/SignUp';
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
             <Route exact path="/Contact" element={<Contact />} />
             <Route exact path="/Booking" element={<Booking />} />
             <Route path="/SignInPage" element={<SignInPage />} />
+            <Route path="/SignUp" element={<SignUp />} />
           </Routes>
         </Router>
       </div>
