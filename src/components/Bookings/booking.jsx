@@ -3,6 +3,8 @@ import worker from "../Bookings/worker2.png";
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBooking } from '../../store/bookingSlice';
+import logo from "../Navbar/logo.png";
+import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Booking = () => {
   const userId = localStorage.getItem('userId'); // Retrieve user ID from local storage
@@ -57,8 +59,15 @@ const Booking = () => {
         {bookingSuccess ? (
           <p className="success-message">Booking successful! You will receive a call from Essica Carpet Cleaning.</p>
         ) : (
-          <section className="signup">
+          <section className="signups">
             <div className="container">
+            <div className="signup-content">
+                <div className="signup-form">
+                <div>
+                    <center>
+                      <img src={logo} alt="Welcome image" style={{ width: "200px", marginBottom: "20px" }} />
+                    </center>
+                  </div>
             <h3 className="form-title">
                     <span style={{ color: '#000F5C' }}>
                       Hi, Welcome to Essica carpet cleaning. The
@@ -75,32 +84,32 @@ const Booking = () => {
                       way to book for your carpet clean.
                     </span>
                   </h3>
-              <div className="signup-content">
-                
-                <div className="signup-form">
+              
 
                 {error && <p className="error-message">{error}</p>} {/* Display error message here */}
-                  <form onSubmit={handleBooking} autoComplete="off" className="register-form">
+                  <form onSubmit={handleBooking} autoComplete="off" className="register-form"
+                    id="register-form">
                 <div className="form-group">
-                  <label htmlFor="apartment">Apartment:</label>
-                  <input type="text" name="apartment" value={bookingData.apartment} onChange={handleInputChange} placeholder="Apartment Name" />
+                <label htmlFor="apartment"><i className="zmdi zmdi-home material-icons-name"></i></label>
+                  <input type="text" name="apartment" value={bookingData.apartment} onChange={handleInputChange} placeholder="&#127968; Apartment Name" />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="houseNumber">House Number:</label>
-                  <input type="text" name="houseNumber" value={bookingData.houseNumber} onChange={handleInputChange} placeholder="House Number" />
+                <label htmlFor="houseNumber"><i className="zmdi zmdi-key material-icons-name"></i></label>
+                  <input type="text" name="houseNumber" value={bookingData.houseNumber} onChange={handleInputChange} placeholder="🔑 House Number" />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="carpetSize">Carpet Size:</label>
+                  <label htmlFor="carpetSize"></label>
                   <input type="text" name="carpetSize" value={bookingData.carpetSize} onChange={handleInputChange} placeholder="Carpet Size" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="location"></label>
+                  <input type="text" name="location" value={bookingData.location} onChange={handleInputChange} placeholder="🧭 Location" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="collectionTime">Collection Time:</label>
                   <input type="datetime-local" name="collectionTime" value={bookingData.collectionTime} onChange={handleInputChange} />
                 </div>
-                <div className="form-group">
-                  <label htmlFor="location">Location:</label>
-                  <input type="text" name="location" value={bookingData.location} onChange={handleInputChange} placeholder="Location" />
-                </div>
+                
                 <div className="form-group form-button">
                   <input type="submit" className="form-submit" value="Book Collection" />
                 </div>
@@ -154,7 +163,49 @@ const Booking = () => {
                     </tbody>
                   </table>
 
+                  <ul className="icons">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/your-facebook-page"
+                        className="icon alt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaFacebook style={{ color: "blue", fontSize: "18px", marginRight: "6px" }} />
+                        <span className="label">Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/your-instagram-account"
+                        className="icon alt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaInstagram style={{ color: "blue", fontSize: "18px", marginRight: "6px" }} />
+                        <span className="label">Instagram</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:your-email@example.com"
+                        className="icon alt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaEnvelope style={{ color: "blue", fontSize: "18px", marginRight: "6px" }} />
+                        <span className="label">Email</span>
+                      </a>
+                    </li>
+                  </ul>
 
+                  <ul className="copyright">
+                    <li>© Essica T&amp;C applies</li>
+                    <li>
+                      Design:{' '}
+                      <a href="#">Essica CARPET CLEANERS - +254-788-413-877</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
