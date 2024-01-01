@@ -10,8 +10,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from './components/footer/footer';
 import Navbar from './components/Navbar/navbar';
+import Options from './components/Registration/options';
+import SignIn from './components/Signin/Signin';
 
 import Booking from './components/Bookings/booking';
+
 
 
 const App = () => {
@@ -19,7 +22,7 @@ const App = () => {
 
   const hideNavbarOnBookingPage = () => {
     const currentPath = window.location.pathname;
-    if (currentPath === '/Booking') {
+    if (currentPath === '/Booking' && currentPath === '/signin') {
       return false; // Don't render Navbar on Booking page
     }
     return true; // Render Navbar on other pages
@@ -39,7 +42,9 @@ const App = () => {
             <Route exact path="/Services" element={<Services />} />
             <Route exact path="/Blog" element={<Blog />} />
             <Route exact path="/Contact" element={<Contact />} />
-            <Route exact path="/Booking" element={<Booking />} />
+            <Route exact path="/Options" element={<Options/>} />
+            <Route exact path="/signin" element={<SignIn />} />
+            <Route exact path="/booking" element={<Booking />} />
           </Routes>
         </Router>
       </div>
