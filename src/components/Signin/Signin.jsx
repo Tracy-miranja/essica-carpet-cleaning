@@ -18,12 +18,20 @@ const SignIn = () => {
     }
   }, [customerStatus, dispatch]);
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Find customer by username and password
-    const user = customers.find(c => 
-      c.username === credentials.username && c.password === credentials.password
-    );
+
+
+   // Trim whitespace and compare
+   const user = customers.find(c => 
+    c.username.trim() == credentials.username.trim() && 
+    c.password.trim() == credentials.password.trim()
+  );
+
+ 
+    
     if (user) {
       localStorage.setItem('userId', user._id); // Assuming MongoDB '_id' is used
       navigate('/Booking');
