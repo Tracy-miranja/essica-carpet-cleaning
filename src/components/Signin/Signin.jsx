@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { fetchCustomers } from '../../store/customerSlice';
 import './signin.css';
 
-const SignIn = () => {
+const SignIn = ({ onLoginStatusChange }) => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
   const [loginError, setLoginError] = useState('');
   const dispatch = useDispatch();
@@ -31,7 +31,10 @@ const SignIn = () => {
       localStorage.setItem('userRole', user.role); // Store user role
 
       // Navigate based on user role
-      user.role === 'admin' ? navigate('/Dashboard') : navigate('/Booking');
+      user.role === 'admin' ? navigate('/Dashboard') : navigate('/Options');
+      window.location.reload();
+      onLoginStatusChange();
+
     } else {
       setLoginError('Invalid username or password.');
       setTimeout(() => setLoginError(''), 2000);

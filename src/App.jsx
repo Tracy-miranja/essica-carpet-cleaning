@@ -21,7 +21,7 @@ const App = () => {
   const [navbarUpdate, setNavbarUpdate] = useState(false);
 
   const onLoginStatusChange = () => {
-    setNavbarUpdate(!navbarUpdate);
+    setNavbarUpdate(prevState => !prevState);
   };
 
   const hideNavbarOnBookingPage = () => {
