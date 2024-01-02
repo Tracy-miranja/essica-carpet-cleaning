@@ -98,11 +98,32 @@
     color: black;
     border: 2px solid black;
   }
+
+  /*Admin panel button and Book Appointment*/
+  .nav__item.admin-panel {
+   border: 2px solid #4CAF50; /* A solid border with a green shade */
+   background-color: #4CAF50; /* Green background */
+   border-radius: 10px; /* Rounded corners */
+ }
+ 
+ .nav__item.admin-panel .nav__link {
+   color: white; /* White text to contrast the green background */
+   display: block; /* Make the anchor fill the li for better click area */
+   padding: 10px 20px; /* Add some padding */
+   text-decoration: none; /* Remove underline from links */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+ }
+ 
+ .nav__item.admin-panel:hover .nav__link {
+   background-color: #3e8e41; /* A darker green for hover state */
+   border-color: #3e8e41; /* Border color changes on hover to match the background */
+ }
+ 
   
   .nav__item.booking-button {
    border: 2px solid #fff; /* Adjust the color and width as needed */
    background-color: #ff0000; /* Red background */
-   border-radius: 5px; /* Rounded corners */
+   border-radius: 10px; /* Rounded corners */
  }
  
  .nav__item.booking-button .nav__link {
