@@ -18,23 +18,20 @@ const SignIn = () => {
     }
   }, [customerStatus, dispatch]);
 
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const user = customers.find(c => 
+      c.username.trim() === credentials.username.trim() && 
+      c.password.trim() === credentials.password.trim()
+    );
 
-   // Trim whitespace and compare
-   const user = customers.find(c => 
-    c.username.trim() == credentials.username.trim() && 
-    c.password.trim() == credentials.password.trim()
-  );
-
- 
-    
     if (user) {
-      localStorage.setItem('userId', user._id); // Assuming MongoDB '_id' is used
-      navigate('/Booking');
+      localStorage.setItem('userId', user._id); // Store user ID
+      localStorage.setItem('userRole', user.role); // Store user role
+
+      // Navigate based on user role
+      user.role === 'admin' ? navigate('/Dashboard') : navigate('/Booking');
     } else {
       setLoginError('Invalid username or password.');
       setTimeout(() => setLoginError(''), 2000);
@@ -51,7 +48,6 @@ const SignIn = () => {
         <div className='signin'>
           <div className='signin-content'>
             <h1>Sign in</h1>
-            
           </div>
         </div>
       </div>
