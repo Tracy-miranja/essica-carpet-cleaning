@@ -8,11 +8,12 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/navbar';
 import Options from './components/Registration/Options';
-import SignIn from './components/Signin/SignIn';
+import SignIn from './components/Signin/Signin';
 import SignUp from './components/Signup/Signup';
 import Booking from './components/Bookings/Booking';
 import Dashboard from './components/Admin/Dashboard';
-import Customers from './components/Admin/Customerslist';
+import Customers from './components/Admin/customerslist';
+import Bookinglist from './components/Admin/bookingslist';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -47,6 +48,8 @@ const App = () => {
             <Route exact path="/booking" element={<Booking />} />
             <Route exact path="/dashboard" element={<Dashboard />} />
             <Route exact path="/customerslist" element={<Customers />} />
+            <Route exact path="/bookinglist" element={<Bookinglist/>} />
+            
           </Routes>
         </Router>
       </div>

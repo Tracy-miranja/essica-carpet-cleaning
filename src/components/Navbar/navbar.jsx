@@ -48,7 +48,7 @@ const Navbar = () => {
                 <a href="/Customerslist" className="nav__link">Customers</a>
               </li>
               <li className="nav__item admin">
-                <a href="/Bookings" className="nav__link">Bookings</a>
+                <a href="/Bookinglist" className="nav__link">Bookings</a>
               </li>
               <li className="nav__item admin" onClick={handleSignOut}>
                 <a href="/Options" className="nav__link">Signout</a>
