@@ -97,16 +97,17 @@ const Booking = () => {
                 <label htmlFor="houseNumber"><i className="zmdi zmdi-key material-icons-name"></i></label>
                   <input type="text" name="houseNumber" value={bookingData.houseNumber} onChange={handleInputChange} placeholder="🔑 House Number" />
                 </div>
-                <div className="form-group">
-                  <label htmlFor="carpetSize"></label>
-                  <input type="text" name="carpetSize" value={bookingData.carpetSize} onChange={handleInputChange} placeholder="Carpet Size" />
-                </div>
+                
                 <div className="form-group">
                   <label htmlFor="location"></label>
                   <input type="text" name="location" value={bookingData.location} onChange={handleInputChange} placeholder="🧭 Location" />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="collectionTime">Collection Time:</label>
+                  <label htmlFor="carpetSize"></label>
+                  <input type="text" name="carpetSize" value={bookingData.carpetSize} onChange={handleInputChange} placeholder="Carpet Size" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="collectionTime"></label>
                   <input type="datetime-local" name="collectionTime" value={bookingData.collectionTime} onChange={handleInputChange} />
                 </div>
                 
