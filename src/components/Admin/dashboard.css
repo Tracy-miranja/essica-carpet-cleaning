@@ -6,6 +6,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
     border-radius: 10px; /* Optional: rounds the corners */
     overflow-x: auto; /* Ensures table is scrollable on smaller screens */
+    font-size: 1.5rem; /* Increase font size for better visibility */
   }
   
   .dashboard-title {
@@ -44,9 +45,5 @@
   
   .dashboard-table-row:hover {
     background-color: #ddd; /* Row hover effect */
-  }
-  
-  .dashboard-data {
-    /* Optional: Add specific styles for data cells if needed */
   }
   

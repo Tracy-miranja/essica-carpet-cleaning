@@ -14,7 +14,7 @@
     color: #333;
     margin-bottom: 20px;
     width: 100%; /* Ensure the title spans the full width */
-    font-size: 1.5rem; /* Increase font size for better visibility */
+    font-size: 2rem; /* Increase font size for better visibility */
     font-weight: bold;
   }
   
@@ -22,6 +22,7 @@
     width: 80%;
     max-width: 1000px;
     border-collapse: collapse;
+    font-size: 1.5rem; /* Increase font size for better visibility */
   }
   
   .customer-list-table th,

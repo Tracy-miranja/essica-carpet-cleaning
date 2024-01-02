@@ -38,7 +38,25 @@ console.log('Hello')
           <td className="dashboard-data">{booking.location}</td>
           <td className="dashboard-data">{new Date(booking.booking_date).toLocaleDateString()}</td>
           <td className="dashboard-data">{booking.booking_time}</td>
-          <td className="dashboard-data">{booking.status}</td>
+          <td
+  className="dashboard-data"
+  style={{
+    border: '1px solid',
+    borderColor: booking.status === 'complete' ? 'green' : 
+                 booking.status === 'incomplete' ? 'red' : 
+                 booking.status === 'pending' ? 'yellow' : 'default',
+    backgroundColor: booking.status === 'complete' ? 'green' : 
+                     booking.status === 'incomplete' ? 'red' : 
+                     booking.status === 'pending' ? 'yellow' : 'default',
+    color: booking.status === 'pending' ? 'black':
+    booking.status === 'complete' ? 'white' : 
+    booking.status === 'incomplete' ? 'white' : 'default',
+    
+  }}
+>
+  {booking.status}
+</td>
+
         </tr>
       ))}
     </tbody>

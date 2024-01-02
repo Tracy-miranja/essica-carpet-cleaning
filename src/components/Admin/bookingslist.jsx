@@ -67,8 +67,10 @@ const BookingsList = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <button onClick={handleSave}>Save</button>
-                                        <button onClick={() => setEditBookingId(null)}>Cancel</button>
+                                    <div className="button-container">
+                                        <button className="save-btn" onClick={handleSave}>Save</button>
+                                        <button className="cancel-btn" onClick={() => setEditBookingId(null)}>Cancel</button>
+                                        </div>
                                     </td>
                                 </>
                             ) : (
@@ -78,7 +80,24 @@ const BookingsList = () => {
                                     <td>{booking.carpetSize}</td>
                                     <td>{booking.location}</td>
                                     <td>{new Date(booking.collectionTime).toLocaleString()}</td>
-                                    <td>{booking.status}</td>
+                                    <td
+                                        className="dashboard-data"
+                                        style={{
+                                            border: '1px solid',
+                                            borderColor: booking.status === 'complete' ? 'green' :
+                                                booking.status === 'incomplete' ? 'red' :
+                                                    booking.status === 'pending' ? 'yellow' : 'default',
+                                            backgroundColor: booking.status === 'complete' ? 'green' :
+                                                booking.status === 'incomplete' ? 'red' :
+                                                    booking.status === 'pending' ? 'yellow' : 'default',
+                                            color: booking.status === 'pending' ? 'black' :
+                                                booking.status === 'complete' ? 'white' :
+                                                    booking.status === 'incomplete' ? 'white' : 'default',
+
+                                        }}
+                                    >
+                                        {booking.status}
+                                    </td>
                                     <td>
                                         <div className="button-container">
                                             <button className="edit-btn" onClick={() => handleEdit(booking)}>Edit</button>

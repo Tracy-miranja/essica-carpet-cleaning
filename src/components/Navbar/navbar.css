@@ -121,6 +121,27 @@ li {
    border: 2px solid black;
  }
  
+/*Signout button */
+.admin.signout {
+   border: 2px solid #4CAF50; /* Green border */
+   border-radius: 25px; /* Rounded corners */
+   background-color: #4CAF50; /* Green background */
+   padding: 5px 10px; /* Some padding for better appearance */
+   margin: 0 10px; /* Optional: Add margin if needed */
+}
+
+.admin.signout .nav__link {
+   color: white; /* White text color for better readability */
+   display: block; /* Make the link take the full area of <li> */
+   text-align: center; /* Center the text inside */
+}
+
+/* Hover effect for signout link */
+.admin.signout:hover {
+   background-color: #45a049; /* Slightly darker green when hovered */
+   border-color: #45a049; /* Border color change on hover */
+}
+
 
 @media(max-width:768px){
    .nav__toggler{
