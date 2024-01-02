@@ -12,6 +12,7 @@ import SignIn from './components/Signin/SignIn';
 import SignUp from './components/Signup/Signup';
 import Booking from './components/Bookings/Booking';
 import Dashboard from './components/Admin/Dashboard';
+import Customers from './components/Admin/Customerslist';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -45,6 +46,7 @@ const App = () => {
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/booking" element={<Booking />} />
             <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route exact path="/customerslist" element={<Customers />} />
           </Routes>
         </Router>
       </div>

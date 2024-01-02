@@ -45,7 +45,7 @@ const Navbar = () => {
                 <a href="/Dashboard" className="nav__link"><i className="fa fa-tachometer-alt"></i> Dashboard</a>
               </li>
               <li className="nav__item admin">
-                <a href="/Customers" className="nav__link">Customers</a>
+                <a href="/Customerslist" className="nav__link">Customers</a>
               </li>
               <li className="nav__item admin">
                 <a href="/Bookings" className="nav__link">Bookings</a>
