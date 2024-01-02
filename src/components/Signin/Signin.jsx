@@ -32,6 +32,7 @@ const SignIn = ({ onLoginStatusChange }) => {
 
       // Navigate based on user role
       user.role === 'admin' ? navigate('/Dashboard') : navigate('/Options');
+      // Force reload the page
       window.location.reload();
       onLoginStatusChange();
 
