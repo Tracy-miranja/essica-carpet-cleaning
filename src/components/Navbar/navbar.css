@@ -1,198 +1,176 @@
 *,*::after, ::before{
-    margin: 0px;
-    box-sizing: border-box;
+   margin: 0px;
+   box-sizing: border-box;
 }
 
- html{
-    font-size: 70.5%;
+html{
+   font-size: 70.5%;
+}
+
+body{
+   font-size: 1.6rem;
+}
+
+li{
+   list-style: none;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+}
+
+.nav{
+   width: 100%;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 8vh;
+   background-color: #fff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   z-index: 2;
+}
+
+.brand{
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.nav__menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 3rem;
+
+}
+
+.nav__toggler div{
+   width: 2.5rem;
+   height: 0.2rem;
+   margin: 0.4rem;
+   background-color: darkgray;
+   border: 2px solid grey;
+   transition: 0.4s ease-in;
+}
+
+.nav__toggler{
+   cursor: pointer;
+   display: none;
+}
+
+.header{
+   background-color: #006bb3;
+   width: 100%;
+   height: 5vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   
+}
+
+.essica-nav{
+ top: 0;
+ position: fixed;
+ width: 100%;
+ z-index: 3;
+ padding-bottom: 100px;
+}
+
+.brand img{
+   width: 180px;
+   height: 100%;
+}
+
+.book__appointment{
+   text-align: center;
+   border-radius: 30px;
+   background-color: rgb(255, 17, 17);
+   color: #fff;
+   font-weight: bold;
+   font-size: 15px;
+   border: #fff;
+   height: 5vh;
+   width: 100%;
+   padding-bottom: 30px;
  }
 
- body{
-    font-size: 1.6rem;
- }
-
- li{
-    list-style: none;
- }
-
- a{
-    text-decoration: none;
-    color: black;
- }
-
- .nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 8vh;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 2;
- }
-
- .brand{
-    text-transform: uppercase;
-    font-weight: bold;
- }
-
- .nav__menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-
- }
-
- .nav__toggler div{
-    width: 2.5rem;
-    height: 0.2rem;
-    margin: 0.4rem;
-    background-color: darkgray;
-    border: 2px solid grey;
-    transition: 0.4s ease-in;
- }
-
- .nav__toggler{
-    cursor: pointer;
-    display: none;
- }
-
- .header{
-    background-color: #006bb3;
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    
- }
-
- .essica-nav{
-   top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  padding-bottom: 100px;
- }
-
- .brand img{
-    width: 180px;
-    height: 100%;
- }
-
- button{
-    border-radius: 30px;
-    background-color: rgb(255, 17, 17);
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    border: #fff;
-    height: 5vh;
-  }
-
-  button:hover {
-    transform: scale(1.1); /* Enlarge on hover */
-    background-color: #f8f6f4;
-    color: black;
-    border: 2px solid black;
-  }
-
-  /*Admin panel button and Book Appointment*/
-  .nav__item.admin-panel {
-   border: 2px solid #4CAF50; /* A solid border with a green shade */
-   background-color: #4CAF50; /* Green background */
-   border-radius: 10px; /* Rounded corners */
- }
- 
- .nav__item.admin-panel .nav__link {
-   color: white; /* White text to contrast the green background */
-   display: block; /* Make the anchor fill the li for better click area */
-   padding: 10px 20px; /* Add some padding */
-   text-decoration: none; /* Remove underline from links */
-   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
- }
- 
- .nav__item.admin-panel:hover .nav__link {
-   background-color: #3e8e41; /* A darker green for hover state */
-   border-color: #3e8e41; /* Border color changes on hover to match the background */
- }
- 
-  
-  .nav__item.booking-button {
-   border: 2px solid #fff; /* Adjust the color and width as needed */
-   background-color: #ff0000; /* Red background */
-   border-radius: 10px; /* Rounded corners */
- }
- 
- .nav__item.booking-button .nav__link {
-   color: #fff; /* White text */
-   padding: 10px 20px; /* Padding inside the border */
-   display: inline-block; /* Allows padding to take effect */
-   text-decoration: none; /* Removes underline from links */
-   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
- }
- 
- .nav__item.booking-button:hover .nav__link {
-   background-color: #cc0000; /* Darker red on hover */
-   color: #ffffff; /* Keeps text white on hover */
+ button:hover {
+   transform: scale(1.1); /* Enlarge on hover */
+   background-color: #f8f6f4;
+   color: black;
+   border: 2px solid black;
  }
  
 
-  
- @media(max-width:768px){
-    .nav__toggler{
-        display: block;
-    }
+@media(max-width:768px){
+   .nav__toggler{
+       display: block;
+   }
 
-    .nav__menu {
-        position: fixed;
-        top: 13vh;
-        left: 0; 
-        width: 50%;
-        height: 100vh;
-        background-color: #006bb3;
-        z-index: 3;
-        flex-direction: column;
-        color: #fff !important;
-        gap: 0.3rem;
-        transform: translateX(-100%); 
-        transition: 0.5s ease-in;
-      }
-
-
-    .book__appointment{
-        display: none;
-    }
-
-    a{
-        text-decoration: none;
-        color: rgb(247, 246, 246);
+   .nav__menu {
+       position: fixed;
+       top: 13vh;
+       left: 0; 
+       width: 50%;
+       height: 90vh;
+       background-color: #006bb3;
+       z-index: 3;
+       flex-direction: column;
+       color: #fff !important;
+       gap: 0.3rem;
+       transform: translateX(-100%); 
+       transition: 0.5s ease-in;
+       scrollbar-3dlight-color: aqua;
+       overflow-y: scroll;
      }
 
-     .header{
-        background-color: #006bb3;
-        height: 12vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 15px;
-     }
-    
- }
 
- .nav__active{
-    transform: translateX(0);
- }
+   .book__appointment{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 30px;
+   }
 
- .toggle .line1{
-    transform: rotate(-45deg) translate(-4px, 5px);
- }
- .toggle .line2{
-    opacity: 0;
- }
- .toggle .line3{
-    transform: rotate(45deg) translate(-4px, -5px);
- }
+   a{
+       text-decoration: none;
+       color: rgb(247, 246, 246);
+    }
+
+    .header{
+       background-color: #006bb3;
+       height: 12vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       font-size: 15px;
+    }
+   
+}
+
+.nav__active{
+   transform: translateX(0);
+}
+
+.toggle .line1{
+   transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2{
+   opacity: 0;
+}
+.toggle .line3{
+   transform: rotate(45deg) translate(-4px, -5px);
+}
+
+@media(max-width:370px){
+   .book__appointment {
+      font-size: 5px; 
+      padding-bottom: 0px;
+      height: 5vh;
+      
+  }
+   
+}

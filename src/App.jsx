@@ -23,7 +23,7 @@ const App = () => {
 
   const hideNavbarOnBookingPage = () => {
     const currentPath = window.location.pathname;
-    if (currentPath === '/Booking') {
+    if (currentPath === '/Booking' && currentPath === '/signin') {
       return false; // Don't render Navbar on Booking page
     }
     return true; // Render Navbar on other pages
