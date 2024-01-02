@@ -1,7 +1,7 @@
-import "./navbar.css";
 import { useState, useEffect } from "react";
 import logo from "../Navbar/logo.png";
 import SocialIcons from "./icons";
+import "../Navbar/navbar.css";
 
 const Navbar = () => {
   const [active, setActive] = useState("nav__menu");
@@ -50,28 +50,28 @@ const Navbar = () => {
               <li className="nav__item admin">
                 <a href="/Bookings" className="nav__link">Bookings</a>
               </li>
-              <li className="nav__item admin-panel" onClick={handleSignOut}>
+              <li className="nav__item admin" onClick={handleSignOut}>
                 <a href="/Options" className="nav__link">Signout</a>
               </li>
             </>
           ) : (
             <>
-              <li className="nav__item">
+              <li className="nav__item user">
                 <a href="/" className="nav__link">Home</a>
               </li>
-              <li className="nav__item">
+              <li className="nav__item user">
                 <a href="/About" className="nav__link">About</a>
               </li>
-              <li className="nav__item">
+              <li className="nav__item user">
                 <a href="/Services" className="nav__link">Services</a>
               </li>
-              <li className="nav__item">
+              <li className="nav__item user">
                 <a href="/Blog" className="nav__link">Blog</a>
               </li>
-              <li className="nav__item">
+              <li className="nav__item user">
                 <a href="/Contact" className="nav__link">Contact</a>
               </li>
-              <li className="nav__item booking-button">
+              <li className="nav__item booking-button user">
                 <a href="/Options" className="nav__link">Book Appointment</a>
               </li>
             </>

@@ -6,7 +6,7 @@ import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/navbar';
 import Options from './components/Registration/Options';
 import SignIn from './components/Signin/SignIn';
 import SignUp from './components/Signup/Signup';
