@@ -5,16 +5,160 @@
     background: #C2C8E5;
     font-weight: 400;
     font-family: Poppins;
-    /* margin-top: 100px; */
+    padding: 70px;
+    padding-top: 10px; /* You might need to increase this value */
+    margin-top: 100px; /* Adjust this value to push the container below the navbar */
+    z-index: 2;
+    height: auto;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #EBEDF7;
+    border-radius: 20px;
+    box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.signup-content {
+    width: 50%; /* Full width */
+}
+
+.signup-image {
+    width: 40%; /* Adjust the width as needed */
+    /* Align the image to the center of its container if desired */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-content {
+    display: flex; /* Use flexbox to lay out children side by side */
+    align-items: start; /* Align items to the start (top) */
+    justify-content: space-between; /* Space between form and image */
+    width: 100%; /* Full width of container */
+}
+.register-form{
+    padding-top: 10px; /* You might need to increase this value */
+    margin-top: 100px; /* Adjust this value to push the container below the navbar */
+}
+.form-title {
+    width: 100%; /* Full width */
+    text-align: center; /* Center the title */
+}
+
+.signup-form {
+    width: 50%; /* Full width of the container */
+    margin-bottom: 150px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between; /* Space between label and input */
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%; /* Full width */
+}
+
+.form-group label {
+    width: 20%; /* Fixed width for labels */
+    min-width: 150px; /* Minimum width */
+    text-align: left;
+}
+
+.form-group input {
+    flex-grow: 1; /* Allow input to grow and fill space */
+    margin-left: 10px; /* Space between label and input */
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.form-submit {
+    width: 100%; /* Full width button */
+    background: #6dabe4;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.signup-image {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    width: 40%; /* Adjust the width as needed */
+    margin-left: 20px; /* Add some space from the form */
+}
+
+.signup-image figure {
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Full width of its container */
+    display: flex; /* Use flexbox for image */
+    justify-content: center; /* Center the image horizontally */
+    height: 240px;
+}
+
+.signup-image img {
+    max-width: 350px; /* Maximum width of the image */
+    width: 100%; /* Scale image to fit container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pricelist {
+    margin-top: 20px; /* Space above the price list */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+}
+
+.price-table {
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Space above the table */
+}
+
+.icons {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center items */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above icons */
+}
+
+.icons li {
+    margin-bottom: 10px; /* Space between each icon */
+}
+
+.success-message {
+    color: green; /* Green text color */
+    font-size: 1.5em; /* Bigger font size */
+    text-align: center; /* Centered text */
+    margin-top: 20px; /* Space above the message */
+    margin-bottom: 20px; /* Space below the message */
+    width: 100%; /* Full width */
+}
+
+.booking-container {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #222;
+    background: #C2C8E5;
+    font-weight: 400;
+    font-family: Poppins;
     padding: 70px;
     padding-top: 10px;
 }
 
 .booking-container {
-    z-index: 2; /* Set a higher z-index than the navbar */
+    z-index: 2; 
     height: 150vh;
     width: 100%;
-    /* position: fixed; */
     top: 0;
     left: 0;
    
@@ -25,13 +169,11 @@
 }
 
   .form-group {
-    /* position: relative; */
     margin-bottom: 25px;
-    /* overflow: hidden; */
 }
   
   .booking-container.active {
-    display: block; /* Display the modal when it has the 'active' class */
+    display: block; 
   }
   
 
@@ -60,7 +202,7 @@ input {
 
 .form-submit {
     display: inline-block;
-    background: #6dabe4;
+    /* background: #6dabe4; */
     color: #fff;
     border-bottom: none;
     width: auto;
@@ -148,4 +290,21 @@ input {
     }
 
 }
+
+/* Adjust styles for responsive design as needed */
+@media (max-width: 768px) {
+    .signup-image {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 0; /* No margin on smaller screens */
+    }
+
+    .form-group label {
+        width: 30%; /* Increase label width on smaller screens */
+    }
+}
+
+/* Add other responsive adjustments as needed */
+
+
+
 

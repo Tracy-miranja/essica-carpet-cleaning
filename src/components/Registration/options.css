@@ -1,0 +1,59 @@
+.options-container {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #222;
+    background: #C2C8E5;
+    font-weight: 400;
+    font-family: Poppins;
+    padding: 30px; /* Reduced overall padding */
+    padding-top: 100px; /* Increased top padding to move content down */
+    z-index: 2; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keep content centered horizontally */
+    justify-content: start; /* Align items to start from top */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 50px; /* Additional spacing above the buttons */
+}
+
+.options-button {
+    background: #FFA500; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Poppins;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+/* Maintain responsiveness */
+@media (max-width: 768px) {
+    .options-container {
+        padding: 20px;
+        padding-top: 70px; /* Adjust for mobile */
+    }
+
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .options-button {
+        width: 100%; /* Full width buttons on smaller screens */
+    }
+}
