@@ -29,6 +29,8 @@ const SignIn = ({ onLoginStatusChange }) => {
     if (user) {
       localStorage.setItem('userId', user._id); // Store user ID
       localStorage.setItem('userRole', user.role); // Store user role
+
+      navigate('/Booking');
       // Force reload the page
       window.location.reload();
       onLoginStatusChange();
