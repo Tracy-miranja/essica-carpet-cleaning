@@ -56,14 +56,14 @@ const SignIn = ({ onLoginStatusChange }) => {
         </div>
       </div>
       <form onSubmit={handleSubmit}>
-        <input 
+        <input  className="signin_input"
           name="username"
           type="text"
           placeholder="Username"
           value={credentials.username}
           onChange={handleChange}
         />
-        <input 
+        <input className="signin_input"
           name="password"
           type="password"
           placeholder="Password"
@@ -71,7 +71,7 @@ const SignIn = ({ onLoginStatusChange }) => {
           onChange={handleChange}
         />
         {loginError && <p className="error-message">{loginError}</p>}
-        <button type="submit">Sign In</button>
+        <button  className="signin_btn" type="submit">Sign in</button>
       </form>
     </div>
   );
