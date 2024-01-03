@@ -1,18 +1,26 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBookings } from '../../store/bookingSlice';
+import { useNavigate } from 'react-router-dom';
 import "../Admin/dashboard.css";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
   const bookings = useSelector(state => state.booking.bookings);
+  const navigate = useNavigate();
 
   useEffect(() => {
+    // Check user role and redirect if not admin
+    const userRole = localStorage.getItem('userRole');
+    if (userRole !== 'admin') {
+      navigate('/adminsignin');
+    }
+
     dispatch(fetchBookings());
-  }, [dispatch]);
-console.log('Hello')
- // Create a copy of the bookings array and sort it
- const sortedBookings = [...bookings].sort((a, b) => {
+  }, [dispatch, navigate]);
+
+  // Sorting logic for bookings
+  const sortedBookings = [...bookings].sort((a, b) => {
     const dateA = new Date(a.booking_date), timeA = a.booking_time;
     const dateB = new Date(b.booking_date), timeB = b.booking_time;
     return dateA - dateB || (timeA < timeB ? -1 : timeA > timeB ? 1 : 0);

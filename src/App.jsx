@@ -1,5 +1,10 @@
+// App.jsx
+
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RoleBasedRoute from './components/Admin/rolebasedroute'; // Adjust the path as needed
+
+// Import your components
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Services from './components/Services/Services';
@@ -7,7 +12,6 @@ import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/navbar';
-//Started here
 import Options from './components/Registration/Options';
 import SignIn from './components/Signin/Signin';
 import SignUp from './components/Signup/Signup';
@@ -15,6 +19,8 @@ import Booking from './components/Bookings/Booking';
 import Dashboard from './components/Admin/Dashboard';
 import Customers from './components/Admin/customerslist';
 import Bookinglist from './components/Admin/bookingslist';
+import AdminSignin from './components/Admin/adminsignin'; 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -47,10 +53,22 @@ const App = () => {
             <Route exact path="/signin" element={<SignIn onLoginStatusChange={onLoginStatusChange} />} />
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/booking" element={<Booking />} />
-            <Route exact path="/dashboard" element={<Dashboard />} />
-            <Route exact path="/customerslist" element={<Customers />} />
-            <Route exact path="/bookinglist" element={<Bookinglist/>} />
-            
+            <Route exact path="/dashboard" element={
+              <RoleBasedRoute>
+                <Dashboard />
+              </RoleBasedRoute>
+            } />
+            <Route exact path="/customerslist" element={
+  <RoleBasedRoute>
+    <Customers />
+  </RoleBasedRoute>
+}  />
+            <Route exact path="/bookinglist" element={
+  <RoleBasedRoute>
+    <Bookinglist />
+  </RoleBasedRoute>
+}  />
+            <Route exact path="/adminsignin" element={<AdminSignin />} />
           </Routes>
         </Router>
       </div>
