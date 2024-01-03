@@ -96,7 +96,17 @@ a{
    padding-bottom: 30px;
  }
 
- button:hover {
+ .booking-button{
+   background-color: #ff5700;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 20px;
+   color: #fff !important;
+ }
+
+ .booking-button:hover {
    transform: scale(1.1); /* Enlarge on hover */
    background-color: #f8f6f4;
    color: black;
