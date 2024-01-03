@@ -8,7 +8,7 @@ const BookingsList = () => {
     const bookings = useSelector(state => state.booking.bookings);
     const [editBookingId, setEditBookingId] = useState(null);
     const [editedBooking, setEditedBooking] = useState({});
-
+console.log(bookings[0].customer_ID.phoneNumber)
     useEffect(() => {
         dispatch(fetchBookings());
     }, [dispatch]);
@@ -44,8 +44,10 @@ const BookingsList = () => {
                         <th>Email</th>
                         <th>Carpet Size</th>
                         <th>Location</th>
+                        <th>Phone Number</th>
                         <th>Collection Time</th>
                         <th>Status</th>
+                        
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -58,7 +60,9 @@ const BookingsList = () => {
                                     <td><input type="email" name="email" value={editedBooking.customer_ID.email} disabled /></td>
                                     <td><input type="text" name="carpetSize" value={editedBooking.carpetSize} onChange={handleChange} /></td>
                                     <td><input type="text" name="location" value={editedBooking.location} onChange={handleChange} /></td>
+                                    <td><input type="text" name="phonenumber" value={editedBooking.customer_ID.phoneNumber} disabled/></td>
                                     <td><input type="datetime-local" name="collectionTime" value={editedBooking.collectionTime} onChange={handleChange} /></td>
+                                    
                                     <td>
                                         <select name="status" value={editedBooking.status} onChange={handleChange}>
                                             <option value="pending">Pending</option>
@@ -79,7 +83,9 @@ const BookingsList = () => {
                                     <td>{booking.customer_ID.email}</td>
                                     <td>{booking.carpetSize}</td>
                                     <td>{booking.location}</td>
+                                    <td>{booking.customer_ID.phoneNumber}</td>
                                     <td>{new Date(booking.collectionTime).toLocaleString()}</td>
+                                    
                                     <td
                                         className="dashboard-data"
                                         style={{

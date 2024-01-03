@@ -19,7 +19,7 @@ import Booking from './components/Bookings/Booking';
 import Dashboard from './components/Admin/Dashboard';
 import Customers from './components/Admin/customerslist';
 import Bookinglist from './components/Admin/bookingslist';
-import AdminSignin from './components/Admin/adminsignin'; 
+import AdminSignin from './components/Admin/adminsignin';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -59,15 +59,15 @@ const App = () => {
               </RoleBasedRoute>
             } />
             <Route exact path="/customerslist" element={
-  <RoleBasedRoute>
-    <Customers />
-  </RoleBasedRoute>
-}  />
+              <RoleBasedRoute>
+                <Customers />
+              </RoleBasedRoute>
+            } />
             <Route exact path="/bookinglist" element={
-  <RoleBasedRoute>
-    <Bookinglist />
-  </RoleBasedRoute>
-}  />
+              <RoleBasedRoute>
+                <Bookinglist />
+              </RoleBasedRoute>
+            } />
             <Route exact path="/adminsignin" element={<AdminSignin />} />
           </Routes>
         </Router>
