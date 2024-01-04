@@ -1,0 +1,103 @@
+.customer-list-container {
+    margin-top: 100px; /* Adjust as needed to clear the navbar */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* Ensures items are stacked vertically */
+    align-items: center; /* Center align the children */
+  }
+  
+  .customer-list-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the title spans the full width */
+    font-size: 2rem; /* Increase font size for better visibility */
+    font-weight: bold;
+  }
+  
+  .customer-list-table {
+    width: 80%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    font-size: 1.5rem; /* Increase font size for better visibility */
+  }
+  
+  .customer-list-table th,
+  .customer-list-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .customer-list-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-field {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .save-btn, .cancel-btn, .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+  }
+  
+  .edit-btn {
+    background-color: #17a2b8; /* Light blue */
+    color: white;
+    width: 80px;
+    height: 30px;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+    width: 80px;
+    height: 30px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .customer-list-container {
+      margin-top: 150px; /* More space for smaller screens */
+      padding: 10px;
+    }
+  
+    .customer-list-table {
+      font-size: 14px;
+    }
+  
+    .action-buttons button {
+      padding: 5px 8px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .customer-list-table {
+      width: 100%; /* Table takes full width on small screens */
+    }
+  }  

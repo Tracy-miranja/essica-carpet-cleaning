@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchCustomers } from '../../store/customerSlice';
-import './signin.css';
+import "./signin.css";
 
 const SignIn = ({ onLoginStatusChange }) => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
@@ -30,7 +30,8 @@ const SignIn = ({ onLoginStatusChange }) => {
       localStorage.setItem('userId', user._id); // Store user ID
       localStorage.setItem('userRole', user.role); // Store user role
 
-      navigate('/Booking');
+      // Navigate based on user role
+      user.role === 'admin' ? navigate('/Dashboard') : navigate('/Booking');
       // Force reload the page
       window.location.reload();
       onLoginStatusChange();
@@ -50,7 +51,7 @@ const SignIn = ({ onLoginStatusChange }) => {
       <div className="signin-banner">
         <div className='signin'>
           <div className='signin-content'>
-            <h1>Sign in</h1>
+            <h1>Admin Sign in Page</h1>
           </div>
         </div>
       </div>
