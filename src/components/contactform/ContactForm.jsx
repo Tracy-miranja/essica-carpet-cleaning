@@ -10,7 +10,7 @@ const ContactForm = () => {
   return (
     <div className='cintactsec2'>
         <h3>Send us a message</h3>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,<br /> luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
       <Row>
       
         <Col md={6}>

@@ -18,11 +18,11 @@ const Contact = () => {
       <div className="contact-us">
         <div className='contact'>
           <p>Contact Us</p>
-          <h1>Have Anything To Ask ? <br />We are Always Ready</h1>
-          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          <h3>Have Anything To Ask ? We are Always Ready</h3>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
 </h6>
 <div className="contact-info">
-      <div className="row" style={{marginBottom:"8px"}}>
+      <div className="row" style={{marginBottom:"15px"}}>
         <div className="col-auto" style={{borderRadius:"50%", backgroundColor:"black", height:"32px", color:"white", fontSize:"18px"}}>
           <FiPhone />
         </div>
@@ -30,7 +30,7 @@ const Contact = () => {
           <h5>Phone: +254-788-413-877</h5>
         </div>
       </div>
-      <div className="row" style={{marginBottom:"8px"}}>
+      <div className="row" style={{marginBottom:"15px"}}>
         <div className="col-auto" style={{borderRadius:"50%", backgroundColor:"black", height:"32px", textAlign:"center", color:"white", fontSize:"18px"}}>
           <FiMail />
         </div>
@@ -38,7 +38,7 @@ const Contact = () => {
           <h5>Email:essicacarpets@gmail.com</h5>
         </div>
       </div>
-      <div className="row" style={{marginBottom:"8px"}}>
+      <div className="row" style={{marginBottom:"15px"}}>
         <div className="col-auto" style={{borderRadius:"50%", backgroundColor:"black", height:"32px", textAlign:"center", color:"white", fontSize:"18px"}}>
           <FiMapPin />
         </div>

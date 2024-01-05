@@ -1,7 +1,7 @@
 // import React from 'react'
 import '../footer/footer.css'
 import { FaPhone, FaEnvelope, FaMapMarker } from 'react-icons/fa';
-import logo from "../footer/logo.png"
+import logo from "../footer/logo2.png"
 
 function Footer() {
   return (

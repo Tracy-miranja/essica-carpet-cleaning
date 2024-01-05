@@ -1,7 +1,7 @@
 .footer{
     background-image: url(../Home/carpetstain.jpg);
     background-color: #0C8EE7;
-    height: 60vh;
+    height: fit-content !important;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     margin-top: 0;
@@ -12,23 +12,24 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #023161, #046eb4); 
-    height: 60vh;
-    padding: 60px;
+    height: fit-content !important;
+    padding: 10px;
+    padding-top: 30px;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     opacity: 0.9;
   }
 
   .footer-inside{
-    height: 50vh;
+    height: fit-content !important;
     width: 100%;
     background: linear-gradient(to bottom, #011224, #02548a); 
     border-radius: 50px;
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 10px;
     color: #fff;
-    gap: 89px;
+    /* gap: 89px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     justify-content: space-around;
     align-items: center;
@@ -56,10 +57,10 @@
   @media (max-width: 768px) {
     .footer-inside {
       flex-direction: column;
-      height: 130vh;
+      height: fit-content !important;
       text-align: center;
-      gap: 1px;
-      width: 80%;
+      gap: 30px;
+      /* width: 90%; */
      }
 
      .footer-inside a{
@@ -67,7 +68,7 @@
      }
 
      .footer1 {
-      height: 170vh;
+      /* height: 170vh; */
       padding: 20px;
      display: flex;
      flex-direction: column;
@@ -75,9 +76,9 @@
       align-items: center;
      }
 
-     .footer{
+     /* .footer{
       height: 170vh;
-     }
+     } */
 
   }
 

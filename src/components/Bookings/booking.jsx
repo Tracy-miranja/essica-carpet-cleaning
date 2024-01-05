@@ -11,6 +11,7 @@ const Booking = () => {
   const dispatch = useDispatch();
   const [bookingData, setBookingData] = useState({
     customer_ID: userId,
+    phoneNumber:'',
     apartment: '',
     houseNumber: '',
     carpetSize: '',
@@ -36,6 +37,7 @@ const Booking = () => {
       setBookingSuccess(true);
       setBookingData({
         customer_ID: userId,
+        phoneNumber:'',
         apartment: '',
         houseNumber: '',
         carpetSize: '',

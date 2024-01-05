@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBookings, updateBooking, deleteBooking } from '../../store/bookingSlice';
 import "../Admin/bookingslist.css";
@@ -8,7 +8,7 @@ const BookingsList = () => {
     const bookings = useSelector(state => state.booking.bookings);
     const [editBookingId, setEditBookingId] = useState(null);
     const [editedBooking, setEditedBooking] = useState({});
-console.log(bookings[0].customer_ID.phoneNumber)
+console.log(bookings[0].phoneNumber)
     useEffect(() => {
         dispatch(fetchBookings());
     }, [dispatch]);
@@ -47,7 +47,6 @@ console.log(bookings[0].customer_ID.phoneNumber)
                         <th>Phone Number</th>
                         <th>Collection Time</th>
                         <th>Status</th>
-                        
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -55,12 +54,12 @@ console.log(bookings[0].customer_ID.phoneNumber)
                     {sortedBookings.map(booking => (
                         <tr key={booking._id}>
                             {editBookingId === booking._id ? (
-                                <>
-                                    <td><input type="text" name="name" value={editedBooking.customer_ID.name} disabled /></td>
-                                    <td><input type="email" name="email" value={editedBooking.customer_ID.email} disabled /></td>
+                                <> 
+                                    <td><input type="text" name="name" value={editedBooking._id.name} disabled /></td>
+                                    <td><input type="email" name="email" value={editedBooking.email} disabled /></td>
                                     <td><input type="text" name="carpetSize" value={editedBooking.carpetSize} onChange={handleChange} /></td>
                                     <td><input type="text" name="location" value={editedBooking.location} onChange={handleChange} /></td>
-                                    <td><input type="text" name="phonenumber" value={editedBooking.customer_ID.phoneNumber} disabled/></td>
+                                    <td><input type="text" name="phonenumber" value={editedBooking.phoneNumber} disabled/></td>
                                     <td><input type="datetime-local" name="collectionTime" value={editedBooking.collectionTime} onChange={handleChange} /></td>
                                     
                                     <td>
@@ -79,11 +78,11 @@ console.log(bookings[0].customer_ID.phoneNumber)
                                 </>
                             ) : (
                                 <>
-                                    <td>{booking.customer_ID.name}</td>
-                                    <td>{booking.customer_ID.email}</td>
+                                    <td>{booking.name}</td>
+                                    <td>{booking.email}</td>
                                     <td>{booking.carpetSize}</td>
                                     <td>{booking.location}</td>
-                                    <td>{booking.customer_ID.phoneNumber}</td>
+                                    <td>{booking.phoneNumber}</td>
                                     <td>{new Date(booking.collectionTime).toLocaleString()}</td>
                                     
                                     <td

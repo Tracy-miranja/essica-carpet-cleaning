@@ -10,7 +10,6 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Check user role and redirect if not admin
     const userRole = localStorage.getItem('userRole');
     if (userRole !== 'admin') {
       navigate('/adminsignin');
@@ -19,7 +18,6 @@ const Dashboard = () => {
     dispatch(fetchBookings());
   }, [dispatch, navigate]);
 
-  // Sorting logic for bookings
   const sortedBookings = [...bookings].sort((a, b) => {
     const dateA = new Date(a.booking_date), timeA = a.booking_time;
     const dateB = new Date(b.booking_date), timeB = b.booking_time;
@@ -33,7 +31,9 @@ const Dashboard = () => {
     <thead className="dashboard-table-head">
       <tr className="dashboard-table-row">
         <th className="dashboard-header">Customer Name</th>
+        <th className="dashboard-header">Phone Number</th>
         <th className="dashboard-header">Location</th>
+        <th className="dashboard-header">Carpet Size</th>
         <th className="dashboard-header">Date</th>
         <th className="dashboard-header">Time</th>
         <th className="dashboard-header">Status</th>
@@ -43,7 +43,9 @@ const Dashboard = () => {
       {sortedBookings.map(booking => (
         <tr key={booking._id} className="dashboard-table-row">
           <td className="dashboard-data">{booking.customer_ID.name}</td>
+          <td className="dashboard-data">{booking.customer_ID.phoneNumber}</td>
           <td className="dashboard-data">{booking.location}</td>
+          <td className="dashboard-data">{booking.carpetSize}</td>
           <td className="dashboard-data">{new Date(booking.booking_date).toLocaleDateString()}</td>
           <td className="dashboard-data">{booking.booking_time}</td>
           <td
