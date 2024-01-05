@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCustomers, updateCustomer, deleteCustomer } from '../../store/customerSlice';
 import "../Admin/customerslist.css";

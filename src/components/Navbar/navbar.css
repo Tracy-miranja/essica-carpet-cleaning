@@ -101,18 +101,10 @@ li {
 .booking-button a{
    color: #fff!important;
 }
-.booking-button{
-   text-align: center;
-   border-radius: 25px;
-   background-color: rgb(255, 17, 17);
-  
-   font-weight: bold;
-   font-size: 15px;
-   border:rgb(255, 17, 17);
-   height: 5vh;
-   width: 200px;
-   padding-bottom: 30px;
- }
+
+.booking-button a:hover{
+   color: #050505!important;
+}
 
  .booking-button{
    background-color: #ff5700;
@@ -122,12 +114,13 @@ li {
    padding-bottom: 5px;
    border-radius: 20px;
    color: #fff !important;
+   margin-top: 5px;
  }
 
  .booking-button:hover {
    transform: scale(1.1); /* Enlarge on hover */
    background-color: #f8f6f4;
-   color: black;
+   color: black !important;
    border: 2px solid black;
  }
  
