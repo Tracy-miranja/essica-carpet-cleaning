@@ -19,7 +19,7 @@ const Services=() =>{
         Back To Life</h5>
         </div>
         <div className="services-sectionB">
-          <div className="services-content" style={{gap: '20', display:"flex", flexDirection:"column", marginLeft:"20px"}}>
+          <div className="services-content">
             <div className="servicelist">
               <h4>OUR SERVICES LIST </h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -32,7 +32,7 @@ const Services=() =>{
             </div>
             <div className="servicelist2"></div>
           </div>
-          <div className="services-content">
+          <div className="services-content2">
             <h4>Our Carpet Cleaning Process</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
