@@ -127,36 +127,36 @@ const Booking = () => {
                   <table className="price-table">
                     <thead style={{ backgroundColor: "#F0520B" }}>
                       <tr style={{ backgroundColor: "#F0520B" }}>
-                        <th style={{ backgroundColor: "#F0520B" }}>Size ft</th>
-                        <th style={{ backgroundColor: "#F0520B" }}>Size m</th>
-                        <th style={{ backgroundColor: "#F0520B" }}>Price Ksh</th>
+                        <th style={{ backgroundColor: "#F0520B" }}>Size (ft)</th>
+                        <th style={{ backgroundColor: "#F0520B" }}>Size (m)</th>
+                        <th style={{ backgroundColor: "#F0520B" }}>Price (Ksh)</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td style={{ border: "1px solid black", padding: "5px" }}>5 by 8</td>
                         <td style={{ border: "1px solid black", padding: "5px" }}>1.5 by 2</td>
-                        <td style={{ border: "1px solid black", padding: "5px" }}>@1,260</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@1,200</td>
                       </tr>
                       <tr>
                         <td style={{ border: "1px solid black", padding: "5px" }}>6 by 10</td>
                         <td style={{ border: "1px solid black", padding: "5px" }}>2 by 3</td>
-                        <td style={{ border: "1px solid black", padding: "5px" }}>@1,890</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@1,800</td>
                       </tr>
                       <tr>
                         <td style={{ border: "1px solid black", padding: "5px" }}>7 by 10</td>
                         <td style={{ border: "1px solid black", padding: "5px" }}>2.1 by 3</td>
-                        <td style={{ border: "1px solid black", padding: "5px" }}>@2,160</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@2,100</td>
                       </tr>
                       <tr>
                         <td style={{ border: "1px solid black", padding: "5px" }}>8 by 11</td>
                         <td style={{ border: "1px solid black", padding: "5px" }}>2.4 by 3.3</td>
-                        <td style={{ border: "1px solid black", padding: "5px" }}>@2,690</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@2,640</td>
                       </tr>
                       <tr>
                         <td style={{ border: "1px solid black", padding: "5px" }}>9 by 12</td>
                         <td style={{ border: "1px solid black", padding: "5px" }}>2.7 by 3.6</td>
-                        <td style={{ border: "1px solid black", padding: "5px" }}>@3,290</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@3,240</td>
                       </tr>
                       <tr>
                         <td style={{ border: "1px solid black", padding: "5px" }}>Extra Large</td>

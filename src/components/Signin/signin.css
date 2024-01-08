@@ -47,6 +47,12 @@
     justify-content: start; /* Align items to start from top */
 }
 
+.signin-banner{
+    background-color: #C2C8E5;
+    width: 50%;
+    height: 100vh;
+}
+
 
 form {
     display: flex;

@@ -157,53 +157,48 @@ when an unknown printer took a galley of type and
     </div>
     <div className="carpet-price">
       <div className="price">
-      <table>
-        <thead style={{background:'#F0520B'}}>
-          <tr>
-            <th style={{width:'40%',height:'40px'}}>Size (ft)</th>
-            <th style={{width:'40%'}}>Size (m)</th>
-            <th style={{width:'40%'}}>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
-            <td>5x8</td>
-            <td>1.52x2</td>
-            <td>Ksh.1200.00</td>
-          </tr>
-          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
-            <td>6x10</td>
-            <td>2x3</td>
-            <td>Ksh.1800.00</td>
-          </tr>
-          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
-            <td>7x10</td>
-            <td>2.1x3</td>
-            <td>Ksh.2100.00</td>
-          </tr>
-          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
-            <td>8x11</td>
-            <td>2.4x3.3</td>
-            <td>Ksh.2640.00</td>
-          </tr>
-          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
-            <td>9x12</td>
-            <td>2.7x3.6</td>
-            <td>Ksh.3240.00</td>
-          </tr>
-          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
-            <td>10x13</td>
-            <td>3x3.5</td>
-            <td>Ksh.3900.00</td>
-          </tr>
-          <tr style={{border:"2px solid #0e0d0d", height:"50px"}}>
-            <td>Extra Large</td>
-            <td>Beyond 9 by 12</td>
-            <td>30Ksh/ft</td>
-          </tr>
-          {/* Add more rows as needed */}
-        </tbody>
-      </table>
+      <p className="pricelist">PRICELIST</p>
+                  <table className="price-table">
+                    <thead style={{ backgroundColor: "#F0520B" }}>
+                      <tr style={{ backgroundColor: "#F0520B" }}>
+                        <th style={{ backgroundColor: "#F0520B" }}>Size (ft)</th>
+                        <th style={{ backgroundColor: "#F0520B" }}>Size (m)</th>
+                        <th style={{ backgroundColor: "#F0520B" }}>Price (Ksh)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>5 by 8</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>1.5 by 2</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@1,200</td>
+                      </tr>
+                      <tr>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>6 by 10</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>2 by 3</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@1,800</td>
+                      </tr>
+                      <tr>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>7 by 10</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>2.1 by 3</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@2,100</td>
+                      </tr>
+                      <tr>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>8 by 11</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>2.4 by 3.3</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@2,640</td>
+                      </tr>
+                      <tr>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>9 by 12</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>2.7 by 3.6</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@3,240</td>
+                      </tr>
+                      <tr>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>Extra Large</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>beyond 9 by 12</td>
+                        <td style={{ border: "1px solid black", padding: "5px" }}>@30 Ksh/sqft</td>
+                      </tr>
+                    </tbody>
+                  </table>
     
       </div>
       <div className="price1">
