@@ -21,28 +21,31 @@ const Booking = () => {
   const [bookingSuccess, setBookingSuccess] = useState(false);
   const [error, setError] = useState('');
 
-   const handleBooking = async (e) => {
+  const handleBooking = async (e) => {
     e.preventDefault();
-    // Check if all fields are filled
-    if (Object.values(bookingData).some(field => field.trim() === '')) {
+  
+    // Check if any field, except phoneNumber, is empty
+    const isAnyFieldEmpty = Object.keys(bookingData).some(
+      (field) => field !== 'phoneNumber' && bookingData[field].trim() === ''
+    );
+  
+    if (isAnyFieldEmpty) {
       setError('Please fill in all fields.');
       setTimeout(() => setError(''), 3000);
       return;
     }
-
-
   
-     try {
+    try {
       await dispatch(addBooking(bookingData));
       setBookingSuccess(true);
       setBookingData({
         customer_ID: userId,
-        phoneNumber:'',
+        phoneNumber: '',
         apartment: '',
         houseNumber: '',
         carpetSize: '',
         collectionTime: '',
-        location: ''
+        location: '',
       });
     } catch (error) {
       console.error('Booking failed:', error);
@@ -50,6 +53,7 @@ const Booking = () => {
       setTimeout(() => setError(''), 3000);
     }
   };
+  
 
   const handleInputChange = (e) => {
     setBookingData({ ...bookingData, [e.target.name]: e.target.value });
@@ -93,24 +97,24 @@ const Booking = () => {
                     id="register-form">
                 <div className="form-group">
                 <label htmlFor="apartment"><i className="zmdi zmdi-home material-icons-name"></i></label>
-                  <input type="text" name="apartment" value={bookingData.apartment} onChange={handleInputChange} placeholder="&#127968; Apartment Name" />
+                  <input type="text" id="apartment" name="apartment" value={bookingData.apartment} onChange={handleInputChange} placeholder="&#127968; Apartment Name" />
                 </div>
                 <div className="form-group">
                 <label htmlFor="houseNumber"><i className="zmdi zmdi-key material-icons-name"></i></label>
-                  <input type="text" name="houseNumber" value={bookingData.houseNumber} onChange={handleInputChange} placeholder="🔑 House Number" />
+                  <input type="text" id='houseNumber' name="houseNumber" value={bookingData.houseNumber} onChange={handleInputChange} placeholder="🔑 House Number" />
                 </div>
                 
                 <div className="form-group">
                   <label htmlFor="location"></label>
-                  <input type="text" name="location" value={bookingData.location} onChange={handleInputChange} placeholder="🧭 Location" />
+                  <input type="text" id="location" name="location" value={bookingData.location} onChange={handleInputChange} placeholder="🧭 Location" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="carpetSize"></label>
-                  <input type="text" name="carpetSize" value={bookingData.carpetSize} onChange={handleInputChange} placeholder="Carpet Size" />
+                  <input type="text" id="carpetSize" name="carpetSize" value={bookingData.carpetSize} onChange={handleInputChange} placeholder="Carpet Size" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="collectionTime"></label>
-                  <input type="datetime-local" name="collectionTime" value={bookingData.collectionTime} onChange={handleInputChange} />
+                  <input type="datetime-local" id= "collectionTime" name="collectionTime" value={bookingData.collectionTime} onChange={handleInputChange} />
                 </div>
                 
                 <div className="form-group form-button">

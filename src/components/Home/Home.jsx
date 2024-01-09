@@ -47,11 +47,7 @@ const Home = () => {
                 CARPET CLEANING
                 </h1>
             <h6>
-            Lorem Ipsum is simply dummy text of the printing 
-and typesetting industry. Lorem Ipsum has been the
- industry standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and
- scrambled it to make a type specimen book.
+            When guests enter through your doors, let us help you give a good impression
             </h6>
             <Button variant="secondary" style={{background:'#FF1111'}}>
               Learn More<Badge bg="secondary"></Badge>
@@ -69,21 +65,19 @@ when an unknown printer took a galley of type and
       <div className="carpet-clean">
       <h3 style={{fontWeight:'700', fontSize:'22px'}}>  Customized <br />
       Cleaning Plans</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing 
-      and typesetting industr 
+        <p>Tailored Cleaning Plans for carpets, ensuring personalized solutions for a spotless and refreshed appearance
       </p>
       </div>
       <div className="carpet-cleanA">
       <h3 style={{fontWeight:'700', fontSize:'22px'}}><span style={{color:"#F0520B", fontWeight:'700'}}>Online</span> Booking <br /> Management</h3>
         <p>
-        Lorem Ipsum is simply dummy text of the printing 
+        Effortless online booking management for convenient scheduling of our top-notch carpet cleaning services 
       </p>
       </div>
       <div className="carpet-cleanB">
         <h3 style={{fontWeight:'700', fontSize:'22px'}}>Eco-Friendly <br/>Cleaning</h3>
         <p>
-        Lorem Ipsum is simply dummy text of 
-      the printing.
+        Eco-friendly cleaning solutions, promoting a sustainable approach for a healthier and greener carpet cleaning experience
        </p>
        </div>
     </div>
@@ -94,9 +88,8 @@ when an unknown printer took a galley of type and
         <h5 style={{color:'#ffff', fontWeight:'300'}}>WHY CHOOSE US</h5>
           <h1 style={{color:'#fff', fontWeight:'800'}}>The Clean Team You <br />Can Trust</h1>
         </div>
-        <div>Lorem Ipsum is simply dummy text of the printing and typesetting
-       industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        <div>Choose us as your preferred carpet cleaning company for unparalleled expertise, cutting-edge techniques, and a commitment to delivering exceptional results.
+           Our dedicated team ensures a thorough and professional service, leaving your carpets spotless and your satisfaction guaranteed
       </div>
       </div>
       <div>
@@ -204,16 +197,8 @@ when an unknown printer took a galley of type and
       <div className="price1">
         <div>
         <h4 style={{color:"#04568E", fontWeight:"700"}}>START WITH A FFORDABLE PRICING</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing 
-and typesetting industry. Lorem Ipsum has been the
- industry standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and
- scrambled it to make a type specimen book.
- Lorem Ipsum is simply dummy text of the printing 
-and typesetting industry. Lorem Ipsum has been the
- industry standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and
- scrambled it to make a type specimen book.
+        <p>At our carpet cleaning company, we pride ourselves on offering not only top-notch services but also affordable pricing tailored to meet your budget. We understand the importance of providing cost-effective solutions without compromising on quality. With transparent and competitive pricing structures, we ensure that our customers receive the best value for their investment. Our commitment to affordability extends beyond just the initial cost – we aim to deliver exceptional results that make every penny spent on our services truly worthwhile. 
+          Trust us for carpet cleaning that not only refreshes your space but also does so at a price that puts a smile on your face
  
  </p>
  </div>
@@ -234,10 +219,9 @@ when an unknown printer took a galley of type and
           <a href="/">
   <h4>How To Create An Organized Cleaning Schedule That Works</h4>
 </a>
-            <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, </p></div>
+            <p>Crafting an effective and organized cleaning schedule involves prioritizing tasks, 
+              setting realistic goals, and maintaining consistency to ensure a 
+              consistently tidy and welcoming space </p></div>
         </div>
         <div className="blog-article">
         <div className="blog-image"></div>
@@ -245,10 +229,8 @@ ullamcorper mattis, </p></div>
           <a href="/">
             <h4>Green Cleaning, Eco-Friendly Solutions For A Healthier Home</h4>
             </a>
-            <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, </p>
+            <p>Embrace a healthier home with our green cleaning approach, offering eco-friendly solutions that prioritize the well-being of your living environment.
+               Our commitment to sustainability ensures a thorough and safe cleaning experience for you and your loved ones </p>
 </div>
         </div>
         <div className="blog-article">
@@ -257,10 +239,8 @@ ullamcorper mattis, </p>
           <a href="/">
             <h4>Removing Stubborn Stains, A Comprehensive Guide</h4>
             </a>
-            <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, </p></div>
+            <p>Dive into our comprehensive guide on removing stubborn stains, where we share expert tips and effective techniques to tackle even the most challenging blemishes.
+               Trust us to provide you with the knowledge and tools needed for a spotless and refreshed living space </p></div>
         </div>
       </div>
     </>

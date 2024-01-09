@@ -57,7 +57,7 @@ body{
   .heading{
     color: #ffffff;
     transform: translateX(-100%); 
-        transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
   }
 
   .drop{
@@ -273,7 +273,7 @@ body{
     position: relative;
     width: 45%;
     height: 60vh;
-    background-color: #F0520B;
+    background-color: #F0520B !important;
     background-size: cover;
     background-image: url(./carpet-cleaner-full.jpg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add box shadow */
@@ -610,6 +610,12 @@ body{
       text-decoration: none !important;
       color: inherit; /* This will make sure the link inherits the color from its parent */
     }
+
+    .section-a {
+      height: fit-content;
+      margin-top: 30px;
+      padding: 140px;
+    }
   }
   
   @media only screen and (max-width: 576px) {
@@ -629,5 +635,15 @@ body{
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+    }
+
+    .content{
+      margin-top: 20px;
+    }
+
+    .section-a {
+      height: fit-content;
+      margin-top: 30px;
+      padding: 140px;
     }
   }

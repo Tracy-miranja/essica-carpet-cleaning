@@ -7,6 +7,7 @@
     border-radius: 10px; /* Optional: rounds the corners */
     overflow-x: auto; /* Ensures table is scrollable on smaller screens */
     font-size: 1.5rem; /* Increase font size for better visibility */
+    text-align: center;
   }
   
   .dashboard-title {
@@ -45,5 +46,12 @@
   
   .dashboard-table-row:hover {
     background-color: #ddd; /* Row hover effect */
+  }
+
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding-top: 150px;
+    }
+    
   }
   
