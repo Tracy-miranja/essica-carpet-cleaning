@@ -7,22 +7,28 @@
     font-family: Poppins;
     padding: 70px;
     padding-top: 10px; /* You might need to increase this value */
-    margin-top: 100px; /* Adjust this value to push the container below the navbar */
     z-index: 2;
-    height: auto;
+    height: fit-content !important;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     background-color: #EBEDF7;
     border-radius: 20px;
     box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    padding: 25px;
+}
+
+.signups{
+    width: 70%;
 }
 
 .signup-content {
@@ -43,12 +49,12 @@
     width: 100%; /* Full width of container */
 }
 .register-form{
-    padding-top: 10px; /* You might need to increase this value */
-    margin-top: 100px; /* Adjust this value to push the container below the navbar */
+    padding-top: 10px; 
+    margin-top: 20px; 
 }
 .form-title {
-    width: 100%; /* Full width */
-    text-align: center; /* Center the title */
+    width: 100%; 
+    text-align: center; 
 }
 
 .signup-form {
@@ -101,7 +107,7 @@
     width: 100%; /* Full width of its container */
     display: flex; /* Use flexbox for image */
     justify-content: center; /* Center the image horizontally */
-    height: 240px;
+    /* height: 240px; */
 }
 
 .signup-image img {
@@ -203,7 +209,6 @@ input {
 
 .form-submit {
     display: inline-block;
-    /* background: #6dabe4; */
     color: #fff;
     border-bottom: none;
     width: auto;
@@ -236,15 +241,20 @@ input {
 
 @media (max-width: 768px) {
     .booking-container {
-        height: 350vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
 
     .container {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    .signup{
+        width: 90%;
     }
 
     .signup-content {
@@ -255,6 +265,7 @@ input {
 
     .signup-form{
         width: 100%;
+        margin-bottom: 0px;
     }
     .signup-image{
         width: 100%;
@@ -292,20 +303,41 @@ input {
 
 }
 
-/* Adjust styles for responsive design as needed */
 @media (max-width: 768px) {
     .signup-image {
-        width: 100%; /* Full width on smaller screens */
-        margin-left: 0; /* No margin on smaller screens */
+        width: 100%; 
+        margin-left: 0; 
     }
 
     .form-group label {
-        width: 30%; /* Increase label width on smaller screens */
+        width: 30%; 
+    }
+
+    div.app{
+        padding: 0px;
     }
 }
 
-/* Add other responsive adjustments as needed */
+@media (max-width: 570px) {
+
+.signups{
+    width: 100%;
+}
+
+.booking-container{
+    padding: 20px;
+}
+
+.register-form {
+    margin-top: 20px;
+}
+
+.signup-form {
+    height: fit-content !important;
+    padding-bottom: 0px;
+}
 
 
+}
 
 

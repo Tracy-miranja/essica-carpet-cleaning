@@ -29,7 +29,7 @@
 
 }
 
-.signin-container {
+.signin2-container {
     font-size: 13px;
     line-height: 1.8;
     color: #222;
@@ -39,12 +39,14 @@
     padding: 30px; /* Uniform padding */
     padding-top: 100px; /* Additional padding at the top */
     z-index: 2;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
-    justify-content: start; /* Align items to start from top */
+    justify-content: center; /* Align items to start from top */
+    align-content: center;
+    padding: 0px 30px 30px;
 }
 
 .signin-banner{
@@ -65,13 +67,13 @@ form {
 }
 
 .signin_input {
-    width: 300px; /* Adjust width as needed */
+    /* width: 300px; Adjust width as needed */
     padding: 10px;
     margin-bottom: 30px; /* Space between inputs */
     margin-top: -10px; /* Move inputs closer to the top */
     border-radius: 4px;
     border: 1px solid #ccc;
-    height: 60px; /* Fixed height for inputs */
+    height: 30px; /* Fixed height for inputs */
     font-size: 20px; /* Increased font size for input text */
 
 }
@@ -84,9 +86,8 @@ form {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px; /* Adjust font size as needed */
-    width: 300px; /* Adjust width as needed */
     height: 60px;
-    font-size: 30px; /* Increased font size for input text */
+    font-size: 16px; /* Increased font size for input text */
     line-height: 30px; /* Center the text vertically */
 }
 
@@ -99,5 +100,13 @@ button:hover {
     color: red;
     font-weight: bold;
     font-size: 18px; /* Adjust the size as needed */
+  }
+
+  .signin-section{
+    width: fit-content;
+    background-color: #fff;
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
   }
   

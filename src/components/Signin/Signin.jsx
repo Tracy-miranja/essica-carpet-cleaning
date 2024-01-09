@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { fetchCustomers } from '../../store/customerSlice';
 import './signin.css';
 
+// eslint-disable-next-line react/prop-types
 const SignIn = ({ onLoginStatusChange }) => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
   const [loginError, setLoginError] = useState('');
@@ -46,14 +47,9 @@ const SignIn = ({ onLoginStatusChange }) => {
   };
 
   return (
-    <div className="signin-container">
-      <div className="signin-banner">
-        <div className='signin'>
-          <div className='signin-content'>
-            <h1>Sign in</h1>
-          </div>
-        </div>
-      </div>
+    <div className="signin2-container">
+      
+      <div className="signin-section">
       <form onSubmit={handleSubmit}>
         <input  className="signin_input"
           name="username"
@@ -72,6 +68,7 @@ const SignIn = ({ onLoginStatusChange }) => {
         {loginError && <p className="error-message">{loginError}</p>}
         <button  className="signin_btn" type="submit">Sign in</button>
       </form>
+    </div>
     </div>
   );
 };

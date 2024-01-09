@@ -24,10 +24,12 @@
     margin-top: 50px; /* Additional spacing above the buttons */
     background-color: #f8f3f3;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 50%;
+    width: 40%;
     margin-top: 10%;
     height: fit-content;
     padding: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     border-radius: 20px;
 }
 
