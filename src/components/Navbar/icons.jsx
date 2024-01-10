@@ -6,8 +6,8 @@ const SocialIcons = () => {
   return (
     <div className='header'>
         <div>
-        <a style={{color:"white", fontSize:"16px"}} href="#" className="mr-2"><span className="fa fa-phone mr-1"></span> +254788 413 877</a>
-        <a style={{color:"white", marginLeft:"10px", fontSize:"16px"}} href="#"><span className="fa fa-paper-plane mr-1"></span> essicacarpet@gmail.com</a>
+        <a style={{color:"white", fontSize:"13px"}} href="#" className="mr-2"><span className="fa fa-phone mr-1"></span> +254788 413 877</a>
+        <a style={{color:"white", marginLeft:"10px", fontSize:"13px"}} href="#"><span className="fa fa-paper-plane mr-1"></span> essicacarpet@gmail.com</a>
         
         </div>
         
