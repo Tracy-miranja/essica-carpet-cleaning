@@ -21,46 +21,47 @@ const Services=() =>{
         <div className="services-sectionB">
           <div className="services-content">
             <div className="servicelist">
-              <h4>OUR SERVICES LIST </h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a 
-                type specimen book. It has survived not only five centuries, but also the
-                 leap into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+              <h3>OUR SERVICES LIST </h3>
+              <h5> ✔️ Home carpet cleaning</h5>
+              <h5> ✔️ Car carpet cleaning</h5>
+              <h5> ✔️ Office carpet cleaning</h5>
             </div>
             <div className="servicelist2"></div>
           </div>
           <div className="services-content2">
             <h4>Our Carpet Cleaning Process</h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-               Lorem Ipsum has been the industrystandard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, but also the leap into 
-                electronic typesetting, remaining essentially unchanged. It was popularised in 
-                the 1960s with the release of Letraset sheets containing 
-              Lorem Ipsum passages, and more recently with desktop publishing software like 
-              Aldus PageMaker including versions of Lorem Ipsum
+            <p><span style={{color:"blue", fontWeight:"bold"}}>Assessment: </span>
+             Our thorough assessment process is the cornerstone of our service. 
+            We meticulously examine the condition of your carpets, paying close attention to any stains, 
+            signs of wear, or specific cleaning requirements unique to your space. This detailed analysis allows us to tailor our cleaning approach, ensuring a precise and effective treatment that addresses your carpets' individual needs. Our commitment to understanding 
+            the nuances of your carpets sets the foundation for a comprehensive and satisfying cleaning experience
               </p>
 
-              <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-               Lorem Ipsum has been the industrystandard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, but also the leap into 
-                electronic typesetting, remaining essentially unchanged. It was popularised in 
-                the 1960s with the release of Letraset sheets containing 
-              Lorem Ipsum passages, and more recently with desktop publishing software like 
-              Aldus PageMaker including versions of Lorem Ipsum
+              <p><span style={{color:"blue", fontWeight:"bold"}}>Pre-Treatment:</span>
+               Stubborn stains and high-traffic areas 
+are pre-treated to ensure effective cleaning.
               </p>
 
-              <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-               Lorem Ipsum has been the industrystandard dummy text ever since the 1500s,
-                when an unknown printer 
+              <p><span style={{color:"blue", fontWeight:"bold"}}>Cleaning:</span>
+               We use state-of-the-art equipment to deep 
+clean your carpets, removing dirt, allergens, and odors. 
               </p>
+              <p> <span style={{color:"blue", fontWeight:"bold"}}>Drying:</span> Our quick-drying methods ensure your carpets 
+are ready for use as soon as possible.
+</p>
+<p><span style={{color:"blue", fontWeight:"bold"}}>Final Inspection:</span> We conduct a final inspection to 
+ensure your satisfaction with our service.</p>
+N/B
+<h4>► No Harsh Chemicals!
+</h4>
+<h4>
+► No Damaging Scrubbers!
+</h4>
+<h4>
+► No Sticky Residues!
+</h4>
+<h4>
+► Safe for Children & Pets!</h4>
           </div>
         </div>
     </div>

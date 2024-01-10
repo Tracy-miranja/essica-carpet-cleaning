@@ -19,7 +19,7 @@ const Contact = () => {
         <div className='contact'>
           <p>Contact Us</p>
           <h3>Have Anything To Ask ? We are Always Ready</h3>
-          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          <h6>If you’re ready to join our growing list of happy Essica Carpet cleaners, simply give us a call to book your appointment. For spotless results, call the cleaning business with a spotless reputation!
 </h6>
 <div className="contact-info">
       <div className="row" style={{marginBottom:"15px"}}>

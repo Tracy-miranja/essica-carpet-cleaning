@@ -12,8 +12,8 @@ const SocialIcons = () => {
         </div>
         
         <div>
-        <a href="#"><FontAwesomeIcon icon={faFacebook} size="2.5x" style={{ marginLeft:"1.5rem",color:"white", fontSize:"16px"}} /></a>
-        <a href="#"><FontAwesomeIcon icon={faInstagram} size="1.5x" style={{  marginLeft:"1.5rem",color:"white", fontSize:"16px" }} /></a>
+        <a href="https://web.facebook.com/profile.php?id=61553580123166"><FontAwesomeIcon icon={faFacebook} size="2.5x" style={{ marginLeft:"1.5rem",color:"white", fontSize:"16px"}} /></a>
+        <a href="https://www.instagram.com/essica_carpet_cleaning?igsh=MWR5ZDQzMzlvenEyeg=="><FontAwesomeIcon icon={faInstagram} size="1.5x" style={{  marginLeft:"1.5rem",color:"white", fontSize:"16px" }} /></a>
         <a href="#"><FontAwesomeIcon icon={faTwitter} size="1.5x" style={{ marginLeft:"1.5rem", color:"white", fontSize:"16px" }} /></a>
         
         </div>

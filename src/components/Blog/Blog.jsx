@@ -23,10 +23,9 @@ const Blog=() =>{
           <a href="/">
   <h4>How To Create An Organized Cleaning Schedule That Works</h4>
 </a>
-            <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, </p></div>
+            <p>Crafting an effective and organized cleaning schedule involves prioritizing tasks, 
+              setting realistic goals, and maintaining consistency to ensure a 
+              consistently tidy and welcoming space, </p></div>
         </div>
         <div className="blog-article">
         <div className="blog-image"></div>
@@ -34,10 +33,8 @@ ullamcorper mattis, </p></div>
           <a href="/">
             <h4>Green Cleaning, Eco-Friendly Solutions For A Healthier Home</h4>
             </a>
-            <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, </p>
+            <p>Embrace a healthier home with our green cleaning approach, offering eco-friendly solutions that prioritize the well-being of your living environment.
+                </p>
 </div>
         </div>
         <div className="blog-article">
@@ -46,10 +43,8 @@ ullamcorper mattis, </p>
           <a href="/">
             <h4>Removing Stubborn Stains, A Comprehensive Guide</h4>
             </a>
-            <p>Lorem ipsum dolor sit amet,
- consectetur adipiscing elit. 
-Ut elit tellus, luctus nec 
-ullamcorper mattis, </p></div>
+            <p>Dive into our comprehensive guide on removing stubborn stains, where we share expert tips and effective techniques to tackle even the most challenging blemishes.
+               </p></div>
         </div>
       </div>
     </div>

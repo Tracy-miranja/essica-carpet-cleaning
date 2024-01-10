@@ -10,7 +10,8 @@ const ContactForm = () => {
   return (
     <div className='cintactsec2'>
         <h3>Send us a message</h3>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
+        <h6>Have a question or specific cleaning request? Feel free to send us a message, and our dedicated team will promptly assist you. Your satisfaction is our priority, and we 
+          look forward to addressing your inquiries and providing personalized solutions for your carpet cleaning needs</h6>
       <Row>
       
         <Col md={6}>
