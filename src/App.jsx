@@ -13,7 +13,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/footer/footer';
 import Navbar from './components/Navbar/navbar';
 import Options from './components/Registration/options';
-import SignIn from './components/Signin/signin';
+import SignIn from './components/Signin/Signin';
 import SignUp from './components/Signup/signup';
 import Booking from './components/Bookings/booking';
 import Dashboard from './components/Admin/dashboard';
@@ -50,7 +50,7 @@ const App = () => {
             <Route exact path="/Blog" element={<Blog />} />
             <Route exact path="/Contact" element={<Contact />} />
             <Route exact path="/options" element={<Options />} />
-            <Route exact path="/signin" element={<SignIn onLoginStatusChange={onLoginStatusChange} />} />
+            <Route exact path="/Signin" element={<SignIn onLoginStatusChange={onLoginStatusChange} />} />
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/booking" element={<Booking />} />
             <Route exact path="/Footer" element={<Footer />} />
