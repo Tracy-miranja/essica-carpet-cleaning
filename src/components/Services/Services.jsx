@@ -33,7 +33,7 @@ const Services=() =>{
             <p><span style={{color:"blue", fontWeight:"bold"}}>Assessment: </span>
              Our thorough assessment process is the cornerstone of our service. 
             We meticulously examine the condition of your carpets, paying close attention to any stains, 
-            signs of wear, or specific cleaning requirements unique to your space. This detailed analysis allows us to tailor our cleaning approach, ensuring a precise and effective treatment that addresses your carpets' individual needs. Our commitment to understanding 
+            signs of wear, or specific cleaning requirements unique to your space. This detailed analysis allows us to tailor our cleaning approach, ensuring a precise and effective treatment that addresses your carpets individual needs. Our commitment to understanding 
             the nuances of your carpets sets the foundation for a comprehensive and satisfying cleaning experience
               </p>
 
