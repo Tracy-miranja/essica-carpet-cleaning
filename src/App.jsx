@@ -10,13 +10,13 @@ import About from './components/About/About';
 import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import Footer from './components/footer/footer';
 import Navbar from './components/Navbar/navbar';
 import Options from './components/Registration/Options';
 import SignIn from './components/Signin/Signin';
 import SignUp from './components/Signup/Signup';
-import Booking from './components/Bookings/Booking';
-import Dashboard from './components/Admin/Dashboard';
+import Booking from './components/Bookings/booking';
+import Dashboard from './components/Admin/dashboard';
 import Customers from './components/Admin/customerslist';
 import Bookinglist from './components/Admin/bookingslist';
 import AdminSignin from './components/Admin/adminsignin';
@@ -53,6 +53,7 @@ const App = () => {
             <Route exact path="/signin" element={<SignIn onLoginStatusChange={onLoginStatusChange} />} />
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/booking" element={<Booking />} />
+            <Route exact path="/Footer" element={<Footer />} />
             <Route exact path="/dashboard" element={
               <RoleBasedRoute>
                 <Dashboard />
