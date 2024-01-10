@@ -1,4 +1,4 @@
-import './Booking.css';
+import './booking.css';
 import worker from "../Bookings/worker2.png";
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
