@@ -14,7 +14,7 @@ import Footer from './components/footer/footer';
 import { Navbar } from 'react-bootstrap';
 import Options from './components/Registration/options';
 import SignIn from './components/Signin/Signin';
-import SignUp from './components/Signup/Signup'
+import SignUp from './components/Signup/Signup';
 import Booking from './components/Bookings/booking';
 import Dashboard from './components/Admin/dashboard';
 import Customers from './components/Admin/customerslist';
