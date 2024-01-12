@@ -11,7 +11,7 @@ import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/footer/footer';
-import Navbar from './components/Navbar/Navbar';
+import { Navbar } from 'react-bootstrap';
 import Options from './components/Registration/options';
 import SignIn from './components/Signin/Signin';
 import SignUp from './components/Signup/Signup';
@@ -33,7 +33,7 @@ const App = () => {
 
   const hideNavbarOnBookingPage = () => {
     const currentPath = window.location.pathname;
-    return !(currentPath === '/Booking' || currentPath === '/signin');
+    return !(currentPath === '/booking' || currentPath === '/signin');
   };
 
   return (
