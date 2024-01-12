@@ -11,10 +11,10 @@ import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/footer/footer';
-import Navbar from './components/Navbar/navbar';
+import Navbar from './components/Navbar/Navbar';
 import Options from './components/Registration/options';
 import SignIn from './components/Signin/Signin';
-import SignUp from './components/Signup/signup';
+import SignUp from './components/Signup/Signup';
 import Booking from './components/Bookings/booking';
 import Dashboard from './components/Admin/dashboard';
 import Customers from './components/Admin/customerslist';
@@ -45,15 +45,15 @@ const App = () => {
         <Router>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/About" element={<About />} />
-            <Route exact path="/Services" element={<Services />} />
-            <Route exact path="/Blog" element={<Blog />} />
-            <Route exact path="/Contact" element={<Contact />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/services" element={<Services />} />
+            <Route exact path="/blog" element={<Blog />} />
+            <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/options" element={<Options />} />
             <Route exact path="/signin" element={<SignIn onLoginStatusChange={onLoginStatusChange} />} />
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/booking" element={<Booking />} />
-            <Route exact path="/Footer" element={<Footer />} />
+            <Route exact path="/footer" element={<Footer />} />
             <Route exact path="/dashboard" element={
               <RoleBasedRoute>
                 <Dashboard />

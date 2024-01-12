@@ -42,16 +42,16 @@ const Navbar = () => {
           {isAdmin ? (
             <>
               <li className="nav__item admin">
-                <a href="/Dashboard" className="nav__link"><i className="fa fa-tachometer-alt"></i> Dashboard</a>
+                <a href="/dashboard" className="nav__link"><i className="fa fa-tachometer-alt"></i> Dashboard</a>
               </li>
               <li className="nav__item admin">
-                <a href="/Customerslist" className="nav__link">Customers</a>
+                <a href="/customerslist" className="nav__link">Customers</a>
               </li>
               <li className="nav__item admin">
-                <a href="/Bookinglist" className="nav__link">Bookings</a>
+                <a href="/bookinglist" className="nav__link">Bookings</a>
               </li>
               <li className="nav__item admin signout" onClick={handleSignOut}>
-                <a href="/Options" className="nav__link">Signout</a>
+                <a href="/options" className="nav__link">Signout</a>
               </li>
             </>
           ) : (
@@ -60,19 +60,19 @@ const Navbar = () => {
                 <a href="/" className="nav__link">Home</a>
               </li>
               <li className="nav__item user">
-                <a href="/About" className="nav__link">About</a>
+                <a href="/about" className="nav__link">About</a>
               </li>
               <li className="nav__item user">
-                <a href="/Services" className="nav__link">Services</a>
+                <a href="/services" className="nav__link">Services</a>
               </li>
               <li className="nav__item user">
-                <a href="/Blog" className="nav__link">Blog</a>
+                <a href="/blog" className="nav__link">Blog</a>
               </li>
               <li className="nav__item user">
-                <a href="/Contact" className="nav__link">Contact</a>
+                <a href="/contact" className="nav__link">Contact</a>
               </li>
               <li className="nav__item booking-button user">
-                <a href="/Options" className="nav__link">Book Appointment</a>
+                <a href="/options" className="nav__link">Book Appointment</a>
               </li>
             </>
           )}
