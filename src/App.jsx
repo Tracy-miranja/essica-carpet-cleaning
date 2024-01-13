@@ -11,7 +11,6 @@ import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/footer/footer';
-import { Navbar } from 'react-bootstrap';
 import Options from './components/Registration/options';
 import SignIn from './components/Signin/Signin';
 import Signup from './components/Signup/signup';
@@ -20,6 +19,7 @@ import Dashboard from './components/Admin/dashboard';
 import Customers from './components/Admin/customerslist';
 import Bookinglist from './components/Admin/bookingslist';
 import AdminSignin from './components/Admin/adminsignin';
+import Navbar from './components/Navbar/navbar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
