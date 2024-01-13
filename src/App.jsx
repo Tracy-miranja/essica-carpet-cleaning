@@ -14,7 +14,7 @@ import Footer from './components/footer/footer';
 import { Navbar } from 'react-bootstrap';
 import Options from './components/Registration/options';
 import SignIn from './components/Signin/Signin';
-import SignUp from './components/Signup/Signup';
+import Signup from './components/Signup/signup';
 import Booking from './components/Bookings/booking';
 import Dashboard from './components/Admin/dashboard';
 import Customers from './components/Admin/customerslist';
@@ -51,7 +51,7 @@ const App = () => {
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/options" element={<Options />} />
             <Route exact path="/signin" element={<SignIn onLoginStatusChange={onLoginStatusChange} />} />
-            <Route exact path="/signup" element={<SignUp />} />
+            <Route exact path="/signup" element={<Signup />} />
             <Route exact path="/booking" element={<Booking />} />
             <Route exact path="/footer" element={<Footer />} />
             <Route exact path="/dashboard" element={
