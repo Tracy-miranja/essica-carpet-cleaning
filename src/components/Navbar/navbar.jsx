@@ -57,10 +57,10 @@ const Navbar = () => {
           ) : (
             <>
               <li className="nav__item user">
-                <a href="/" className="nav__link">Home</a>
+                <a href="/home" className="nav__link">Home</a>
               </li>
               <li className="nav__item user">
-                <a href="/about" className="nav__link">About</a>
+                <a href="/" className="nav__link">About</a>
               </li>
               <li className="nav__item user">
                 <a href="/services" className="nav__link">Services</a>
