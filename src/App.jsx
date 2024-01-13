@@ -41,7 +41,7 @@ const App = () => {
       <div>
         {hideNavbarOnBookingPage() && <Navbar navbarUpdate={navbarUpdate} />}
       </div>
-      <Navbar />
+      
       <div className='app'>
         <Router>
           <Routes>

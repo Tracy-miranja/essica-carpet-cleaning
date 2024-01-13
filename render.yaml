@@ -1,5 +1,0 @@
-services:
-  - type: web
-    name: my-vite-app
-    buildCommand: npm run build
-    publish: dist
