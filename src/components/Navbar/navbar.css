@@ -169,7 +169,7 @@ li {
        transition: 0.5s ease-in;
        scrollbar-3dlight-color: aqua;
        overflow-y: scroll;
-       background-color: rgba(3, 82, 185, 0.8);
+       background-color: rgba(13, 110, 238, 0.8);
    backdrop-filter: blur(2px); /* Initial backdrop filter, adjust as needed */
   
    margin-top: 0px;
