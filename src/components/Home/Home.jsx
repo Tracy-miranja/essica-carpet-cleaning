@@ -203,7 +203,7 @@ const Home = () => {
  </p>
  </div>
  <div>
- <Button>Book Appointment</Button>
+ <Button className="book_button">Book Appointment</Button>
  </div>
       </div>
     </div>
