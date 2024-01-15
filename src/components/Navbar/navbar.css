@@ -158,7 +158,7 @@ li {
        left: 0; 
        width: 50%;
        height: 90vh;
-       justify-content: space-evenly;
+       /* justify-content: space-evenly; */
        background-color: #006bb3;
        z-index: 3;
        flex-direction: column;
@@ -177,6 +177,11 @@ li {
 
      .nav__item a{
       color: #fff !important;
+      font-size: medium;
+     }
+
+     .nav__item {
+      margin-top: -115px;
      }
 
 
