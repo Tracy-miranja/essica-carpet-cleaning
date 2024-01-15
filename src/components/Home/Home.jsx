@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import {Button, Badge }from "react-bootstrap";
+import {Button }from "react-bootstrap";
 // import clean from '../../assets/clean.png'
 import '../Home/home.css';
 import { useEffect, useState } from "react";
@@ -46,11 +46,11 @@ const Home = () => {
             <h1> <span className="heading">PROFESSIONAL</span> <br />
                 CARPET CLEANING
                 </h1>
-            <h6>
+            <h6 style={{marginTop:"20px",}}>
             When guests enter through your doors, let us help you give a good impression
             </h6>
             <Button variant="secondary" style={{background:'#FF1111'}}>
-              Learn More<Badge bg="secondary"></Badge>
+            <a href="/options" className="nav__link">Book Appointment</a>
             </Button>
             </div>
            
