@@ -307,7 +307,7 @@ body{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 
-  btn{
+  .btn{
     font-size: 16px;
   }
 
@@ -461,6 +461,10 @@ body{
       height: 70vh;
     }
 
+    .row1{
+      padding-top: 100px;
+    }
+
     .app{
       display: flex;
       align-items: center;
@@ -533,22 +537,23 @@ body{
     }
   
     .carpet-clean {
-      width: 60%;
-      height: 40vh;
+      width: 70%;
+      /* height: 40vh; */
       text-align: center;
       padding-top: 35px;
     }
   
     .carpet-cleanA {
-      width: 60%;
-      height: 40vh;
+      width: 70%;
+      /* height: 40vh; */
       padding-top: 35px;
     }
   
     .carpet-cleanB {
-      width: 60%;
-      height: 40vh;
+      width: 70%;
+      /* height: 40vh; */
       padding-top: 35px;
+      
     }
   
     .carpet-progress {
@@ -593,8 +598,8 @@ body{
     }
   
     .price1 {
-      width: 80%;
-      /* height: 40vh; */
+      width: 100%;
+      padding-bottom: 30px;
     }
   
     div.content {
@@ -602,9 +607,9 @@ body{
       text-align: center;
     }
   
-    .content h1 {
+    /* .content h1 {
       margin: 0px 0px 0px;
-    }
+    } */
   
     .footer-inside a {
       text-decoration: none !important;

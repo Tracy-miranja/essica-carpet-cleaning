@@ -38,7 +38,7 @@ const Home = () => {
       <div className="bubble" style={{ top: '100%', left: '70%', width: '100px', height: '100px' }}></div>
       <div className="bubble" style={{ top: '80%', left: '20%', width: '100px', height: '100px' }}></div>
       <div className="bubble" style={{ top: '80%', left: '20%', width: '30px', height: '30px' }}></div>
-        <div className="row">
+        <div className="row row1">
           <div className="col-md-4 section-a">
             <div className="content">
               
