@@ -54,7 +54,7 @@
 @media (max-width: 768px) {
     .options-container {
         padding: 20px;
-        padding-top: 70px; /* Adjust for mobile */
+        padding-top: 223px; /* Adjust for mobile */
     }
 
     .button-group {
