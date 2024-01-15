@@ -48,8 +48,9 @@ li {
 .nav__menu {
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-evenly;
    gap: 3rem;
+   
 }
 
 .nav__link:hover {
@@ -153,19 +154,29 @@ li {
 
    .nav__menu {
        position: fixed;
-       top: 13vh;
+       top: 20vh;
        left: 0; 
        width: 50%;
        height: 90vh;
+       justify-content: space-evenly;
        background-color: #006bb3;
        z-index: 3;
        flex-direction: column;
        color: #fff !important;
        gap: 0.3rem;
+       color: #fff !important;
        transform: translateX(-100%); 
        transition: 0.5s ease-in;
        scrollbar-3dlight-color: aqua;
        overflow-y: scroll;
+       background-color: rgba(3, 82, 185, 0.8);
+   backdrop-filter: blur(2px); /* Initial backdrop filter, adjust as needed */
+  
+   margin-top: 0px;
+     }
+
+     .nav__item a{
+      color: #fff !important;
      }
 
 
