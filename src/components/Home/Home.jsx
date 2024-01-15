@@ -46,7 +46,7 @@ const Home = () => {
             <h1> <span className="heading">PROFESSIONAL</span> <br />
                 CARPET CLEANING
                 </h1>
-            <h6 style={{marginTop:"20px",}}>
+            <h6 style={{marginTop:"10px",}}>
             When guests enter through your doors, let us help you give a good impression
             </h6>
             <Button variant="secondary" style={{background:'#FF1111'}}>
