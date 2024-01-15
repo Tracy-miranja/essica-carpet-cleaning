@@ -545,19 +545,19 @@ body{
       width: 70%;
       /* height: 40vh; */
       text-align: center;
-      padding-top: 35px;
+      /* padding-top: 35px; */
     }
   
     .carpet-cleanA {
       width: 70%;
       /* height: 40vh; */
-      padding-top: 35px;
+      /* padding-top: 35px; */
     }
   
     .carpet-cleanB {
       width: 70%;
       /* height: 40vh; */
-      padding-top: 35px;
+      /* padding-top: 35px; */
       
     }
   
@@ -655,5 +655,11 @@ body{
       height: fit-content;
       margin-top: 30px;
       padding: 140px;
+    }
+
+    @media (max-width:390px) {
+      .row1{
+        padding-top: 60px;
+      }
     }
   }
