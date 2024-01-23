@@ -91,7 +91,7 @@ li {
  position: fixed;
  width: 100%;
  z-index: 3;
- padding-bottom: 100px;
+ /* padding-bottom: 100px; */
 }
 
 .brand img{
