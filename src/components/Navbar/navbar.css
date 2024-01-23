@@ -111,11 +111,12 @@ li {
    background-color: #ff5700;
    padding-left: 10px;
    padding-right: 10px;
-   padding-top: 5px;
+   padding-top: -14px;
    padding-bottom: 5px;
    border-radius: 20px;
    color: #fff !important;
    margin-top: 5px;
+   height: fit-content;
  }
 
  .booking-button:hover {
@@ -150,17 +151,20 @@ li {
 @media(max-width:768px){
    .nav__toggler{
        display: block;
+       z-index: 10;
    }
 
    .nav__menu {
        position: fixed;
-       top: 20vh;
+       top: 0;
        left: 0; 
-       width: 50%;
-       height: 90vh;
-       /* justify-content: space-evenly; */
+       width: 90%;
+       height: 100vh;
+       font-size: 32px !important;
+       font-weight: 600;
        background-color: #006bb3;
        z-index: 3;
+       padding-top: 80px;
        flex-direction: column;
        color: #fff !important;
        gap: 0.3rem;
@@ -169,7 +173,7 @@ li {
        transition: 0.5s ease-in;
        scrollbar-3dlight-color: aqua;
        overflow-y: scroll;
-       background-color: rgba(13, 110, 238, 0.8);
+       background-color: rgba(3, 3, 3, 0.8);
    backdrop-filter: blur(2px); /* Initial backdrop filter, adjust as needed */
   
    margin-top: 0px;
@@ -205,6 +209,16 @@ li {
        align-items: center;
        justify-content: space-around;
        font-size: 15px;
+    }
+   
+    .booking-button{
+      background-color: rgb(255, 17, 17);;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: -14px;
+      padding-bottom: 19px;
+      color: #fff !important;
+      height: fit-content;
     }
    
 }
