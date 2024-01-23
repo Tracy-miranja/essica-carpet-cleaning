@@ -181,13 +181,7 @@ li {
 
      .nav__item a{
       color: #fff !important;
-      font-size: medium;
      }
-
-     .nav__item {
-      margin-top: -115px;
-     }
-
 
    .book__appointment{
       text-align: center;
@@ -211,14 +205,20 @@ li {
        font-size: 15px;
     }
    
-    .booking-button{
+    .nav__item.booking-button{
       background-color: rgb(255, 17, 17);;
       padding-left: 10px;
       padding-right: 10px;
-      padding-top: -14px;
-      padding-bottom: 19px;
+      padding-bottom: 5px;
+      padding-top: -5px;
+      border-radius: 0px;
       color: #fff !important;
       height: fit-content;
+    }
+
+    .nav__item.booking-button a{
+      font-size: medium;
+      padding-top: -10px;
     }
    
 }
