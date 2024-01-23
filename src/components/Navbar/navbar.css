@@ -117,6 +117,7 @@ li {
    color: #fff !important;
    margin-top: 5px;
    height: fit-content;
+    width: 200px;
  }
 
  .booking-button:hover {
@@ -213,7 +214,8 @@ li {
       padding-top: -5px;
       border-radius: 0px;
       color: #fff !important;
-      height: fit-content;
+      height: 60px;
+      width: 200px;
     }
 
     .nav__item.booking-button a{
