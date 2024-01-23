@@ -108,5 +108,17 @@ button:hover {
     height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
+   
+  }
+
+  @media (max-width:390px) {
+    .signin-section{
+        width: fit-content;
+        background-color: #fff;
+        height: fit-content;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        margin-top: 50%;
+      }
   }
   
