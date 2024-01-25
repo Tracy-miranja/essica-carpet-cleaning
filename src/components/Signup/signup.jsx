@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addCustomer } from '../../store/customerSlice';
-import './signup.css'; // Make sure to create this CSS file for styling
+import worker from '../Signup/worker2.png'
+import './signup.css'; 
 
 const Signup = () => {
   const dispatch = useDispatch();
@@ -12,11 +13,13 @@ const Signup = () => {
     username: '',
     email: '',
     password: '',
+    confirmPassword: '',
     dateOfBirth: '',
     phoneNumber: '',
     location: '',
   });
   const [signupSuccess, setSignupSuccess] = useState(false);
+  const [passwordMatchError, setPasswordMatchError] = useState('');
 
   const handleInputChange = (e) => {
     setUserData({ ...userData, [e.target.name]: e.target.value });
@@ -25,72 +28,103 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      if (userData.password !== userData.confirmPassword) {
+        setPasswordMatchError('Passwords do not match');
+        return;
+      }
+
       await dispatch(addCustomer({ ...userData, role: 'user' }));
       setSignupSuccess(true);
-      setTimeout(() => navigate('/options'), 3000); // Redirect after 3 seconds
+      navigate('/options');
     } catch (error) {
       console.error('Signup failed:', error);
-      // Handle signup failure (e.g., show error message)
     }
   };
 
+  const handleConfirmPasswordChange = (e) => {
+    // Clear the password match error when the user corrects the input
+    setPasswordMatchError('');
+    handleInputChange(e);
+  };
   return (
-    
+    <div className="outer-dv">
     <div className="signup-container">
-            <div className="signup-banner">
-        <div className='signup'>
-          <div className='signup-contents'>
-            <h1>Sign Up</h1>
-            
-          </div>
-        </div>
-      </div>
+
+         <div className='section1'>
+         <h2>SIGN UP</h2>
       {signupSuccess ? (
         <p className="signup-success-message">Account successfully added.</p>
       ) : (
-        <form onSubmit={handleSubmit} className="signup-form">
-        {/* Input for Name */}
+        <form method='post' onSubmit={handleSubmit} className="signup2-form">
+       
         <div className="form-group">
-          <input type="text" name="name" value={userData.name} onChange={handleInputChange} placeholder="Name" required />
+          <input type="text" name="name" value={userData.name} onChange={handleInputChange} placeholder="👤 Name" required />
         </div>
       
-        {/* Input for Username */}
         <div className="form-group">
-          <input type="text" name="username" value={userData.username} onChange={handleInputChange} placeholder="Username" required />
+          <input type="text" name="username" value={userData.username} onChange={handleInputChange} placeholder="👤 Username" required />
         </div>
       
-        {/* Input for Email */}
         <div className="form-group">
-          <input type="email" name="email" value={userData.email} onChange={handleInputChange} placeholder="Email" required />
-        </div>
-      
-        {/* Input for Password */}
-        <div className="form-group">
-          <input type="password" name="password" value={userData.password} onChange={handleInputChange} placeholder="Password" required />
+        <span className="icon"></span>
+          <input type="email" name="email" value={userData.email} onChange={handleInputChange} placeholder=" ✉️ Email" required />
         </div>
       
         {/* Input for Date of Birth */}
-        <div className="form-group">
+        {/* <div className="form-group">
           <input type="date" name="dateOfBirth" value={userData.dateOfBirth} onChange={handleInputChange} required />
-        </div>
+        </div> */}
       
-        {/* Input for Phone Number */}
+       
         <div className="form-group">
-          <input type="tel" name="phoneNumber" value={userData.phoneNumber} onChange={handleInputChange} placeholder="Phone Number" required />
+          <input type="tel" name="phoneNumber" value={userData.phoneNumber} onChange={handleInputChange} placeholder="☎ Phone Number" required />
         </div>
       
-        {/* Input for Location */}
+       
         <div className="form-group">
-          <input type="text" name="location" value={userData.location} onChange={handleInputChange} placeholder="Location" required />
+          <input type="text" name="location" value={userData.location} onChange={handleInputChange} placeholder="📍 Location" required />
         </div>
       
-        {/* Submit Button */}
+       
+
+         
+         
+         <div className="form-group">
+          <input type="password" name="password" value={userData.password} onChange={handleInputChange} placeholder=" Password" required />
+        </div>
+
+        <div className="form-group">
+            <input
+              type="password"
+              name="confirmPassword"
+              value={userData.confirmPassword}
+              onChange={handleConfirmPasswordChange}
+              placeholder="🔒︎ Confirm Password"
+              required
+            />
+          </div>
+
+         
+      {passwordMatchError && (
+        <p className="password-match-error">{passwordMatchError}</p>
+      )}
+
+           
         <div className="form-group">
           <button type="submit" className="signup-submit">Sign Up</button>
         </div>
       </form>
       
       )}
+      </div>  
+      <div className='section2'>
+      <figure>
+      <img src={worker} alt="Sign up image" style={{ width: "550px"}} />
+      </figure>
+      <a href='#'>i am already a member?</a>
+      </div>
+    </div>
+    
     </div>
   );
 };

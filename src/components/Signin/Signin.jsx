@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchCustomers } from '../../store/customerSlice';
-import './signin.css';
+import './sign.css';
 
 // eslint-disable-next-line react/prop-types
 const SignIn = ({ onLoginStatusChange }) => {
@@ -54,19 +54,19 @@ const SignIn = ({ onLoginStatusChange }) => {
         <input  className="signin_input"
           name="username"
           type="text"
-          placeholder="Username"
+          placeholder="👤 Username"
           value={credentials.username}
           onChange={handleChange}
         />
         <input className="signin_input"
           name="password"
           type="password"
-          placeholder="Password"
+          placeholder="🔒︎ Password"
           value={credentials.password}
           onChange={handleChange}
         />
         {loginError && <p className="error-message">{loginError}</p>}
-        <button  className="signin_btn" type="submit">Sign in</button>
+        <button  className="signin_btn" type="submit">Log in</button>
       </form>
     </div>
     </div>
