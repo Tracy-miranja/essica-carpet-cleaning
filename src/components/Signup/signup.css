@@ -40,17 +40,17 @@
     padding: 0; /* Adjusted padding */
     z-index: 2;
     height: 70%;
-    width: 100vw; /* Set the width to 100% of the viewport width */
+    width: 100%; /* Set the width to 100% of the viewport width */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    padding-top: 160px;
+    
   }
   
-
-  .outer-dv{
-    background-color: #E2E6EA;
-  }
 
   .section2 {
     display: flex;
@@ -189,7 +189,11 @@
     z-index: -1;
   }
 
-  @media (max-width: 375px){
+  .section2 img{
+    width: 550px;
+  }
+
+  @media (max-width: 768px){
     .signup-container {
       display: flex;
       flex-direction: column;
@@ -217,4 +221,25 @@
     height: 70vh;
     
   }
+
+  .section2 img{
+    width: 400px ;
+  }
+  }
+
+  @media (max-width: 420px){
+    .section2 img{
+      width: 300px !important ;
+    }
+  }
+
+  @media (max-width: 1142px){
+    .signup-container {
+      width: 90%;
+     
+      }
+      .section2 img{
+        width: 450px !important ;
+      }
+
   }
