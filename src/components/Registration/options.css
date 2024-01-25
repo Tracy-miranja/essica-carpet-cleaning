@@ -64,7 +64,7 @@
     }
   }
 
-  h1 {
+  .button-group h1 {
     animation: dance 2s infinite;
     display: inline-block; /* Ensures the animation works correctly with inline elements */
   }

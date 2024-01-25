@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchCustomers } from '../../store/customerSlice';
-import './sign.css';
+// import './sign.css';
 
 // eslint-disable-next-line react/prop-types
 const SignIn = ({ onLoginStatusChange }) => {
