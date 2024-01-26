@@ -40,7 +40,7 @@ const Contact = () => {
           <FiMail />
         </div>
         <div className="col">
-          <h5>Email:essicacarpets@gmail.com</h5>
+          <h5>essicacarpets@gmail.com</h5>
         </div>
       </div>
       <div className="row" style={{marginBottom:"15px"}}>
