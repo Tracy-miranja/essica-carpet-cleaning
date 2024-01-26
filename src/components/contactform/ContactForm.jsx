@@ -9,16 +9,15 @@ const ContactForm = () => {
 
   return (
     <div className='cintactsec2'>
-        <h3>Send us a message</h3>
-        <h6>Have a question or specific cleaning request? Feel free to send us a message, and our dedicated team will promptly assist you. Your satisfaction is our priority, and we 
-          look forward to addressing your inquiries and providing personalized solutions for your carpet cleaning needs</h6>
+        <h2>Send us a message</h2>
+        
       <Row>
       
         <Col md={6}>
           {/* <Form onSubmit={handleSubmit}> */}
             <Form.Group className="mb-3" controlId="formName">
-              <Form.Label style={{fontWeight:'700'}}>Name:</Form.Label>
-              <Form.Control type="text" placeholder="Your name" required />
+              <Form.Label style={{fontWeight:'700'}}>Full Name:</Form.Label>
+              <Form.Control type="text" placeholder="Your Full name" required />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formPhone">
@@ -36,10 +35,10 @@ const ContactForm = () => {
               <Form.Control type="email" placeholder="Your email" required />
             </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formSubject">
+          {/* <Form.Group className="mb-3" controlId="formSubject">
             <Form.Label style={{fontWeight:'700', borderRadius:'20px'}}>Subject:</Form.Label>
             <Form.Control type="text" placeholder="Subject" required />
-          </Form.Group>
+          </Form.Group> */}
         </Col>
       </Row>
       <Form.Group className="mb-3" controlId="formMessage">

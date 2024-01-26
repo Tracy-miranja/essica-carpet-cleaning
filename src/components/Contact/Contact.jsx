@@ -15,12 +15,17 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <div className='outer-contact'>
       <div className="contact-us">
+
+          <div className='contact-formm'>
+          
+          <ContactForm />
+        </div>
         <div className='contact'>
           <p>Contact Us</p>
-          <h3>Have Anything To Ask ? We are Always Ready</h3>
-          <h6>If you’re ready to join our growing list of happy Essica Carpet cleaners, simply give us a call to book your appointment. For spotless results, call the cleaning business with a spotless reputation!
-</h6>
+          <h6>Have Anything To Ask ? We are Always Ready</h6>
+          
 <div className="contact-info">
       <div className="row" style={{marginBottom:"15px"}}>
         <div className="col-auto" style={{borderRadius:"50%", backgroundColor:"black", height:"32px", color:"white", fontSize:"18px"}}>
@@ -48,9 +53,6 @@ const Contact = () => {
       </div>
     </div>
         </div>
-        <div>
-          
-          <ContactForm />
         </div>
       </div>
     </div>
