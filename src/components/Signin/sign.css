@@ -1,9 +1,19 @@
 
-.signin_btn{
+button.signin_btn{
     font-size: 20px !important;
     border-radius: 40px !important;
+    width: 50%;
   }
 
   .signin_btn:hover{
     background-color: rgba(1, 40, 212, 0.664);
+  }
+
+  .signin_input {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .signin2-container{
+    width: 100%;
   }

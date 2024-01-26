@@ -27,7 +27,6 @@
     width: 30%;
     margin-top: 10%;
     height: fit-content;
-    padding: 20px;
     padding-bottom: 50px;
     padding-top: 50px;
     border-radius: 20px;
@@ -73,14 +72,17 @@
 /* Maintain responsiveness */
 @media (max-width: 768px) {
     .options-container {
-        padding: 20px;
-        /* padding-top: 160px;  */
+        padding: 20px ;
+        padding-top: 120px; 
         height: fit-content;
     }
 
     .button-group {
         flex-direction: column;
         width: 100%;
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .options-button {
@@ -92,5 +94,12 @@
     .button-group {
         width: fit-content;
         margin-top: 180px;
+    }
+}
+
+@media (max-width: 1242px){
+    .button-group {
+        width: fit-content;
+        margin-top: 100px;
     }
 }
