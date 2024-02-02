@@ -119,7 +119,7 @@ const Signup = () => {
       </div>  
       <div className='section2'>
       <figure>
-      <img src={worker} alt="Sign up image" style={{ width: "550px"}} />
+      <img src={worker} alt="Sign up image" />
       </figure>
       <a href='#'>i am already a member?</a>
       </div>

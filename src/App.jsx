@@ -23,6 +23,8 @@ import Navbar from './components/Navbar/navbar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import GoogleMap from './GoogleMap';
+
 
 const App = () => {
   const [navbarUpdate, setNavbarUpdate] = useState(false);
@@ -33,7 +35,7 @@ const App = () => {
 
   const hideNavbarOnBookingPage = () => {
     const currentPath = window.location.pathname;
-    return !(currentPath === '/booking' || currentPath === '/signin');
+    return !(currentPath === '/booking' || currentPath === '/Signin');
   };
 
   return (
@@ -74,6 +76,7 @@ const App = () => {
           </Routes>
         </Router>
       </div>
+      <GoogleMap />
       <Footer />
     </>
   );
