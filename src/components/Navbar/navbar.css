@@ -1,250 +1,245 @@
-*, *::after, *::before {
-   margin: 0px;
-   box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 html {
-   font-size: 70.5%;
+  font-size: 70.5%;
 }
 
 body {
-   font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 li {
-   list-style: none;
+  list-style: none;
 }
 
 .user a {
-   text-decoration: none!important;
-   color: black!important;
-   font-size: 1.8rem; /* Increase font size */
-   transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 1.8rem; /* Increase font size */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
 }
 
 .admin a {
-   text-decoration: none!important;
-   color: black!important;
-   font-size: 1.8rem; /* Increase font size */
-   transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 1.8rem; /* Increase font size */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
 }
 .nav {
-   width: 100%;
-   text-align: center;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   height: 8vh;
-   background-color: #fff;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-   z-index: 2;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 
 .brand {
-   text-transform: uppercase;
-   font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav__menu {
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   gap: 3rem;
-   
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
 }
 
 .nav__link:hover {
-   text-decoration: underline; /* Add underline on hover */
-   color: #000; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+  color: #000; /* Change color on hover */
 }
 
 /* Rest of your existing CSS... */
 
-
-.nav__toggler div{
-   width: 2.5rem;
-   height: 0.2rem;
-   margin: 0.4rem;
-   background-color: darkgray;
-   border: 2px solid grey;
-   transition: 0.4s ease-in;
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background-color: darkgray;
+  border: 2px solid grey;
+  transition: 0.4s ease-in;
 }
 
-.nav__toggler{
-   cursor: pointer;
-   display: none;
+.nav__toggler {
+  cursor: pointer;
+  display: none;
 }
 
-.header{
-   background-color: #006bb3;
-   width: 100%;
-   height: 5vh;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-evenly;
-   
+.header {
+  background-color: #006bb3;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.essica-nav{
- top: 0;
- position: fixed;
- width: 100%;
- z-index: 3;
- /* padding-bottom: 100px; */
+.essica-nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  /* padding-bottom: 100px; */
 }
 
-.brand img{
-   width: 180px;
-   height: 100%;
+.brand img {
+  width: 180px;
+  height: 100%;
 }
 
-.booking-button a{
-   color: #fff!important;
+.booking-button a {
+  color: #fff !important;
 }
 
-.booking-button a:hover{
-   color: #050505!important;
+.booking-button a:hover {
+  color: #050505 !important;
 }
 
- .booking-button{
-   background-color: #ff5700;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-top: -14px;
-   padding-bottom: 5px;
-   border-radius: 20px;
-   color: #fff !important;
-   margin-top: 5px;
-   height: fit-content;
-    width: 200px;
- }
+.booking-button {
+  background-color: #ff5700;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: -14px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  color: #fff !important;
+  margin-top: 5px;
+  height: fit-content;
+  width: 200px;
+}
 
- .booking-button:hover {
-   transform: scale(1.1); /* Enlarge on hover */
-   background-color: #f8f6f4;
-   color: black !important;
-   border: 2px solid black;
- }
- 
+.booking-button:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  background-color: #f8f6f4;
+  color: black !important;
+  border: 2px solid black;
+}
+
 /*Signout button */
 .admin.signout {
-   border: 2px solid #4CAF50; /* Green border */
-   border-radius: 25px; /* Rounded corners */
-   background-color: #4CAF50; /* Green background */
-   padding: 5px 10px; /* Some padding for better appearance */
-   margin: 0 10px; /* Optional: Add margin if needed */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #4caf50; /* Green background */
+  padding: 5px 10px; /* Some padding for better appearance */
+  margin: 0 10px; /* Optional: Add margin if needed */
 }
 
 .admin.signout .nav__link {
-   color: white; /* White text color for better readability */
-   display: block; /* Make the link take the full area of <li> */
-   text-align: center; /* Center the text inside */
+  color: white; /* White text color for better readability */
+  display: block; /* Make the link take the full area of <li> */
+  text-align: center; /* Center the text inside */
 }
 
 /* Hover effect for signout link */
 .admin.signout:hover {
-   background-color: #45a049; /* Slightly darker green when hovered */
-   border-color: #45a049; /* Border color change on hover */
+  background-color: #45a049; /* Slightly darker green when hovered */
+  border-color: #45a049; /* Border color change on hover */
 }
 
-
-@media(max-width:768px){
-   .nav__toggler{
-       display: block;
-       z-index: 10;
-   }
-
-   .nav__menu {
-       position: fixed;
-       top: 0;
-       left: 0; 
-       width: 90%;
-       height: 100vh;
-       font-size: 24px !important;
-       font-weight: 600;
-       background-color: #006bb3;
-       z-index: 3;
-       padding-top: 80px;
-       flex-direction: column;
-       color: #fff !important;
-       gap: 0.3rem;
-       color: #fff !important;
-       transform: translateX(-100%); 
-       transition: 0.5s ease-in;
-       scrollbar-3dlight-color: aqua;
-       overflow-y: scroll;
-       background-color: rgba(3, 3, 3, 0.8);
-   backdrop-filter: blur(2px); /* Initial backdrop filter, adjust as needed */
-  
-   margin-top: 0px;
-     }
-
-     .nav__item a{
-      color: #fff !important;
-     }
-
-   .book__appointment{
-      text-align: center;
-      display: block;
-      margin: 0 auto;
-      padding-bottom: 30px;
-   }
-
-   a{
-       text-decoration: none;
-       color: rgb(247, 246, 246);
-    }
-
-    .header{
-       background-color: #006bb3;
-       height: 12vh;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: space-around;
-       font-size: 15px;
-    }
-   
-    .nav__item.booking-button{
-      background-color: rgb(255, 17, 17);;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 5px;
-      padding-top: -5px;
-      border-radius: 0px;
-      color: #fff !important;
-      height: 60px;
-      width: 200px;
-    }
-
-    .nav__item.booking-button a{
-      font-size: medium;
-      padding-top: -10px;
-    }
-   
-}
-
-.nav__active{
-   transform: translateX(0);
-}
-
-.toggle .line1{
-   transform: rotate(-45deg) translate(-4px, 5px);
-}
-.toggle .line2{
-   opacity: 0;
-}
-.toggle .line3{
-   transform: rotate(45deg) translate(-4px, -5px);
-}
-
-@media(max-width:370px){
-   .book__appointment {
-      font-size: 5px; 
-      padding-bottom: 0px;
-      height: 5vh;
-      
+@media (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    z-index: 10;
   }
-   
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100vh;
+    font-size: 24px !important;
+    font-weight: 600;
+    background-color: #006bb3;
+    z-index: 3;
+    padding-top: 80px;
+    flex-direction: column;
+    color: #fff !important;
+    gap: 0.3rem;
+    color: #fff !important;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in;
+    scrollbar-3dlight-color: aqua;
+    overflow-y: scroll;
+    background-color: rgba(3, 3, 3, 0.8);
+    backdrop-filter: blur(2px); /* Initial backdrop filter, adjust as needed */
+
+    margin-top: 0px;
+  }
+
+  .nav__item a {
+    color: #fff !important;
+  }
+
+  .book__appointment {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(247, 246, 246);
+  }
+
+  .header {
+    background-color: #006bb3;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+  }
+
+  .nav__item.booking-button {
+    background-color: rgb(255, 17, 17);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: -5px;
+    border-radius: 39px;
+    color: #fff !important;
+    height: 60px;
+    width: 200px;
+  }
+
+  .nav__item.booking-button a {
+    font-size: medium;
+    padding-top: -10px;
+  }
+}
+
+.nav__active {
+  transform: translateX(0);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
+@media (max-width: 370px) {
+  .book__appointment {
+    font-size: 5px;
+    padding-bottom: 0px;
+    height: 5vh;
+  }
 }
