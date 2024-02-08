@@ -1,20 +1,23 @@
-import { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { fetchCustomers } from '../../store/customerSlice';
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { fetchCustomers } from "../../store/customerSlice";
 import "./signin.css";
 
 // eslint-disable-next-line react/prop-types
 const SignIn = ({ onLoginStatusChange }) => {
-  const [credentials, setCredentials] = useState({ username: '', password: '' });
-  const [loginError, setLoginError] = useState('');
+  const [credentials, setCredentials] = useState({
+    username: "",
+    password: "",
+  });
+  const [loginError, setLoginError] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const customers = useSelector(state => state.customer.customers);
-  const customerStatus = useSelector(state => state.customer.status);
+  const customers = useSelector((state) => state.customer.customers);
+  const customerStatus = useSelector((state) => state.customer.status);
 
   useEffect(() => {
-    if (customerStatus === 'idle') {
+    if (customerStatus === "idle") {
       dispatch(fetchCustomers());
     }
   }, [customerStatus, dispatch]);
@@ -22,24 +25,24 @@ const SignIn = ({ onLoginStatusChange }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const user = customers.find(c => 
-      c.username.trim() === credentials.username.trim() && 
-      c.password.trim() === credentials.password.trim()
+    const user = customers.find(
+      (c) =>
+        c.username.trim() === credentials.username.trim() &&
+        c.password.trim() === credentials.password.trim()
     );
 
     if (user) {
-      localStorage.setItem('userId', user._id); // Store user ID
-      localStorage.setItem('userRole', user.role); // Store user role
+      localStorage.setItem("userId", user._id); // Store user ID
+      localStorage.setItem("userRole", user.role); // Store user role
 
       // Navigate based on user role
-      user.role === 'admin' ? navigate('/Dashboard') : navigate('/Booking');
+      user.role === "admin" ? navigate("/Dashboard") : navigate("/Booking");
       // Force reload the page
       window.location.reload();
       onLoginStatusChange();
-
     } else {
-      setLoginError('Invalid username or password.');
-      setTimeout(() => setLoginError(''), 2000);
+      setLoginError("Invalid username or password.");
+      setTimeout(() => setLoginError(""), 2000);
     }
   };
 
@@ -50,14 +53,16 @@ const SignIn = ({ onLoginStatusChange }) => {
   return (
     <div className="signin-container">
       <form onSubmit={handleSubmit}>
-        <input  className="signin_input"
+        <input
+          className="signin_input"
           name="username"
           type="text"
           placeholder="Username"
           value={credentials.username}
           onChange={handleChange}
         />
-        <input className="signin_input"
+        <input
+          className="signin_input"
           name="password"
           type="password"
           placeholder="Password"
@@ -65,7 +70,9 @@ const SignIn = ({ onLoginStatusChange }) => {
           onChange={handleChange}
         />
         {loginError && <p className="error-message">{loginError}</p>}
-        <button  className="signin_btn" type="submit">Sign in</button>
+        <button className="signin2_btn" type="submit">
+          Sign in
+        </button>
       </form>
     </div>
   );
