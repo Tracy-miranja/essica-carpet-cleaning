@@ -138,11 +138,11 @@ const BookingsList = () => {
                 </>
               ) : (
                 <>
-                  <td>{booking.name}</td>
-                  <td>{booking.email}</td>
+                  <td>{booking.customer_ID.name}</td>
+                  <td>{booking.customer_ID.email}</td>
                   <td>{booking.carpetSize}</td>
                   <td>{booking.location}</td>
-                  <td>{booking.phoneNumber || ""}</td>
+                  <td>{booking.customer_ID.phoneNumber || ""}</td>
                   <td>{new Date(booking.collectionTime).toLocaleString()}</td>
                   <td
                     className="dashboard-data"
