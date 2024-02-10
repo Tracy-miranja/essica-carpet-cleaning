@@ -52,7 +52,7 @@ const BookingsList = () => {
             <th>Email</th>
             <th>Carpet Size</th>
             <th>Location</th>
-            <th>Phone Number</th>
+            {/* <th>Phone Number</th> */}
             <th>Collection Time</th>
             <th>Status</th>
             <th>Actions</th>
@@ -95,14 +95,14 @@ const BookingsList = () => {
                       onChange={handleChange}
                     />
                   </td>
-                  <td>
+                  {/* <td>
                     <input
                       type="text"
                       name="phonenumber"
                       value={editedBooking && editedBooking.phoneNumber}
                       disabled
                     />
-                  </td>
+                  </td> */}
 
                   <td>
                     <input
