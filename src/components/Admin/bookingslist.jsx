@@ -51,9 +51,11 @@ const BookingsList = () => {
             <th>Customer Name</th>
             <th>Email</th>
             <th>Carpet Size</th>
+            <th>Price</th>
             <th>Location</th>
             <th>Phone Number</th>
             <th>Collection Time</th>
+
             <th>Status</th>
             <th>Actions</th>
           </tr>
@@ -84,6 +86,14 @@ const BookingsList = () => {
                       type="text"
                       name="carpetSize"
                       value={editedBooking.carpetSize}
+                      onChange={handleChange}
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="price"
+                      value={editedBooking.price}
                       onChange={handleChange}
                     />
                   </td>
@@ -141,6 +151,7 @@ const BookingsList = () => {
                   <td>{booking.customer_ID.name}</td>
                   <td>{booking.customer_ID.email}</td>
                   <td>{booking.carpetSize}</td>
+                  <td>{booking.price}</td>
                   <td>{booking.location}</td>
                   <td>{booking.customer_ID.phoneNumber || ""}</td>
                   <td>{new Date(booking.collectionTime).toLocaleString()}</td>
