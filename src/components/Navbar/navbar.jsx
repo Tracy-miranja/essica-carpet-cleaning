@@ -6,29 +6,26 @@ import "../Navbar/navbar.css";
 const Navbar = () => {
   const [active, setActive] = useState("nav__menu");
   const [toggleIcon, setToggleIcon] = useState("nav__toggler");
-  const [userRole, setUserRole] = useState('');
+  const [userRole, setUserRole] = useState("");
 
   useEffect(() => {
-    const role = localStorage.getItem('userRole');
+    const role = localStorage.getItem("userRole");
     setUserRole(role);
   }, []);
 
   const navToggle = () => {
-    active === "nav__menu"
-      ? setActive("nav__menu nav__active")
-      : setActive("nav__menu");
-
-    toggleIcon === "nav__toggler"
-      ? setToggleIcon("nav__toggler toggle")
-      : setToggleIcon("nav__toggler");
+    setActive(active === "nav__menu" ? "nav__menu nav__active" : "nav__menu");
+    setToggleIcon(
+      toggleIcon === "nav__toggler" ? "nav__toggler toggle" : "nav__toggler"
+    );
   };
 
-  const isAdmin = userRole === 'admin';
+  const isAdmin = userRole === "admin";
+  const isWpAdmin = userRole === "wpAdmin";
 
   const handleSignOut = () => {
-    localStorage.setItem('userRole', 'user'); // Set the role to 'user'
-    setUserRole('user'); // Update state to re-render navbar
-    // Redirect to home or other page if necessary
+    localStorage.setItem("userRole", "user");
+    setUserRole("user");
   };
 
   return (
@@ -39,40 +36,64 @@ const Navbar = () => {
           <img src={logo} alt="Essica carpets" />
         </a>
         <ul className={active}>
-          {isAdmin ? (
+          {isAdmin || isWpAdmin ? (
             <>
               <li className="nav__item admin">
-                <a href="/dashboard" className="nav__link"><i className="fa fa-tachometer-alt"></i> Dashboard</a>
+                <a href="/wpadmindashboard" className="nav__link">
+                  <i className="fa fa-tachometer-alt"></i> Dashboard
+                </a>
               </li>
-              <li className="nav__item admin">
-                <a href="/customerslist" className="nav__link">Customers</a>
-              </li>
-              <li className="nav__item admin">
-                <a href="/bookinglist" className="nav__link">Bookings</a>
-              </li>
+              {isAdmin && (
+                <>
+                  <li className="nav__item admin">
+                    <a href="/customerslist" className="nav__link">
+                      Customers
+                    </a>
+                  </li>
+                  <li className="nav__item admin">
+                    <a href="/bookinglist" className="nav__link">
+                      Bookings
+                    </a>
+                  </li>
+                </>
+              )}
               <li className="nav__item admin signout" onClick={handleSignOut}>
-                <a href="/options" className="nav__link">Signout</a>
+                <a href="/options" className="nav__link">
+                  Signout
+                </a>
               </li>
             </>
           ) : (
             <>
               <li className="nav__item user">
-                <a href="/" className="nav__link">Home</a>
+                <a href="/" className="nav__link">
+                  Home
+                </a>
               </li>
               <li className="nav__item user">
-                <a href="/about" className="nav__link">About</a>
+                <a href="/about" className="nav__link">
+                  About
+                </a>
               </li>
               <li className="nav__item user">
-                <a href="/services" className="nav__link">Services</a>
+                <a href="/services" className="nav__link">
+                  Services
+                </a>
               </li>
               <li className="nav__item user">
-                <a href="/blog" className="nav__link">Blog</a>
+                <a href="/blog" className="nav__link">
+                  Blog
+                </a>
               </li>
               <li className="nav__item user">
-                <a href="/contact" className="nav__link">Contact</a>
+                <a href="/contact" className="nav__link">
+                  Contact
+                </a>
               </li>
               <li className="nav__item booking-button user">
-                <a href="/options" className="nav__link">Book Appointment</a>
+                <a href="/options" className="nav__link">
+                  Book Appointment
+                </a>
               </li>
             </>
           )}

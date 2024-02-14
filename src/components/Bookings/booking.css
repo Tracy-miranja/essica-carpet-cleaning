@@ -148,6 +148,7 @@
   margin-top: 20px; /* Space above the message */
   margin-bottom: 20px; /* Space below the message */
   width: 100%; /* Full width */
+  padding: 10%;
 }
 
 .booking-container {
@@ -287,6 +288,10 @@ input {
 
   .copyright {
     color: black;
+  }
+
+  .success-message {
+    padding-top: 30%;
   }
 }
 

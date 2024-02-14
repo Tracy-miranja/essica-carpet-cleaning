@@ -36,8 +36,13 @@ const SignIn = ({ onLoginStatusChange }) => {
       localStorage.setItem("userRole", user.role); // Store user role
 
       // Navigate based on user role
-      user.role === "admin" ? navigate("/Dashboard") : navigate("/Booking");
-
+      if (user.role === "admin") {
+        navigate("/adminsignin");
+      } else if (user.role === "wpAdmin") {
+        navigate("/wpadmindashboard");
+      } else {
+        navigate("/Booking");
+      }
       // Force reload the page
       window.location.reload();
       onLoginStatusChange();

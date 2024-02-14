@@ -1,5 +1,3 @@
-// RoleBasedRoute.jsx
-
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -8,10 +6,12 @@ const RoleBasedRoute = ({ children }) => {
 
   useEffect(() => {
     const userRole = localStorage.getItem("userRole");
-    if (userRole !== "admin") {
+    if (userRole !== "admin" && userRole !== "wpAdmin") {
+      // If user is neither admin nor wpAdmin, redirect to appropriate route
       navigate("/adminsignin");
     } else if (userRole === "wpAdmin") {
-      navigate("/WpDashboard");
+      // If user is wpAdmin, redirect to appropriate route
+      navigate("/dashboard");
     }
   }, [navigate]);
 
