@@ -22,6 +22,7 @@ import AdminSignin from "./components/Admin/adminsignin";
 import WpAdmin from "./components/wpAdmin/wpadmin";
 import WpDashboard from "./components/wpAdmin/wpadmindashboard";
 import Navbar from "./components/Navbar/navbar";
+import NotFoundPage from "./components/NotFoundPage";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
@@ -96,6 +97,7 @@ const App = () => {
             ></Route>
             <Route exact path="/adminsignin" element={<AdminSignin />} />
             <Route exact path="/wpadmin" element={<WpAdmin />}></Route>
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Router>
       </div>
