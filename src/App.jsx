@@ -23,6 +23,7 @@ import WpAdmin from "./components/wpAdmin/wpadmin";
 import WpDashboard from "./components/wpAdmin/wpadmindashboard";
 import Navbar from "./components/Navbar/navbar";
 import NotFoundPage from "./components/NotFoundPage";
+import ForgotPassword from "./components/forgotpassword";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
@@ -55,6 +56,7 @@ const App = () => {
             <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/options" element={<Options />} />
+            <Route path="/forgotpassword" element={<ForgotPassword />} />
             <Route
               exact
               path="/signin"

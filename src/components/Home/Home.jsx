@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-// import clean from '../../assets/clean.png'
+import carpetVideo from "../Home/rug-cleaning.mp4";
 import "../Home/home.css";
 import { useEffect, useState } from "react";
 
@@ -82,7 +82,11 @@ const Home = () => {
               </div>
             </div>
             <div className="col-md-8 section-b">
-              <div className="inner"></div>
+              <div className="inner">
+                <video autoPlay muted loop id="video-background">
+                  <source src={carpetVideo} type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </Container>

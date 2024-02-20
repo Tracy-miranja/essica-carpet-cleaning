@@ -16,7 +16,15 @@ const Options = () => {
         <div className="button-group">
           <h1>Welcome 💃</h1>
           <SignIn />
-          <a href="#">Forgot password?</a>
+          <a
+            href="/forgotpassword"
+            className="options-link"
+            role="button"
+            aria-pressed="false"
+            onClick={() => navigateTo("/forgotpassword")}
+          >
+            Forgot password?
+          </a>
           {/* <p>If you have already registered, please click below to make a booking</p>
                 <button className="options-button" onClick={() => navigateTo('/signin')}>Sign In to Book</button> */}
           <p>If you haven&apos;t registered, please, click below to register</p>
