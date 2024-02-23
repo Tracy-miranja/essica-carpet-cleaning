@@ -10,6 +10,7 @@ const SignIn = ({ onLoginStatusChange }) => {
     username: "",
     password: "",
   });
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const [loginError, setLoginError] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -49,6 +50,10 @@ const SignIn = ({ onLoginStatusChange }) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
 
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
   return (
     <div className="signin2-container">
       <div className="signin-section">
@@ -61,14 +66,24 @@ const SignIn = ({ onLoginStatusChange }) => {
             value={credentials.username}
             onChange={handleChange}
           />
-          <input
-            className="signin_input"
-            name="password"
-            type="password"
-            placeholder="🔒︎ Password"
-            value={credentials.password}
-            onChange={handleChange}
-          />
+
+          <div className="password-input-container">
+            <input
+              className="signin_input"
+              name="password"
+              type={passwordVisible ? "text" : "password"}
+              placeholder="🔒︎ Password"
+              value={credentials.password}
+              onChange={handleChange}
+            />
+            <i
+              className={`bi ${
+                passwordVisible ? "bi-eye" : "bi-eye-slash"
+              } eye`}
+              onClick={togglePasswordVisibility} // Toggle password visibility on eye icon click
+            ></i>
+          </div>
+
           {loginError && <p className="error-message">{loginError}</p>}
           <button className="signin_btn" type="submit">
             Log in

@@ -16,3 +16,20 @@ button.signin_btn {
 .signin2-container {
   width: 100%;
 }
+
+.password-input-container {
+  position: relative;
+  width: 100% !important;
+}
+
+.signin_input {
+  padding-right: 30px;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 20%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
