@@ -394,6 +394,39 @@ div.banner.container-fluid {
   padding: 0px 0px;
 }
 
+.blog-image1:hover {
+  background-color: #fff; /* Change the background color on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change the box shadow on hover */
+  transform: rotate(10deg) scale(1.1); /* Add a rotation and scaling effect on hover */
+}
+.blog-image1 {
+  width: 100%;
+  height: 40vh;
+  align-items: center;
+  background-image: url(./rug-washing.jpg);
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: background 0.3s, box-shadow 0.3s,
+    transform var(--e-transform-transition-duration, 0.4s);
+}
+.blog-image2:hover {
+  background-color: #fff; /* Change the background color on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change the box shadow on hover */
+  transform: rotate(10deg) scale(1.1); /* Add a rotation and scaling effect on hover */
+}
+.blog-image2 {
+  width: 100%;
+  height: 40vh;
+  align-items: center;
+  background-image: url(./commercial-carpetcleaning.jpg);
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: background 0.3s, box-shadow 0.3s,
+    transform var(--e-transform-transition-duration, 0.4s);
+}
+
 @media (max-width: 1095px) {
   .content {
     margin-top: 25%;

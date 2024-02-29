@@ -1,238 +1,247 @@
-.about-banner{
-    background-image: url(../About/carpets-washing.jpg);
+.about-banner {
+  background-image: url(../About/carpets-washing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-position: 50%;
+  height: 50vh;
+  width: 100%;
+}
+
+.about {
+  background-color: rgba(37, 130, 184, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.about-content {
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #111111;
+  width: fit-content;
+  /* height: 50px; */
+  align-items: center;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.about-content h1 {
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.about-sectioA {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  width: 100%;
+  gap: 40px;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.about-contentA {
+  width: 50%;
+  height: fit-content !important;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.about-contentB {
+  background-image: url(../About/essica-carpet-cleaning.jpg);
+  width: 40%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80%;
+  background-position: 80%;
+  border-radius: 20px;
+  transition: 2s all ease-in-out;
+}
+.about-contentB :hover {
+  background-image: url(./essica-deep-carpet-washing.jpg);
+  background-color: #111111 0.2;
+}
+
+.testimonials {
+  height: fit-content !important;
+  width: 100%;
+  background-image: url(../About/essica-deep-carpet-washing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+  background-color: #2892d5;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.testimonialsClients {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(37, 130, 184, 0.6);
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.testimonialsClients h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.cllientfeed-section {
+  max-height: fit-content !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.cllientfeed {
+  width: 30%;
+  height: fit-content !important;
+  background-color: #054570;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-sectioA {
+    flex-direction: column;
+    padding: 0px;
+    height: 150vh;
+  }
+
+  .about-contentA {
+    width: 100%;
+  }
+
+  .about-contentB {
+    width: 90% !important;
+    height: 60vh;
+  }
+
+  .about-contentB {
+    background-image: url(../About/essica-carpet-cleaning.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 30px;
-    background-position: 50%;
-    height: 50vh;
-    width: 100%;
-}
-
-.about{
-    background-color: rgba(37, 130, 184, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.about-content{
-    text-align: center;
-    justify-content: center;
-    border: 1px solid #111111;
-    width: fit-content;
-    /* height: 50px; */
-    align-items: center;
-    font-weight: 500;
-    padding: 10px;
-
-}
-
-.about-content h1{
-   font-weight: 700;
-   color: #fff;
-   text-align: center;
-}
-
-.about-sectioA{
-    display: flex;
-    flex-direction: row;
-    height: 80vh;
-    width: 100%;
-    gap: 40px;
-    justify-content: space-around;
-    padding: 50px;
-}
-
-.about-contentA{
-    width: 50%;
-    height: fit-content !important;
-    font-size: 16px;
-    padding: 20px;
-}
-
-.about-contentB{
-    background-image: url(../About/carpet-cleaner-full.jpg);
-    width: 40%;
-    height: 100%;
-    background-size: cover;
+    background-position: 80%;
     background-position: 80%;
     border-radius: 20px;
-}
+    transition: 2s all ease-in-out;
+  }
 
-.testimonials{
+  .testimonialsClients {
     height: fit-content !important;
+  }
+
+  .cllientfeed-section {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .cllientfeed {
     width: 100%;
-    background-image: url(../About/carpetstain.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30%;
-    background-color: #2892D5;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  }
 }
 
-.testimonialsClients{
+@media (max-width: 768px) {
+  .cllientfeed {
+    /* padding: 10px; */
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-sectioA {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(37, 130, 184, 0.6);
-    height: 100%;
-    width: 100%;
-    color: #fff;
+    /* justify-content: center; */
+    align-items: center;
     text-align: center;
-    justify-content: center;
-    padding: 10px;
-}
+  }
 
-.testimonialsClients h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.cllientfeed-section{
-    max-height: fit-content !important;
+  .about-contentA {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
-}
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
 
-.cllientfeed{
-    width: 30%;
-    height: fit-content !important;
-    background-color: #054570;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 16px;
+  .cllientfeed {
+    display: flex;
     justify-content: center;
-    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Footer {
+    margin-bottom: 0px;
+  }
 }
 
-@media(max-width:768px){
-    .about-sectioA{
-        flex-direction: column;
-        padding: 0px;
-        height: 120vh;
-    }
+@media (max-width: 1195px) {
+  .cllientfeed {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .about-contentA {
-        width: 100%;
-    }
+  .testimonialsClients {
+    justify-content: flex-start;
+  }
 
-    .about-contentB {
-        width: 100%;
-        height: 60vh;
-    }
-
-    .testimonialsClients {
-        height: fit-content !important;
-    }
-
-    .cllientfeed-section {
-       flex-direction: column;
-       padding: 40px;
-    }
-
-    .cllientfeed {
-        width: 100%;
-    }
-
-   
+  .about-contentA {
+    padding: 0px;
+  }
 }
 
-@media(max-width:768px){
-    .cllientfeed {
-        /* padding: 10px; */
-        text-align: center;
-        align-items: center;
-    }
+@media (max-width: 575px) {
+  .about-sectioA {
+    display: flex;
+    flex-direction: column;
 
-    .about-sectioA {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        text-align: center;
-    }
+    align-items: center;
+    text-align: center;
+  }
 
-    .about-contentA{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-    }
+  .about-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    
+  .about-content {
+    margin-top: 30%;
+  }
 
-    .cllientfeed{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
+  .about-contentA {
+    display: flex;
+    flex-direction: column;
 
-    .Footer{
-        margin-bottom: 0px;
-    }
-
-   
-}
-
-@media(max-width:1195px){
-    .cllientfeed {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
-
-    .testimonialsClients {
-        justify-content: flex-start;
-    }
-
-    .about-contentA {
-        padding: 0px;
-    }
-}
-
-@media(max-width:575px){
-    .about-sectioA {
-        display: flex;
-        flex-direction: column;
-       
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-banner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .about-content{
-        margin-top: 30%;
-    }
-
-    .about-contentA{
-        display: flex;
-        flex-direction: column;
-        
-        padding: 10px;
-        
-    }
-    .cllientfeed{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
+    padding: 10px;
+  }
+  .cllientfeed {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }

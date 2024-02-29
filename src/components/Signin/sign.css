@@ -33,3 +33,7 @@ button.signin_btn {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
+.bi-eye {
+  color: blue;
+}

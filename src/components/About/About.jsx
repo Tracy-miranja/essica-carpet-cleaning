@@ -29,9 +29,7 @@ const About = () => {
             and embodies our vision, ensuring a lasting impact on your home or
             business
           </p>
-          <h3 style={{ color: "blue", fontStyle: "italic" }}>
-            Exceptional Cleaning Services
-          </h3>
+          <h3 style={{ color: "blue" }}>Exceptional Cleaning Services</h3>
           <p>
             At Essica Carpet Cleaning Company, we are dedicated to upholding the
             industry highest standards by delivering quality services to each
@@ -47,7 +45,7 @@ const About = () => {
       <div className="testimonials">
         <div className="testimonialsClients">
           <h1>Happy Clients & Feedbacks</h1>
-          <CarpetCleaningReview />
+
           <div className="cllientfeed-section">
             <div className="cllientfeed">
               <h3>Grace muhavi</h3>
@@ -82,6 +80,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <CarpetCleaningReview />
     </div>
   );
 };

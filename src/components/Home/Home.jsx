@@ -328,7 +328,7 @@ const Home = () => {
           </div>
         </div>
         <div className="blog-article">
-          <div className="blog-image"></div>
+          <div className="blog-image1"></div>
           <div>
             <a href="/">
               <h4>
@@ -345,7 +345,7 @@ const Home = () => {
           </div>
         </div>
         <div className="blog-article">
-          <div className="blog-image"></div>
+          <div className="blog-image2"></div>
           <div>
             <a href="/">
               <h4>Removing Stubborn Stains, A Comprehensive Guide</h4>

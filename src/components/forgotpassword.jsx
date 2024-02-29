@@ -14,7 +14,10 @@ const ForgotPassword = () => {
 
     try {
       // Send a request to your backend to initiate the password reset process
-      const response = await axios.post("/api/forgot-password", { email });
+      const response = await axios.post(
+        "http://localhost:5173/forgotpassword",
+        { email }
+      );
 
       // Handle the response from the backend
       setMessage(response.data.message);
@@ -28,7 +31,7 @@ const ForgotPassword = () => {
     <div className="forgotpassword">
       <div className="innerdv">
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="UserReset">
             <h2>Forgot Password</h2>
             <label htmlFor="email"></label>
             <input
@@ -39,11 +42,11 @@ const ForgotPassword = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
+            <button type="submit">Submit</button>
           </div>
-          <button type="submit">Submit</button>
         </form>
         {/* Display the status message */}
-        {message && <p>{message}</p>}
+        {message && <p>{message} </p>}
       </div>
     </div>
   );
