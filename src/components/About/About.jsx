@@ -44,11 +44,23 @@ const About = () => {
       </div>
       <div className="testimonials">
         <div className="testimonialsClients">
-          <h1>Happy Clients & Feedbacks</h1>
+          <h1>CARPET CLEANING PROCESS</h1>
 
           <div className="cllientfeed-section">
             <div className="cllientfeed">
-              <h3>Grace muhavi</h3>
+              <h3>Assessment:</h3>
+              <p>
+                Our thorough assessment process is the cornerstone of our
+                service. We meticulously examine the condition of your carpets,
+                paying close attention to any stains, signs of wear, or specific
+                cleaning requirements unique to your space. This detailed
+                analysis allows us to tailor our cleaning approach, ensuring a
+                precise and effective treatment that addresses your carpets
+                individual needs.
+              </p>
+            </div>
+            <div className="cllientfeed">
+              <h3>Pre-Treatment</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry standard dummy text
@@ -58,23 +70,13 @@ const About = () => {
               </p>
             </div>
             <div className="cllientfeed">
-              <h3>Grace muhavi</h3>
+              <h3>Cleaning</h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries,
-              </p>
-            </div>
-            <div className="cllientfeed">
-              <h3>Grace muhavi</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries,
+                We use state-of-the-art equipment to deep clean your carpets,
+                removing dirt, allergens, and odors. Drying: Our quick-drying
+                methods ensure your carpets are ready for use as soon as
+                possible. Final Inspection: We conduct a final inspection to
+                ensure your satisfaction with our service.
               </p>
             </div>
           </div>
