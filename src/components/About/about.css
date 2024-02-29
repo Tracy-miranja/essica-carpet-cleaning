@@ -117,6 +117,14 @@
   padding: 20px;
 }
 
+.Review {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .about-sectioA {
     flex-direction: column;

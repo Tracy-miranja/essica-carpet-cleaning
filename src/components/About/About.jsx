@@ -80,7 +80,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <CarpetCleaningReview />
+      <div className="Review">
+        <CarpetCleaningReview />
+      </div>
     </div>
   );
 };
