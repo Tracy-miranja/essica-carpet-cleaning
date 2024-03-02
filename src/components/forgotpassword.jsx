@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./forgotpassword.css";
+import { Navigate } from "react-router-dom";
 
 const ForgotPassword = () => {
   // State to store the email entered by the user
@@ -15,9 +16,12 @@ const ForgotPassword = () => {
     try {
       // Send a request to your backend to initiate the password reset process
       const response = await axios.post(
-        "http://localhost:5173/forgotpassword",
+        "http://localhost:3000/forgotpassword",
         { email }
       );
+      if (response) {
+        Navigate("/SignIn");
+      }
 
       // Handle the response from the backend
       setMessage(response.data.message);
@@ -33,6 +37,9 @@ const ForgotPassword = () => {
         <form onSubmit={handleSubmit}>
           <div className="UserReset">
             <h2>Forgot Password</h2>
+            <p>
+              Enter your email, you will receive a reset password in your email
+            </p>
             <label htmlFor="email"></label>
             <input
               type="email"

@@ -34,10 +34,6 @@ html {
   z-index: -1;
 }
 
-.banner::before {
-  /* transform: translate(-25%, -25%); */
-}
-
 .banner::after {
   transform: translate(25%, 25%);
 }
